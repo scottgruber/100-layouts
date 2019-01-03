@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Brown Pelicans | 100 LA Layouts</title>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link href="https://fonts.googleapis.com/css?family=Lora:400i,700" rel="stylesheet">
+
+  <style type="text/css">
+    body {
+      margin-top: 5%;
+    }
+
+    @media (min-width: 48em) {
+      article {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+      }
+    }
+
+    img {
+      grid-column: 2;
+      grid-row: 1 / 3;
+      height: 80vh;
+      width: 100%;
+      object-fit: contain;
+      align-self: center;
+    }
+
+    .e-content {
+      grid-column: 1;
+      grid-row: 2;
+      align-self: start;
+      justify-self: end;
+      max-width: 30em;
+    }
+
+    h1 {
+      font-family: 'Lora', serif;
+      font-size: var(--font-size-display);
+      font-weight: var(--font-weight-bold);
+      margin: 0;
+    }
+
+    p {
+      font-size: var(--font-size);
+      line-height: 1.4;
+    }
+
+    .standfirst {
+      font-family: 'Lora', serif;
+      font-size: var(--font-size);
+      font-style: italic;
+      font-size: var(--font-size-x-large);
+      line-height: 1.2;
+    }
+  </style>
+</head>
+
+<body>
+  <article>
+    <img src="img/005/brown-pelican@0.5x.jpg" srcset="img/005/brown-pelican.jpg 2x, img/005/brown-pelican@2x.jpg 3x"
+      alt="Photo of the Brown Pelican Painting" />
+
+    <div class="e-content">
+      <h1>Brown Pelican</h1>
+      <p class="standfirst">
+        An unmistakable bird of coastal waters, groups of Brown Pelicans fly
+        low over the waves in single file, flapping and gliding in unison.
+      </p>
+      <p>
+        Their feeding behavior is spectacular, as they plunge headlong into
+        the water in pursuit of fish. The current abundance of this species in
+        the United States represents a success story for conservationists, who
+        succeeded in halting the use of DDT and other persistent pesticides
+        here; as recently as the early 1970s, the Brown Pelican was seriously
+        endangered.
+      </p>
+    </div>
+  </article>
+</body>
+
+</html>

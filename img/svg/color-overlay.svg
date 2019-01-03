@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" 
+     xmlns:xlink="http://www.w3.org/1999/xlink"  
+     width="960px" 
+     height="560px" 
+     viewBox="0 0 960px 560px">
+
+<!-- lacking the B & G channels (only R at 1) -->
+<filter id="red">
+  <feColorMatrix
+    type="matrix"
+    values="1   0   0   0   0
+            0   0   0   0   0
+            0   0   0   0   0
+            0   0   0   1   0 "/>
+</filter>
+
+<!-- lacking the R & G channels (only B at 1) -->
+<filter id="blue">
+ <feColorMatrix
+    type="matrix"
+    values="0   0   0   0   0
+            0   0   0   0   0
+            0   0   1   0   0
+            0   0   0   1   0 "/>
+</filter>
+
+<!-- lacking the R & B channels (only G at 1) -->
+<filter id="green">
+  <feColorMatrix
+    type="matrix"
+    values="0   0   0   0   0
+            0   1   0   0   0
+            0   0   0   0   0
+            0   0   0   1   0 "/>
+</filter>
+	<!-- lacking the G channel (R and G at 1) -->
+<filter id="yellow">
+  <feColorMatrix
+    type="matrix"
+    values="1   0   0   0   0
+            0   1   0   0   0
+            0   0   0   0   0
+            0   0   0   1   0 "/>
+</filter>
+<!-- lacking the G channels (mix of R & B)
+Red + Blue = Magenta
+-->
+<filter id="magenta">
+  <feColorMatrix
+    type="matrix"
+    values="1   0   0   0   0
+            0   0   0   0   0
+            0   0   0.5   0   0
+            0   0   0   1   0 "/>
+</filter>
+	
+<filter id="pink">
+  <feColorMatrix
+    type="matrix"
+    values="1   0   0   0   0
+            0   0   0   0   0
+            0   0   1   0   0
+            0   0   0   1   0 "/>
+</filter>
+
+<filter id="orange">
+  <feColorMatrix
+    type="matrix"
+    values="1   0   0   0   0
+            0   0.5   0   0   0
+            0   0   0   0   0
+            0   0   0   1   0 "/>
+</filter>
+
+<filter id="cyan">
+  <feColorMatrix
+    type="matrix"
+    values="0   0   0   0   0
+            0   1   0   0   0
+            0   0   1   0   0
+            0   0   0   1   0 "/>
+</filter>
+</svg>

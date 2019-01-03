@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>DTLA The Park | 100 Layouts</title>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i" rel="stylesheet"> 
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <style type="text/css">
+    body {
+      font-family: 'Noto Sans', sans-serif;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: 1fr 2fr;
+      grid-template-areas:
+        ". a img img"
+        ". b img img";
+      grid-gap: 1em;
+      margin: 0;
+      min-height: 100vh;
+    }
+
+    .park {
+      grid-area: img;
+    }
+
+    img {
+      width: 100%;
+      height: 100vh;
+      object-fit: cover;
+    }
+
+    article {
+      grid-area: b;
+      align-self: end;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="park">
+    <img src="img/002/park-dtla.jpg" alt="Photo of the DTLA Park" />
+  </div>
+  <article>
+    <h1>The Park DTLA</h1>
+    <address>261 S. Figueroa<br>
+      Los Angeles, California 90012</address>
+    <small><a href="https://www.theparkdtla.com/">www.theparkdtla.com</a></small>
+    <p>The only true office campus in Downtown, The Park DTLA indoor and outdoor creative office sits on Figueroa
+      between 2nd and 3rd Streets, only one-half mile from LA Live and South Park. The Park is a pet friendly campus,
+      solar-powered and offers the top fiber tech for its tenants and visitors.</p>
+  </article>
+
+</body>
+
+</html>

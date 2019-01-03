@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>100 LA Layouts</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400|Rochester" rel="stylesheet"> 
+  <style>
+    body {
+      color: #454543;
+      font-family: 'Roboto', sans-serif;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-template-areas:
+        "header"
+        "main"
+        "aside"
+        "footer";
+      max-width: 80vw;
+      margin: 0 auto;
+    }
+
+    @media (min-width: 30em) {
+      body {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-areas:
+          "header header"
+          "main aside"
+          "footer footer";
+        max-width: 60vw;
+      }
+    }
+
+    header {
+      grid-area: header;
+    }
+
+    main {
+      grid-area: main;
+    }
+
+    aside {
+      grid-area: aside;
+    }
+
+    footer {
+      border-top: var(--border-width-hairline) solid var(--color-border-separator);
+      grid-area: footer;
+      margin-top: var(--spacing-medium);
+    }
+
+    h1 {
+      font-family: "Rochester", cursive;
+      font-size: var(--font-size-xxxx-large);
+      color: #003579;
+      text-align: center;
+    }
+
+    @media (min-width: 30em) {
+      h1 {
+        font-size: var(--font-size-x-display);
+      }
+    }
+
+    @media (min-width: 62em) {
+      h1 {
+        font-size: var(--font-size-xxx-display);
+      }
+    }
+
+    .standfirst {
+      font-size: var(--font-size-large);
+    }
+
+    h2 {
+      font-size: var(--font-size-xx-large);
+    }
+
+    ol {
+      padding-left: 0;
+    }
+
+    ol li {
+      font-size: var(--font-size-medium);
+      margin-left: 0;
+      margin-bottom: .5em;
+    }
+
+    img[src*="svg"] {
+      margin-right: 1em;
+    }
+
+    img[src*="svg"]:hover {
+      color: #0142fe;
+    }
+
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>100 Layouts</h1>
+    <p class="standfirst">100 Layouts is my side project to create 100 designs
+      to study layouts and typography. Most pages use photos of Los Angeles
+      and include some of my favorite locations. I like to call it an
+      ethnographic love story for LA. All layouts use CSS grid. And other
+      modern CSS properities like flexbox, shapes, transforms, animations and
+      multi-column. Font selections come from Google and Adobe collections. I
+      plan to use variable fonts and web fonts served here. I'll keep a list of
+      type specimens for review. If you'd like to view code or contact me find
+      links in the footer.</p>
+    <p>Scott Gruber<br> Los Angeles. 2018</p>
+  </header>
+  <main>
+    <h2>Layouts</h2>
+    <ol>
+      <li><a href="001.html">Flying into LAX</a></li>
+      <li><a href="002.html">DTLA The Park</a></li>
+      <li><a href="003.html">Bonaventure Hotel</a></li>
+      <li><a href="004.html">Santa Monica Pier</a></li>
+      <li><a href="005.html">Brown Pelican Mural, Venice</a></li>
+      <li><a href="006.html">Walt Disney Concert Hall #1</a></li>
+      <li><a href="007.html">Walt Disney Concert Hall #2</a></li>
+      <li><a href="008.html">Walt Disney Concert Hall #3</a></li>
+      <li><a href="009.html">Walt Disney Concert Hall #4</a></li>
+      <li><a href="010.html">Color palettes, Santa Monica mountains</a></li>
+      <li><a href="011.html">Swatch color palettes</a></li>
+      <li><a href="012.html">Interaction of Color, Joseph Albers</a></li>
+      <li><a href="013.html">Swiss poster</a></li>
+      <li><a href="014.html">Disney Hall, polygon & clip-path</a></li>
+      <li><a href="015.html">LA Audubon Bird palettes</a></li>
+    </ol>
+  </main>
+  <aside>
+    <h2>Typography</h2>
+    <ol>
+      <li><a href="typography/cormorant-garamond.html">Cormorant Garamond</a></li>
+      <li><a href="typography/courier.html">Courier</a></li>
+      <li><a href="typography/futura.html">Futura</a></li>
+      <li><a href="typography/lora.html">Lora</a></li>
+      <li><a href="typography/merriweather.html">Merriweather</a></li>
+      <li><a href="typography/noto-sans.html">Noto Sans</a></li>
+      <li><a href="typography/noto-serif.html">Noto Serif</a></li>
+      <li><a href="typography/open-sans.html">Open Sans</a></li>
+      <li><a href="typography/pacifico.html">Pacifico</a></li>
+      <li><a href="typography/playfair.html">Playfair</a></li>
+      <li><a href="typography/roboto.html">Roboto</a></li>
+      <li><a href="typography/rochester.html">Rochester</a></li>   
+    </ol>
+  </aside>
+  <footer>
+    <p><a href="https://github.com/scottgruber/100-layouts"><img class="icon-github"
+          src="icons/github.svg" alt="GitHub icon" title="Code on GitHub"></a><a
+        href="https://twitter.com/scott_gruber"><img class="icon-github" src="icons/twitter.svg"
+          alt="Twitter icon" title="Talk with me on Twitter"></a><a href="https://scottgruber.me"><img
+          class="icon-homepage" src="icons/house-modern.svg" alt="Homepage icon"
+          title="Visit my personal website"></a></p>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i');
+@import url("custom-properties.css");
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  color: var(--color-text-default);
+  font-family: var(--font-family);
+  font-size: var(--text-base-size);
+  font-weight: var(--font-weight);
+  line-height: 1.5;
+}
+
+@media (min-width: 64em) {
+  :root {
+    --text-scale-ratio: var(--text-scale-ratio-alt);
+  }
+}
+
+.aspect-ratio {
+  width: 100vw;
+  height: calc(100vw * 9/16);
+}
