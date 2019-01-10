@@ -21,7 +21,7 @@
           "text text";
         grid-column-gap: 2vw;
         grid-row-gap: 1vh;
-        margin: 5vw;
+        margin: 1vh 4vw;
       }
 
       @media (min-width: 48em) {
@@ -33,7 +33,7 @@
             "caption text text";
           grid-column-gap: 0px;
           grid-row-gap: 1vh;
-          margin: 5vw;
+          margin: 2vh 6vw;
         }
       }
 
@@ -63,9 +63,9 @@
 
       img {
         grid-area: image;
-        max-height: 100%;
-        object-fit: cover;
-        width: 100%;
+        /* max-height: 100%;
+        object-fit: cover; */
+        max-width: 100%;
       }
 
       figcaption {
@@ -75,6 +75,8 @@
 
       article {
         grid-area: text;
+        max-width: 70em;
+         /* add maxcontent to keep around 75em */
       }
 
       article p:first-of-type::first-letter {
