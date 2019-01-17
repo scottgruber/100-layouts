@@ -1,397 +1,435 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <title>Santa Monica Mountains Color Palettes | 100 LA Layouts</title>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/styles.css" />
-  <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i" rel="stylesheet"> 
-  <style type="text/css">
-    /* Total width of design = 1290px
-    Total column width = 54px
-    54 of 1290 as a percentage = 54/1290*100 = 4.186046512% */
-    /* @media (min-width: 720px) { */
+  <head>
+    <title>Santa Monica Mountains Colors | 100 LA Layouts</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i"
+      rel="stylesheet">
+    <style type="text/css">
       body {
-        display: grid;
         font-family: 'Noto Sans', sans-serif;
-        grid-template-columns: 4.06504065% 12.814556717% 18.81533101% 13.008130081% 2.322880372% 8.439798684% 8.594657375% 23.228803717% 8.713372048%;
-        grid-template-rows: auto-fit;
-        grid-template-areas: 
-        "1 2 3 4 5 6 7 8 9",
+        margin: 0;
       }
-    /* } */
 
-    figure {
-      margin: 0;
-    }
+      header {
+        text-align: center;
+      }
 
-    figcaption p {
-      text-transform: uppercase;
-      font-style: italic;
-    }
+      h1 {
+        text-transform: uppercase;
+        font-style: italic;
+        font-size: var(--font-size-x-display);
+      }
 
-    img {
-      width: 80%;
-    }
+      @media (min-width: 48em) {
+        figure {
+          margin: 15vh 0;
+          display: grid;
+          grid-template-columns: 2fr 3fr 1fr 2fr 3fr 1fr;
+          grid-template-areas:
+            ". img img . palette .";
+        }
+      }
 
-    .palette {
-      display: flex;
-      flex-wrap: wrap;
-      font-family: var(--font-family-condensed);
-      font-size: var(--font-size-small);
-    }
+      figure>img {
+        grid-area: img;
+      }
 
-    .swatch {
-      margin: 1vw;
-    }
+      figure>figcaption {
+        grid-area: palette;
+      }
 
-    .swatch div {
-      border-radius: 50%;
-      width: 110px;
-      height: 110px;
-    }
+      p {
+        text-transform: uppercase;
+        font-style: italic;
+        font-size: var(--font-size);
+      }
 
-    figure:nth-child(1) {
-      grid-column-start: 1;
-      grid-column-end: 5;
-      grid-row-start: 2;
-    }
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+      }
 
-    figure:nth-child(2) {
-      grid-column-start: 7;
-      grid-column-end: 9;
-    }
+      .swatch {
+        align-items: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5px;
+        border-bottom: 1px solid #efefef;
+      }
 
-    figure:nth-child(3) {
-      grid-column-start: 3;
-      grid-column-end: 5;
-      grid-row-start: 4;
-    }
+      .swatch:last-child {
+        border-bottom: 0;
+      }
 
-    figure:nth-child(4) {
-      grid-column-start: 8;
-      grid-column-end: 10;
-      grid-row-start: 4;
-    }
+      .swatch>div:first-child {
+        justify-self: center;
+        border-radius: 50%;
+        height: 75px;
+        width: 75px;
+        border: 10px solid hsla(24, 17%, 83%, .5);
+      }
 
-    figure:nth-child(5) {
-      grid-column-start: 2;
-      grid-column-end: 4;
-      grid-row-start: 7;
-    }
+      .swatch div:last-child {
+        height: 100px;
+        width: 140px;
 
-    figure:nth-child(6) {
-      grid-column-start: 6;
-      grid-column-end: 10;
-      grid-row-start: 6;
-    }
+      }
 
-  </style>
-</head>
+    </style>
+  </head>
 
-<body>
-  <figure>
-    <img src="img/010/color-theme-3a.jpg" alt="">
-    <figcaption>
-      <p><b>Color palette 1</b></p>
-      <section class="palette">
-        <div class="swatch">
-          <div style="background: #6F798A;"></div>
-          <div>
-            <b>Hex: </b>#6F798A<br>
-            <b>HSL: </b>218° 11% 49%<br>
-            <b>RGB: </b>111 121 138 </div>
-        </div>
-        <div class="swatch">
-          <div style="background: #BFB063;"></div>
-          <div>
-            <b>Hex: </b>#BFB063<br>
-            <b>HSL: </b>50° 42% 57%<br>
-            <b>RGB: </b>191 176 99 </div>
-        </div>
-        <div class="swatch">
-          <div style="background: #DAD1CB;"></div>
-          <div><b>Hex: </b>#DAD1CB<br>
-            <b>HSL: </b>24° 17% 83%<br>
-            <b>RGB: </b>218 209 203 </div>
-        </div>
-        <div class="swatch">
-          <div style="background: #454543;"></div>
-          <div><b>Hex: </b>#454543<br>
-            <b>HSL: </b>60° 1% 27%<br>
-            <b>RGB: </b>69 69 67 </div>
-        </div>
-        <div class="swatch">
-          <div style="background: #A68C76;"></div>
-          <div><b>Hex: </b>#A68C76<br>
-            <b>HSL: </b>28° 21% 56%<br>
-            <b>RGB: </b>166 140 118 </div>
-        </div>
-        <div class="swatch">
-          <div style="background: #95561F;"></div>
-          <div><b>Hex: </b>#95561F<br>
-            <b>HSL: </b>28° 66% 35%<br>
-            <b>RGB: </b>149 86 31</div>
-        </div>
-      </section>
-    </figcaption>
-  </figure>
-  <figure>
-    <img src="img/010/color-theme-5.jpg" alt="">
-    <figcaption>
-      <p><b>Color palette 2</b></p>
-      <section class="palette">
-        <div class="swatch">
-          <div style="background: #595736;"></div>
-          <div>
-            <b>Hex: </b>#595736<br>
-            <b>HSL: </b>57° 24% 28%<br>
-            <b>RGB: </b>89 87 54</div>
-        </div>
-        <div class="swatch">
-          <div style="background: #D9C3A9;"></div>
-          <div>
-            <b>Hex: </b>#D9C3A9<br>
-            <b>HSL: </b>33° 39% 76%<br>
-            <b>RGB: </b>217 195 169 </div>
-        </div>
-        <div class="swatch">
-          <div style="background: #F0E7D8;"></div>
-          <div>
-            <b>Hex: </b>#F0E7D8<br>
-            <b>HSL: </b>38° 44% 89%<br>
-            <b>RGB: </b>240 231 216</div>
-        </div>
-        <div class="swatch">
-          <div style="background: #BFAB99;"></div>
-          <div>
-            <b>Hex: </b>#BFAB99<br>
-            <b>HSL: </b>28° 23% 67%<br>
-            <b>RGB: </b>191 171 153</div>
-        </div>
-        <div class="swatch">
-          <div style="background: #8C7C6D;"></div>
-          <div>
-            <b>Hex: </b>#8C7C6D<br>
-            <b>HSL: </b>29° 12% 49%<br>
-            <b>RGB: </b>140 124 109</div>
-        </div>
-      </section>
-    </figcaption>
-  </figure>
-  <figure>
-    <img src="img/010/color-theme-7.jpg" alt="" />
-    <figcaption>
-      <p><b>Color palette 3</b></p>
-      <section class="palette">
-        <div class="swatch">
-          <div style="background: #4F643D;"></div>
-          <div>
-            <b>Hex: </b>#4F643D<br>
-            <b>HSL: </b>92° 24% 32%<br>
-            <b>RGB: </b>79 100 61</div>
-        </div>
-        <div class="swatch">
-          <div style="background: #BAC96D;"></div>
-          <div>
-            <b>Hex: </b>#BAC96D<br>
-            <b>HSL: </b>70° 46% 61%<br>
-            <b>RGB: </b>186 201 109 </div>
-        </div>
-        <div class="swatch">
-          <div style="background: #5C4E48;"></div>
-          <div>
-            <b>Hex: </b>#5C4E48<br>
-            <b>HSL: </b>18° 12% 32%<br>
-            <b>RGB: </b>92 78 72</div>
-        </div>
-        <div class="swatch">
-          <div style="background: #A69D92;"></div>
-          <div>
-            <b>Hex: </b>#A69D92<br>
-            <b>HSL: </b>33° 10% 61%<br>
-            <b>RGB: </b>166 157 146</div>
-        </div>
-        <div class="swatch">
-          <div style="background: #BFB3A8;"></div>
-          <div>
-            <b>Hex: </b>#BFB3A8<br>
-            <b>HSL: </b>29° 15% 70%<br>
-            <b>RGB: </b>191 179 168</div>
-        </div>
-      </section>
-    </figcaption>
-  </figure>
-  <figure>
-    <img src="img/010/color-theme-4.jpg" alt="">
-    <figcaption>
-      <p><b>Color palette 4</b></p>
-      <section class="palette">
-        <div class="swatch">
-          <div style="background: #5891D8;"></div>
-          <div>
-            <b>Hex: </b>#5891D8<br>
-            <b>HSL: </b>213° 62% 60%<br>
-            <b>RGB: </b>88 145 216</div>
-        </div>
-        <div class="swatch">
-          <div style="background: #4B89BF;"></div>
-          <div>
-            <b>Hex: </b>#4B89BF<br>
-            <b>HSL: </b>208° 48% 52%<br>
-            <b>RGB: </b>75 137 191 </div>
-        </div>
-        <div class="swatch">
-          <div style="background: #79BAF2;"></div>
-          <div>
-            <b>Hex: </b>#79BAF2<br>
-            <b>HSL: </b>208° 82% 71%<br>
-            <b>RGB: </b>121 186 242</div>
-        </div>
-        <div class="swatch">
-          <div style="background: #D9AD77;"></div>
-          <div>
-            <b>Hex: </b>#D9AD77<br>
-            <b>HSL: </b>33° 56% 66%<br>
-            <b>RGB: </b>217 173 119</div>
-        </div>
-        <div class="swatch">
-          <div style="background: #A67C58;"></div>
-          <div>
-            <b>Hex: </b>#A67C58<br>
-            <b>HSL: </b>28° 31% 50%<br>
-            <b>RGB: </b>166 124 88</div>
-        </div>
-      </section>
-    </figcaption>
-  </figure>
-  <figure><img src="img/010/color-theme-6.jpg" alt="">
-    <figcaption>
-      <p><b>Color palette 5</b></p>
-      <section class="palette">
-        <div class="swatch">
-          <div style="background: #68748C;"></div>
-          <div>
-            <b>Hex: </b>#68748C<br>
-            <b>HSL: </b>220° 15% 48%<br>
-            <b>RGB: </b>104 116 140</div>
-        </div>
-        <div class="swatch">
-          <div style="background: #6CA6D9;"></div>
-          <div>
-            <b>Hex: </b>#6CA6D9<br>
-            <b>HSL: </b>208° 59% 64%<br>
-            <b>RGB: </b>108 166 217</div>
-        </div>
-        <div class="swatch">
-          <div style="background: #80BDF2;"></div>
-          <div>
-            <b>Hex: </b>#80BDF2<br>
-            <b>HSL: </b>208° 81% 73%<br>
-            <b>RGB: </b>128 189 242</div>
-        </div>
-        <div class="swatch">
-          <div style="background: #A7D5F2;"></div>
-          <div>
-            <b>Hex: </b>#A7D5F2<br>
-            <b>HSL: </b>203° 74% 80%<br>
-            <b>RGB: </b>167 213 242</div>
-        </div>
-        <div class="swatch">
-          <div style="background: #A68A7B;"></div>
-          <div>
-            <b>Hex: </b>#A68A7B<br>
-            <b>HSL: </b>21° 19% 57%<br>
-            <b>RGB: </b>166 138 123</div>
-        </div>
-      </section>
-    </figcaption>
-  </figure>
-  <figure>
-    <img src="img/010/color-theme-1a.jpg" alt="">
-    <figcaption>
-      <p><b>Color palette 6</b></p>
-      <section class="palette">
-        <div class="swatch">
-          <div style="background: #F2C2C2;"></div>
-          <div>
-            <b>Hex: </b>#F2C2C2<br>
-            <b>HSL: </b>0° 65% 85%<br>
-            <b>RGB: </b>242 194 194</div>
-        </div>
-        <div class="swatch">
-          <div style="background: #F2B6CC;"></div>
-          <div>
-            <b>Hex: </b>#F2B6CC<br>
-            <b>HSL: </b>338° 70% 83%<br>
-            <b>RGB: </b>242 182 204</div>
-        </div>
-        <div class="swatch">
-          <div style="background: #BBADD9;"></div>
-          <div>
-            <b>Hex: </b>#BBADD9<br>
-            <b>HSL: </b>259° 37% 76%<br>
-            <b>RGB: </b>187 173 217</div>
-        </div>
-        <div class="swatch">
-          <div style="background: #F2D8CE;"></div>
-          <div>
-            <b>Hex: </b>#F2D8CE<br>
-            <b>HSL: </b>17° 58% 88%<br>
-            <b>RGB: </b>242 216 206</div>
-        </div>
-        <div class="swatch">
-          <div style="background: #8C7570;"></div>
-          <div>
-            <b>Hex: </b>#8C7570<br>
-            <b>HSL: </b>11° 11% 49%<br>
-            <b>RGB: </b>140 117 112</div>
-        </div>
-      </section>
-    </figcaption>
-    <img src="img/010/color-theme-2.jpg" alt="">
-    <figcaption>
-      <p><b>Color palette 7</b></p>
-      <section class="palette">
-        <div class="swatch">
-          <div style="background: #5F6A3D;"></div>
-          <div>
-            <b>Hex: </b>#5F6A3D<br>
-            <b>HSL: </b>75° 27% 33%<br>
-            <b>RGB: </b>95 106 61</div>
-        </div>
-        <div class="swatch">
-          <div style="background: #80823F;"></div>
-          <div>
-            <b>Hex: </b>#80823F<br>
-            <b>HSL: </b>62° 35% 38%<br>
-            <b>RGB: </b>128 130 63</div>
-        </div>
-        <div class="swatch">
-          <div style="background: #F6D763;"></div>
-          <div>
-            <b>Hex: </b>#F6D763<br>
-            <b>HSL: </b>47° 89% 68%<br>
-            <b>RGB: </b>246 215 99</div>
-        </div>
-        <div class="swatch">
-          <div style="background: #E6C859;"></div>
-          <div>
-            <b>Hex: </b>#E6C859<br>
-            <b>HSL: </b>47° 74% 63%<br>
-            <b>RGB: </b>230 200 89</div>
-        </div>
-        <div class="swatch">
-          <div style="background: #9D4A59;"></div>
-          <div>
-            <b>Hex: </b>#9D4A59<br>
-            <b>HSL: </b>349° 36% 45%<br>
-            <b>RGB: </b>157 74 89</div>
-        </div>
-      </section>
-    </figcaption>
-  </figure>
-</body>
+  <body>
+    <header>
+      <h1>Santa Monica Mountains</h1>
+    </header>
+    <figure>
+      <img src="img/016/mrt-colors-22.jpg" alt="">
+      <figcaption>
+        <p><b>Color palette 1</b></p>
+        <section class="palette">
+          <div class="swatch">
+            <div style="background: #6F798A;"></div>
+            <div>
+              <p><b>Hex: </b>#6F798A<br>
+                <b>HSL: </b>218° 11% 49%<br>
+                <b>RGB: </b>111 121 138 </p>
+            </div>
+          </div>
+          <div class="swatch">
+            <div style="background: #BFB063;"></div>
+            <div>
+              <p><b>Hex: </b>#BFB063<br>
+                <b>HSL: </b>50° 42% 57%<br>
+                <b>RGB: </b>191 176 99</p>
+            </div>
+          </div>
+          <div class="swatch">
+            <div style="background: #DAD1CB;"></div>
+            <div>
+              <p><b>Hex: </b>#DAD1CB<br>
+                <b>HSL: </b>24° 17% 83%<br>
+                <b>RGB: </b>218 209 203 </p>
+            </div>
+          </div>
+          <div class="swatch">
+            <div style="background: #454543;"></div>
+            <div>
+              <p><b>Hex: </b>#454543<br>
+                <b>HSL: </b>60° 1% 27%<br>
+                <b>RGB: </b>69 69 67</p>
+            </div>
+          </div>
+          <div class="swatch">
+            <div style="background: #A68C76;"></div>
+            <div>
+              <p><b>Hex: </b>#A68C76<br>
+                <b>HSL: </b>28° 21% 56%<br>
+                <b>RGB: </b>166 140 118 </p>
+            </div>
+          </div>
+          <div class="swatch">
+            <div style="background: #95561F;"></div>
+            <div>
+              <p><b>Hex: </b>#95561F<br>
+                <b>HSL: </b>28° 66% 35%<br>
+                <b>RGB: </b>149 86 31</p>
+            </div>
+          </div>
+        </section>
+      </figcaption>
+    </figure>
+    <figure>
+      <img src="img/016/mrt-colors-5.jpg" alt="">
+      <figcaption>
+        <p><b>Color palette 2</b></p>
+        <section class="palette">
+          <div class="swatch">
+            <div style="background: #595736;"></div>
+            <div>
+              <p><b>Hex: </b>#595736<br>
+                <b>HSL: </b>57° 24% 28%<br>
+                <b>RGB: </b>89 87 54</p>
+            </div>
+          </div>
+          <div class="swatch">
+            <div style="background: #D9C3A9;"></div>
+            <div>
+              <p> <b>Hex: </b>#D9C3A9<br>
+                <b>HSL: </b>33° 39% 76%<br>
+                <b>RGB: </b>217 195 169</p>
+            </div>
+          </div>
+          <div class="swatch">
+            <div style="background: #F0E7D8;"></div>
+            <div>
+              <p> <b>Hex: </b>#F0E7D8<br>
+                <b>HSL: </b>38° 44% 89%<br>
+                <b>RGB: </b>240 231 216</p>
+            </div>
+          </div>
+          <div class="swatch">
+            <div style="background: #BFAB99;"></div>
+            <div>
+              <p> <b>Hex: </b>#BFAB99<br>
+                <b>HSL: </b>28° 23% 67%<br>
+                <b>RGB: </b>191 171 153</p>
+            </div>
+          </div>
+          <div class="swatch">
+            <div style="background: #8C7C6D;"></div>
+            <div>
+              <p><b>Hex: </b>#8C7C6D<br>
+                <b>HSL: </b>29° 12% 49%<br>
+                <b>RGB: </b>140 124 109</p>
+            </div>
+          </div>
+        </section>
+      </figcaption>
+    </figure>
+    <figure>
+      <img src="img/016/mrt-colors-2.jpg" alt="" />
+      <figcaption>
+        <p><b>Color palette 3</b></p>
+        <section class="palette">
+          <div class="swatch">
+            <div style="background: #4F643D;"></div>
+            <div>
+              <p> <b>Hex: </b>#4F643D<br>
+                <b>HSL: </b>92° 24% 32%<br>
+                <b>RGB: </b>79 100 61</p>
+            </div>
+          </div>
+          <div class="swatch">
+            <div style="background: #BAC96D;"></div>
+            <div>
+              <p> <b>Hex: </b>#BAC96D<br>
+                <b>HSL: </b>70° 46% 61%<br>
+                <b>RGB: </b>186 201 109 </p>
+            </div>
+          </div>
+          <div class="swatch">
+            <div style="background: #5C4E48;"></div>
+            <div>
+              <p> <b>Hex: </b>#5C4E48<br>
+                <b>HSL: </b>18° 12% 32%<br>
+                <b>RGB: </b>92 78 72</p>
+            </div>
+          </div>
+          <div class="swatch">
+            <div style="background: #A69D92;"></div>
+            <div>
+              <p><b>Hex: </b>#A69D92<br>
+                <b>HSL: </b>33° 10% 61%<br>
+                <b>RGB: </b>166 157 146</p>
+            </div>
+          </div>
+          <div class="swatch">
+            <div style="background: #BFB3A8;"></div>
+            <div>
+              <p> <b>Hex: </b>#BFB3A8<br>
+                <b>HSL: </b>29° 15% 70%<br>
+                <b>RGB: </b>191 179 168</p>
+            </div>
+          </div>
+        </section>
+      </figcaption>
+    </figure>
+    <figure>
+      <img src="img/016/mrt-colors-13.jpg" alt="">
+      <figcaption>
+        <p><b>Color palette 4</b></p>
+        <section class="palette">
+          <div class="swatch">
+            <div style="background: #5891D8;"></div>
+            <div>
+              <p> <b>Hex: </b>#5891D8<br>
+                <b>HSL: </b>213° 62% 60%<br>
+                <b>RGB: </b>88 145 216</p>
+            </div>
+          </div>
+          <div class="swatch">
+            <div style="background: #4B89BF;"></div>
+            <div>
+              <p><b>Hex: </b>#4B89BF<br>
+                <b>HSL: </b>208° 48% 52%<br>
+                <b>RGB: </b>75 137 191</p>
+            </div>
+          </div>
+          <div class="swatch">
+            <div style="background: #79BAF2;"></div>
+            <div>
+              <p><b>Hex: </b>#79BAF2<br>
+                <b>HSL: </b>208° 82% 71%<br>
+                <b>RGB: </b>121 186 242</p>
+            </div>
+          </div>
+          <div class="swatch">
+            <div style="background: #D9AD77;"></div>
+            <div>
+              <p><b>Hex: </b>#D9AD77<br>
+                <b>HSL: </b>33° 56% 66%<br>
+                <b>RGB: </b>217 173 119</p>
+            </div>
+          </div>
+          <div class="swatch">
+            <div style="background: #A67C58;"></div>
+            <div>
+              <p><b>Hex: </b>#A67C58<br>
+                <b>HSL: </b>28° 31% 50%<br>
+                <b>RGB: </b>166 124 88</p>
+            </div>
+          </div>
+        </section>
+      </figcaption>
+    </figure>
+    <figure><img src="img/016/mrt-colors-14.jpg" alt="">
+      <figcaption>
+        <p><b>Color palette 5</b></p>
+        <section class="palette">
+          <div class="swatch">
+            <div style="background: #68748C;"></div>
+            <div>
+              <p><b>Hex: </b>#68748C<br>
+                <b>HSL: </b>220° 15% 48%<br>
+                <b>RGB: </b>104 116 140</p>
+            </div>
+          </div>
+          <div class="swatch">
+            <div style="background: #6CA6D9;"></div>
+            <div>
+              <p> <b>Hex: </b>#6CA6D9<br>
+                <b>HSL: </b>208° 59% 64%<br>
+                <b>RGB: </b>108 166 217</p>
+            </div>
+          </div>
+          <div class="swatch">
+            <div style="background: #80BDF2;"></div>
+            <div>
+              <p><b>Hex: </b>#80BDF2<br>
+                <b>HSL: </b>208° 81% 73%<br>
+                <b>RGB: </b>128 189 242</p>
+            </div>
+          </div>
+          <div class="swatch">
+            <div style="background: #A7D5F2;"></div>
+            <div>
+              <p><b>Hex: </b>#A7D5F2<br>
+                <b>HSL: </b>203° 74% 80%<br>
+                <b>RGB: </b>167 213 242</p>
+            </div>
+          </div>
+          <div class="swatch">
+            <div style="background: #A68A7B;"></div>
+            <div>
+              <p><b>Hex: </b>#A68A7B<br>
+                <b>HSL: </b>21° 19% 57%<br>
+                <b>RGB: </b>166 138 123</p>
+            </div>
+          </div>
+        </section>
+      </figcaption>
+    </figure>
+    <figure>
+      <img src="img/016/mrt-book-colors-2.jpg" alt="">
+      <figcaption>
+        <p><b>Color palette 6</b></p>
+        <section class="palette">
+          <div class="swatch">
+            <div style="background: #F2C2C2;"></div>
+            <div>
+              <p><b>Hex: </b>#F2C2C2<br>
+                <b>HSL: </b>0° 65% 85%<br>
+                <b>RGB: </b>242 194 194</p>
+            </div>
+          </div>
+          <div class="swatch">
+            <div style="background: #F2B6CC;"></div>
+            <div>
+              <p><b>Hex: </b>#F2B6CC<br>
+                <b>HSL: </b>338° 70% 83%<br>
+                <b>RGB: </b>242 182 204</p>
+            </div>
+          </div>
+          <div class="swatch">
+            <div style="background: #BBADD9;"></div>
+            <div>
+              <p><b>Hex: </b>#BBADD9<br>
+                <b>HSL: </b>259° 37% 76%<br>
+                <b>RGB: </b>187 173 217</p>
+            </div>
+          </div>
+          <div class="swatch">
+            <div style="background: #F2D8CE;"></div>
+            <div>
+              <p><b>Hex: </b>#F2D8CE<br>
+                <b>HSL: </b>17° 58% 88%<br>
+                <b>RGB: </b>242 216 206</p>
+            </div>
+          </div>
+          <div class="swatch">
+            <div style="background: #8C7570;"></div>
+            <div>
+              <p><b>Hex: </b>#8C7570<br>
+                <b>HSL: </b>11° 11% 49%<br>
+                <b>RGB: </b>140 117 112</p>
+            </div>
+          </div>
+        </section>
+      </figcaption>
+    </figure>
+    <figure>
+      <img src="img/016/mrt-book-colors-1.jpg" alt="">
+      <figcaption>
+        <p><b>Color palette 7</b></p>
+        <section class="palette">
+          <div class="swatch">
+            <div style="background: #5F6A3D;"></div>
+            <div>
+              <p><b>Hex: </b>#5F6A3D<br>
+                <b>HSL: </b>75° 27% 33%<br>
+                <b>RGB: </b>95 106 61</p>
+            </div>
+          </div>
+          <div class="swatch">
+            <div style="background: #80823F;"></div>
+            <div>
+              <p><b>Hex: </b>#80823F<br>
+                <b>HSL: </b>62° 35% 38%<br>
+                <b>RGB: </b>128 130 63</p>
+            </div>
+          </div>
+          <div class="swatch">
+            <div style="background: #F6D763;"></div>
+            <div>
+              <p><b>Hex: </b>#F6D763<br>
+                <b>HSL: </b>47° 89% 68%<br>
+                <b>RGB: </b>246 215 99</p>
+            </div>
+          </div>
+          <div class="swatch">
+            <div style="background: #E6C859;"></div>
+            <div>
+              <p> <b>Hex: </b>#E6C859<br>
+                <b>HSL: </b>47° 74% 63%<br>
+                <b>RGB: </b>230 200 89</p>
+            </div>
+          </div>
+          <div class="swatch">
+            <div style="background: #9D4A59;"></div>
+            <div>
+              <p> <b>Hex: </b>#9D4A59<br>
+                <b>HSL: </b>349° 36% 45%<br>
+                <b>RGB: </b>157 74 89</p>
+            </div>
+          </div>
+        </section>
+      </figcaption>
+    </figure>
+  </body>
 
 </html>
