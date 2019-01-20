@@ -1,68 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <title>Responsive Images | 100 LA Layouts</title>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="format-detection" content="telephone=no">
-  <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css" />
-  <style type="text/css">
-    body {
-      font-family: 'Noto Sans', sans-serif;
-      display: grid;
-    }
+  <head>
+    <title>Liberty and the Heart of LA 2018 | 100 LA Layouts</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <style type="text/css">
+      :root {
+        --color-red: #d42629;
+        --color-blue: #000554;
+      }
 
-  </style>
-</head>
+      body {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+          "stars red-stripes"
+          "stars white-stripes";
+        margin: 0;
+        max-height: 100vh;
+      }
 
-<body>
-  <header></header>
-  
-  <main>
-    <h2>Art direction use case</h2>
+      .blue {
+        background: var(--color-blue);
+        background-image: url('img/svg/star.svg');
+        grid-area: stars;
+        height: 100vh;
+        width: 50vw;
+      }
 
-    <h3>Min width</h3>
-    <p>If we’re using min-width media queries, we want to have our largest
-      sources first, as illustrated in the example above. When we’re using
-      max-width media queries, we want to make sure our smallest sources come
-      first. </p>
-    
-    <picture>
-      <source media="(min-width: 800px)" srcset="pic-big.jpg">
-      <source media="(min-width: 400px)" srcset="pic-med.jpg">
-      <img src="small.jpg" alt="Cubes of tofu simmering in a fiery red sauce.">
-    </picture>
-    
-    <picture>
-      <source srcset="img/jacob-rees-mogg.jpg" media="(min-width: 64em)">
-      <img src="img/jacob-rees-mogg-small.jpg" alt="The Honourable Jacob Rees-Mogg MP">
-    </picture>
-    <h3>Max Width</h3>
-    <picture>
-      <source media="(max-width: 400px)" srcset="pic-med.jpg">
-      <source media="(max-width: 800px)" srcset="pic-big.jpg">
-      <img src="small.jpg" alt="Cubes of tofu simmering in a fiery red sauce.">
-    </picture>
-    <h2>Display density use case</h2>
-    <picture alt="Description of image subject">
-      <source srcset="small.jpg 1x, small-highres.jpg 2x">
-      <source media="(min-width: 18em)" srcset="med.jpg 1x, med-highres.jgp 2x">
-      <source media="(min-width: 45em)" srcset="large.jpg 1x, large-highres.jpg 2x">
-      <img src="small.jpg" alt="Description of image subject">
-    </picture>
+      .red,
+      .white {
+        height: 50vh;
+        width: 50vw;
+      }
 
-    <h2>Sizes</h2>
-    <img sizes="100vw" srcset="small.jpg 400w, medium.jpg 800w, large.jpg
-     1600w" src="fallback.jpg" alt="...">
-    <img sizes="(min-width: 1200px) 1200px, 100vw" srcset="small.jpg 400w, medium.jpg 800w, large.jpg 1600w, x-large.jpg 2400w" src="fallback.jpg" alt="...">
-    <img srcset="small.jpg .625x, medium.jpg 1.25x, large.jpg 2.5x" alt="...">
-    
-    <article></article>
-  </main>
-  <aside></aside>
-  <footer></footer>
-</body>
+      .red {
+        background: var(--color-red);
+        grid-area: red-stripes;
+      }
+
+      .white {
+        background: #fff;
+        grid-area: white-stripes;
+      }
+
+      .blue img {
+        height: 100vh;
+        width: 50vw;
+        object-fit: contain;
+      }
+
+      .red img,
+      .white img {
+        height: 50vh;
+        width: 50vw;
+        object-fit: contain;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <div class="blue">
+      <img src="img/019/ciclavia-56.jpg" alt="American Man">
+    </div>
+    <div class="red">
+      <img src="img/019/ciclavia-34.jpg" alt="Liberty Mural">
+    </div>
+    <div class="white"> <img src="img/019/ciclavia-62.jpg" alt="Heart of LA Mural">
+    </div>
+  </body>
 
 </html>
