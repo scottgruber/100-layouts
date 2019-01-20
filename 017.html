@@ -1,77 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <title>Liberty and the Heart of LA 2018 | 100 LA Layouts</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/styles.css" />
-    <style type="text/css">
-      :root {
-        --color-red: #d42629;
-        --color-blue: #000554;
-      }
+<head>
+  <title>Cormorant Garamond | 100 LA Layouts</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="format-detection" content="telephone=no">
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/type-layout.css" />
+  <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,400,400i,700,700i"
+    rel="stylesheet">
+  <style type="text/css">
+    body {
+      font-family: 'Cormorant Garamond', serif;
+    }
 
-      body {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-template-areas:
-          "stars red-stripes"
-          "stars white-stripes";
-        margin: 0;
-        max-height: 100vh;
-      }
+    .thin {
+      font-size: var(--font-size-display);
+      font-weight: var(--font-weight-thin);
+    }
 
-      .blue {
-        background: var(--color-blue);
-        background-image: url('img/svg/star.svg');
-        grid-area: stars;
-        height: 100vh;
-        width: 50vw;
-      }
+    .regular {
+      font-size: var(--font-size-display);
+      font-weight: var(--font-weight);
+    }
 
-      .red,
-      .white {
-        height: 50vh;
-        width: 50vw;
-      }
+    .bold {
+      font-size: var(--font-size-display);
+      font-weight: var(--font-weight-bold);
+    }
 
-      .red {
-        background: var(--color-red);
-        grid-area: red-stripes;
-      }
+    .italic {
+      font-style: italic;
+    }
 
-      .white {
-        background: #fff;
-        grid-area: white-stripes;
-      }
+  </style>
+</head>
 
-      .blue img {
-        height: 100vh;
-        width: 50vw;
-        object-fit: contain;
-      }
-
-      .red img,
-      .white img {
-        height: 50vh;
-        width: 50vw;
-        object-fit: contain;
-      }
-
-    </style>
-  </head>
-
-  <body>
-    <div class="blue">
-      <img src="img/019/ciclavia-56.jpg" alt="American Man">
-    </div>
-    <div class="red">
-      <img src="img/019/ciclavia-34.jpg" alt="Liberty Mural">
-    </div>
-    <div class="white"> <img src="img/019/ciclavia-62.jpg" alt="Heart of LA Mural">
-    </div>
-  </body>
+<body>
+  <header>
+    <h1>Cormorant Garamond</h1>
+  </header>
+  <nav>
+    <p><a href="/"><img class="icon-github" src="icons/smart-house.svg"
+          alt="Home icon" title="Go to home page"></a></p>
+  </nav>
+  <article>
+    <h2>Light 300</h2>
+    <div class="thin" contenteditable="true">abcdefghijklmnopqrstuvwxyz</div>
+    <div class="thin" contenteditable="true">ABCDEFGHIJKLMNOPQRSTUVWXYZ</div>
+    <div class="thin" contenteditable="true">1234567890!@#$%^&*(){}</div>
+    <h2>Regular 400</h2>
+    <div class="regular" contenteditable="true">abcdefghijklmnopqrstuvwxyz</div>
+    <div class="regular" contenteditable="true">ABCDEFGHIJKLMNOPQRSTUVWXYZ</div>
+    <div class="regular" contenteditable="true">1234567890!@#$%^&*(){}</div>
+    <h2>Regular Italic 400</h2>
+    <div class="regular italic" contenteditable="true">abcdefghijklmnopqrstuvwxyz</div>
+    <div class="regular italic" contenteditable="true">ABCDEFGHIJKLMNOPQRSTUVWXYZ</div>
+    <div class="regular italic" contenteditable="true">1234567890!@#$%^&*(){}</div>
+    <h2>Bold 700</h2>
+    <div class="bold" contenteditable="true">abcdefghijklmnopqrstuvwxyz</div>
+    <div class="bold" contenteditable="true">ABCDEFGHIJKLMNOPQRSTUVWXYZ</div>
+    <div class="bold" contenteditable="true">1234567890!@#$%^&*(){}</div>
+    <h2>Bold Italic 700</h2>
+    <div class="bold italic" contenteditable="true">abcdefghijklmnopqrstuvwxyz</div>
+    <div class="bold italic" contenteditable="true">ABCDEFGHIJKLMNOPQRSTUVWXYZ</div>
+    <div class="bold italic" contenteditable="true">1234567890!@#$%^&*(){}</div>
+  </article>
+  <footer>
+    <p> Cormorant is a free display type family developed by Christian
+      Thalmann. The project currently comprises a total of 45 font files
+      spanning 9 different visual styles (Roman, Italic, Infant, Infant Italic,
+      Garamond, Garamond Italic, Upright Cursive, Small Caps, and Unicase) and
+      5 weights (Light, Regular, Medium, SemiBold, and Bold.) Cormorant was
+      conceived, drawn, spaced, kerned, programmed, interpolated, and produced
+      in its entirety by Christian Thalmann of Catharsis Fonts. For an
+      illustrated presentation and description of the family, please visit its
+      Bēhance page. </p>
+    <p> While this project was heavily inspired by Claude Garamont's immortal
+      legacy, Christian did not use any specific font as a starting point or
+      direct reference for the designs. Most glyphs were drawn from scratch;
+      when he needed guidance on a specific character, he searched for the term
+      Garamond and skimmed through the results for a general impression. </p>
+    <p> He is grateful to the creative souls on the Typophile, TypeDrawers and
+      Typografie forums, and Github, for a wealth of knowledge about type
+      design, and for providing a large amount of excellent feedback on
+      Cormorant during its development. He also thanks the tireless folks at
+      Glyphs, in particular Rainer Erich Scheichelbauer of Schriftlabor and
+      Georg Seifert. Special thanks go to Dave Crossland and Google Fonts for
+      making the libre release of this font family possible through generous
+      funding of the development process. </p>
+    <p> The Cormorant project is led by Christian Thalmann, a type designer
+      based in Zurich, Switzerland. To contribute, see <a href="github.com/CatharsisFonts/Cormorant">github.com/CatharsisFonts/Cormorant</a>
+    </p>
+    <p><a href="https://fonts.google.com/specimen/Cormorant+Garamond">On google
+        fonts</a></p>
+  </footer>
+</body>
 
 </html>
