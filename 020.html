@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>CicLAvia | 100 LA Layouts</title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:700,700i|Noto+Serif:400,400i"
+      rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <style type="text/css">
+      body {
+        font-family: 'Noto Serif', serif;
+        display: grid;
+        grid-gap: 2vw;
+        grid-template-columns: 2fr 2fr 1fr;
+        grid-template-areas:
+          "photographer photographer logo"
+          "photographer photographer logo"
+          "photo photo2 text";
+        margin: 2em auto;
+        max-width: 90%;
+        max-height: 100vh;
+      }
+
+      h1 {
+        font-family: 'Courier New', Courier, monospace;
+        color: #0396d3;
+        font-weight: 700;
+      }
+
+      p::first-line {
+        font-weight: 700;
+        font-style: italic;
+        text-transform: capitalize;
+      }
+
+      header {
+        grid-area: logo;
+      }
+
+      header>img {
+        width: 100%;
+      }
+
+      figure {
+        display: contents;
+      }
+
+      img {
+        border: 1em solid #efefef;
+      }
+
+      figure > img:nth-of-type(1) {
+        grid-area: photographer;
+        width: 100%;
+        object-fit: cover;
+
+      }
+
+      figure > img:nth-of-type(2) {
+        grid-area: photo;
+        width: 100%;      
+      }
+
+      figure>img:nth-of-type(3) {
+        grid-area: photo2;
+        width: 100%;
+       
+      }
+
+      figcaption {
+        grid-area: text;
+        align-self: end;
+        padding: .5em;
+
+      }
+
+     
+
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <img src="img/020/ciclavia-1.jpg" alt="CicLAvia">
+    </header>
+    <figure>
+      <img src="img/020/ciclavia-11.jpg" alt="">
+      <img src="img/020/ciclavia-10.jpg" alt="">
+      <img src="img/020/ciclavia-9.jpg" alt="">
+      <figcaption>
+        <h1>CicLAvia</h1>
+        <p>CicLAvia is an Open Streets event held in Los Angeles where streets
+          are closed to motor vehicles and open for the public to walk, bike,
+          and skate through the open streets. Each CicLAvia event is planned by
+          the nonprofit organisation CicLAvia. The event now attracts over
+          100,000 participants and
+          expands to connect even more neighborhoods.</p>
+
+      </figcaption>
+    </figure>
+
+  </body>
+
+</html>
