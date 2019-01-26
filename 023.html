@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Blue bird illustration | 100 LA Layouts</title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Merriweather:400,700"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <style type="text/css">
+      body {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-areas:
+          "header bird"
+          "article bird";
+        grid-gap: 2vw;
+        font-family: "Merriweather", serif;
+        align-self: center;
+      }
+
+      header {
+        grid-area: header;
+      }
+
+      figure{
+        grid-area: bird;
+        align-self: center;  
+      }
+
+      article {
+        grid-area: article;
+      }
+
+      h1 {
+        color: #015087;
+        font-size: var(--font-size-xxxx-large);
+      }
+
+      article p:first-of-type::first-line {
+        font-weight: 700;
+        font-feature-settings: "smp" 1;
+        color: #015087;
+      }
+
+      @supports (font-variant-caps: small-caps) {
+        aricle p:first-of-type::first-line {
+          font-feature-settings: normal;
+          font-weight: 400;
+          font-variant-caps: small-caps;
+          
+        }
+      }
+
+      
+
+      article p:first-of-type::first-letter {
+        -webkit-initial-letter: 3 2;
+        
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>Blue Jay <span>Cyanocitta cristata</span></h1>
+    </header>
+
+    <figure>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 679.59 407.33">
+        <defs>
+          <style>
+            .cls-5 {
+              fill: #231f20;
+              stroke: #231f20;
+              stroke-miterlimit: 10;
+            }
+            .cls-3 {
+              fill: #005087;
+            }
+            .cls-5 {
+              stroke-linecap: round;
+            }
+          </style>
+        </defs>
+        <g id="eye">
+          <path fill="#231f20" d="M46.27 45.79L0 63.06 63.8 63 46.27 45.79z" />
+          <path
+            d="M491.43 136.46h-71c3.26 10.16 8.81 15.39 11.83 17.74 14.06 11 37.3 9.6 57.43-4.23"
+            stroke="#231f20"
+            stroke-miterlimit="10"
+            fill="none"
+            stroke-width="5"
+          />
+          <path
+            class="cls-3"
+            d="M84.9 127.75S123.57 81.57 169.74 82c36.42.3 48.43 9 69.08 22.71l219.24-2.81-4.5 387.42z"
+            transform="translate(-38.64 -81.95)"
+          />
+          <path
+            class="cls-3"
+            d="M418.86 19.9v18.02h244.39l16.34-18.02H418.86z"
+          />
+          <path
+            fill="#c1b6b9"
+            d="M418.47 37.92L418.1 134l101.17-96.08h-100.8z"
+          />
+          <path class="cls-5" d="M363.39 116.19l51.77 60.15" />
+          <path
+            fill="#c1b6b9"
+            stroke="#231f20"
+            stroke-miterlimit="10"
+            d="M316.87 116.19l98.29 110.26"
+          />
+          <path
+            class="cls-5"
+            d="M265.5 116.19l149.66 155M218.58 116.19l196.58 205.12M170.53 116.19l240.45 248.67"
+          />
+          <path
+            d="M102.08 145h140s-58.45 42.49-.45 136.53z"
+            transform="translate(-38.64 -81.95)"
+            fill="#ba2704"
+          />
+          <circle cx="113.9" cy="33.73" r="13.39" fill="#fff" />
+          <circle
+            cx="113.9"
+            cy="33.73"
+            r="5.76"
+            stroke-width="4"
+            stroke="#231f20"
+            stroke-miterlimit="10"
+            fill="#231f20"
+          />
+        </g>
+      </svg>
+    </figure>
+    <article>
+      <p>
+        One of the loudest and most colorful birds of eastern back yards and
+        woodlots, the Blue Jay is unmistakable. Intelligent and adaptable, it
+        may feed on almost anything, and it is quick to take advantage of bird
+        feeders. Besides their raucous jay! jay! calls, Blue Jays make a variety
+        of musical sounds, and they can do a remarkable imitation of the scream
+        of a Red-shouldered Hawk. Not always conspicuous, they slip furtively
+        through the trees when tending their own nest or going to rob the nest
+        of another bird.
+        <a href="https://www.audubon.org/field-guide/bird/blue-jay">Blue Jay on Audubon.org</a>
+      </p>
+    </article>
+
+    <aside></aside>
+    <footer></footer>
+  </body>
+</html>
