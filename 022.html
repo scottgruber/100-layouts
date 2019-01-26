@@ -13,25 +13,28 @@
 
     <style type="text/css">
       body {
-        background: #e7e7e8;
-        color: white;
-        font-family: 'Noto Sans', serif;
+        background: white;
+        font-family: 'Noto Sans', sans-serif;
+        
+      }
+
+      div {
         display: grid;
         grid-gap: 1vw;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 2fr 1fr;
         grid-template-rows: auto;
         grid-template-areas:
-        "header caption caption"
-        "img img img2"
-        "img img img2"
-        "img3 img3 img4"
-        ". . img4";
+        ". header ."
+        ". img ."
+        ". caption .";
         justify-content: center;
-        margin: 1em 0 2em 0;
+        margin: 2em 0;
+        max-height: 70vh;
       }
 
       header {
         grid-area: header;
+        justify-self: center;
         
       }
 
@@ -42,10 +45,10 @@
      
 
       svg {
-        width: 48px;
-        height: 48px;
+        width: 32px;
+        height: 32px;
         margin: 2em;
-        fill: hsla(196, 100%, 45%, .5);
+        fill: #ffde00;
       }
 
       svg:hover {
@@ -54,66 +57,50 @@
 
       h1 {
         font-family: 'Courier New', Courier, monospace;
-        color: hsla(196, 100%, 45%, .5);
+        color: hsla(196, 100%, 45%, 1);
+        color: black;
         font-weight: 700;
-        font-size: var(--font-size-xx-display);
+        font-size: var(--font-size-display);
         margin: 0;
         line-height: 1;
       }
 
       h1 span {
-        color: hsl(199, 100%, 43%);
-        /*#0097dc;*/
+        color:#00a6e3;
+      
       }
 
       h1 span:nth-child(2) {
         display: block;
-        font-family: 'Noto Sans', sans-serif;
-        font-size: var(--font-size-small);
+        font-size: var(--font-size-x-small);
         font-style: italic;
-        font-weight: 400;
+        font-weight: 200;
         text-transform: uppercase;
+        
+      }
+
+  
+      picture {
+        display: contents;
+       
       }
 
       img {
         height: 100vh;
         width: 100%;
-        object-fit: cover;
-      }
-
-      img:nth-of-type(1){
+        object-fit: contain;
         grid-area: img;
       }
 
-      img:nth-of-type(2){
-        grid-area: img2;
-      }
-
-      img:nth-of-type(3){
-        grid-area: img3;
-      }
-
-      img:nth-of-type(4){
-        grid-area: img4;
-      }
-     
-
       footer {
-        background: hsla(199, 100%, 43%, 1);
-        column-count: 2;
-        column-fill: balance;
-        column-gap: 2vw;
-        column-rule-style: dotted;
-        column-rule-width: thick;
+        background: hsl(199, 100%, 43%);
+        color: white;
         grid-area: caption;
-        padding: 2em;
-        max-width: 90vw;
+        padding: 3rem;
+       
       }
-
       footer p {
-        margin-top: 0;
-        break-inside: avoid;
-        padding: 0 1em;
+        font-size: var(--font-size-large);
       }
 
 
@@ -121,6 +108,7 @@
   </head>
 
   <body>
+    <div>
     <header>
       <div>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -137,27 +125,24 @@
     </div>
      
     </header>
-    
+    <picture alt="Street Photographer">
+      <source srcset="img/022/ciclavia-17@0.25x.jpg 1x, img/022/ciclavia-17@0.5x.jpg 2x">
+      <source media="(min-width: 18em)" srcset="img/022/ciclavia-17@0.25x.jpg 1x, img/022/ciclavia-17@0.5x.jpg 2x">
+      <source media="(min-width: 45em)" srcset="img/022/ciclavia-17.jpg 1x, img/022/ciclavia-17@2x.jpg 2x">
+      <img src="img/022/ciclavia-17@0.25x.jpg" alt="Street Photographer">
+      </picture>
+      
 
-      <img src="img/022/ciclavia-8.jpg" alt="">
-      <img src="img/022/ciclavia-48.jpg" alt="">
-      <img src="img/021/ciclavia-18.jpg" alt="">
-      <img src="img/022/ciclavia-47.jpg" alt="">
+     
       
   
     <footer>
       <p>CicLAvia transforms streets into safe, car-free spaces for thousands
-        of people to bike, walk, play and smile. CicLAvia is free and
-        connects
-        people to communities and to each other.</p>
+        of people to bike, walk, play and smile. </p>
 
-      <p>CicLAvia transforma las calles en espacios seguros y sin carros para
-        que miles de personas puedan ir en bicicleta, pasearse a pie, jugar y
-        sonreír. CicLAvia es gratis y conecta a las personas a las
-        comunidades
-        y a cada uno de los demás.</p>
+     
     </footer>
-   
+  </div>
   </body>
 
 </html>
