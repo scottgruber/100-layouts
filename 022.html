@@ -7,140 +7,100 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="format-detection" content="telephone=no">
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i|Noto+Serif:400,400i"
-      rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css" />
+
 
     <style type="text/css">
       body {
         background: white;
-        font-family: 'Noto Sans', sans-serif;
-        
-      }
-
-      div {
+        font-family: 'Courier New', Courier, monospace;
+        color: black;
         display: grid;
-        grid-gap: 1vw;
-        grid-template-columns: 1fr 2fr 1fr;
-        grid-template-rows: auto;
+        grid-template-columns: 1fr 3fr 1fr;
         grid-template-areas:
-        ". header ."
-        ". img ."
-        ". caption .";
-        justify-content: center;
+          ". logo ."
+          ". photo ."
+          ". tagline .";
+        grid-gap: 2vw;
         margin: 2em 0;
-        max-height: 70vh;
+        justify-items: center;
       }
 
       header {
-        grid-area: header;
-        justify-self: center;
-        
+        grid-area: logo;
       }
 
-      header div {
-        display: flex;
-      }
-
-     
-
-      svg {
-        width: 32px;
-        height: 32px;
-        margin: 2em;
-        fill: #ffde00;
-      }
-
-      svg:hover {
-        fill: #0097dc;
-      }
-
-      h1 {
-        font-family: 'Courier New', Courier, monospace;
-        color: hsla(196, 100%, 45%, 1);
-        color: black;
-        font-weight: 700;
-        font-size: var(--font-size-display);
-        margin: 0;
-        line-height: 1;
-      }
-
-      h1 span {
-        color:#00a6e3;
-      
-      }
-
-      h1 span:nth-child(2) {
-        display: block;
-        font-size: var(--font-size-x-small);
-        font-style: italic;
-        font-weight: 200;
-        text-transform: uppercase;
-        
-      }
-
-  
       picture {
-        display: contents;
-       
-      }
-
-      img {
-        height: 100vh;
-        width: 100%;
-        object-fit: contain;
-        grid-area: img;
+        grid-area: photo;
+        margin-top: 1em;
+        padding: .5em;
+        background: linear-gradient(#0096db, #00bd30);
       }
 
       footer {
-        background: hsl(199, 100%, 43%);
-        color: white;
-        grid-area: caption;
-        padding: 3rem;
-       
-      }
-      footer p {
-        font-size: var(--font-size-large);
+        grid-area: tagline;
       }
 
+      header img {
+        width: 50vw;
+      }
+
+      footer p {
+        font-size: 1rem;
+        color: #0096db; 
+      }
+
+      @media (min-width: 37.5em) {
+
+        body {
+          grid-template-areas:
+            ". logo ."
+            ". tagline ."
+            ". photo .";
+        }
+
+        header img {
+          width: 30vw;
+        }
+
+        footer p {
+          max-width: 48ch;
+        }
+      }
+
+      @media (min-width: 48em) {
+        header img {
+          width: 20vw;         
+        }
+
+        picture {
+          padding: 1em;
+          background: linear-gradient(#0096db, #00bd30);
+        }
+
+        footer p {
+          font-size: 1.4em;
+          max-width: 40ch;
+        }
+      }
 
     </style>
   </head>
 
   <body>
-    <div>
     <header>
-      <div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-        <title>love-it</title>
-        <path d="M23.3,5.076a6.582,6.582,0,0,0-10.446-1.71L12,4.147l-.827-.753A6.522,6.522,0,0,0,5.485,1.588,6.472,6.472,0,0,0,.7,5.075,6.4,6.4,0,0,0,1.91,12.544L11.283,22.2a1,1,0,0,0,1.434,0l9.36-9.638A6.414,6.414,0,0,0,23.3,5.076Z" />
-      </svg>
-      <h1>Cic<span>LA</span>via
-        <span>Heart of LA</span>
-      </h1>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-        <title>love-it</title>
-        <path d="M23.3,5.076a6.582,6.582,0,0,0-10.446-1.71L12,4.147l-.827-.753A6.522,6.522,0,0,0,5.485,1.588,6.472,6.472,0,0,0,.7,5.075,6.4,6.4,0,0,0,1.91,12.544L11.283,22.2a1,1,0,0,0,1.434,0l9.36-9.638A6.414,6.414,0,0,0,23.3,5.076Z" />
-      </svg>
-    </div>
-     
+      <a href="http://www.ciclavia.org/"><img src="img/022/ciclavialogo.png"
+          alt="Ciclavia Logo"></a>
     </header>
     <picture alt="Street Photographer">
-      <source srcset="img/022/ciclavia-17@0.25x.jpg 1x, img/022/ciclavia-17@0.5x.jpg 2x">
-      <source media="(min-width: 18em)" srcset="img/022/ciclavia-17@0.25x.jpg 1x, img/022/ciclavia-17@0.5x.jpg 2x">
-      <source media="(min-width: 45em)" srcset="img/022/ciclavia-17.jpg 1x, img/022/ciclavia-17@2x.jpg 2x">
+      <source media="(min-width: 45em) 33vw" srcset="img/022/ciclavia-17.jpg 1x, img/022/ciclavia-17@2x.jpg 2x">
+      <source media="(min-width: 18em) 100vw" srcset="img/022/ciclavia-17@0.25x.jpg 1x, img/022/ciclavia-17.jpg 2x">
       <img src="img/022/ciclavia-17@0.25x.jpg" alt="Street Photographer">
-      </picture>
-      
-
-     
-      
-  
+    </picture>
     <footer>
-      <p>CicLAvia transforms streets into safe, car-free spaces for thousands
-        of people to bike, walk, play and smile. And be in peace.</p>
+      <p>CicLAvia transforms our streets into safe, car-free spaces for thousands
+        of people to bike, walk, play and smile.</p>
     </footer>
-  </div>
+
   </body>
 
 </html>
