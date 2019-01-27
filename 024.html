@@ -13,16 +13,33 @@
 
     <style type="text/css">
       body {
-        display: grid;
-        grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: 2fr 2f 1fr 2fr 2fr 4fr;
-        grid-gap: 1vw;
         font-family: 'Noto Sans', sans-serif;
       }
 
+      img {
+        width: 100%;
+      }
+
+      @media (min-width: 48em) {
+        body {
+          display: grid;
+          grid-template-columns: repeat(6, 1fr);
+          grid-template-rows: 2fr 2f 1fr 2fr 2fr 4fr;
+          grid-gap: 1vw;
+        }
+
+        img {
+          width: initial;
+        }
+      }
+
       h1 {
+        font-family: 'Courier New', Courier, monospace;
         font-weight: 700;
-        margin: 0;
+      }
+
+      h1>span {
+        color: #0096db;
       }
 
       header {
@@ -34,6 +51,7 @@
       .standfirst {
         grid-column: 4 / 6;
       }
+
       img {
         grid-column: 3 / 4;
         grid-row: 1 / 3;
@@ -46,40 +64,37 @@
 
       article p:first-of-type::first-line {
         font-weight: 700;
-        font-feature-settings: "smp" 1;
+        font-feature-settings: "smp"1;
         color: #015087;
-      }
-
-      @supports (font-variant-caps: small-caps) {
-        aricle p:first-of-type::first-line {
-          font-feature-settings: normal;
-          font-weight: 400;
-          font-variant-caps: small-caps;
-          
-        }
       }
 
       article p:first-of-type::first-letter {
         -webkit-initial-letter: 3 2;
       }
 
-
     </style>
   </head>
 
   <body>
-      <header>
-      <h1>cicLAvia</h1>
-      </header> 
-      <img src="img/024/ciclavia-58@1x.jpg" alt="">
-      <p class="standfirst"> CicLAvia is an Open Streets event held in Los Angeles where streets are closed to motor vehicles and open for the public to walk, bike, and skate through the open streets.</p> 
-      <article>
-        
-          
-         <p>Each street that is closed off is attended by police officers who direct the cars to alternative routes through Los Angeles. On some streets the traffic lights are still in service, which means the bikers and pedestrians must abide by the traffic laws. LAPD Traffic Divisions and LADOT Parking Enforcement Traffic Officers are guarding each intersection to allow ultimate safety of the community during this event.</p>
+    <header>
+      <h1>cic<span>LA</span>via</h1>
+    </header>
+    <p class="standfirst"> CicLAvia is an Open Streets event held in Los
+      Angeles where streets are closed to motor vehicles and open for the
+      public to walk, bike, and skate through the open streets.</p>
+    <img src="img/024/ciclavia-58@1x.jpg" srcset="img/024/ciclavia-58@1x.jpg, 1000w, ciclavia-58@3x.jpg, 1800w"
+      sizes="(min-width:30em) 50vw, 100vw" alt="LAPD">
 
-      </article>
-   
+    <article>
+      <p>Each street that is closed off is attended by police officers who
+        direct the cars to alternative routes through Los Angeles. On some
+        streets the traffic lights are still in service, which means the bikers
+        and pedestrians must abide by the traffic laws. LAPD Traffic Divisions
+        and LADOT Parking Enforcement Traffic Officers are guarding each
+        intersection to allow ultimate safety of the community during this
+        event.</p>
+
+    </article>
 
   </body>
 
