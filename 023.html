@@ -15,26 +15,22 @@
     <style type="text/css">
       body {
         display: grid;
-        grid-template-columns: 1fr 2fr;
+        grid-template-columns: 1fr;
         grid-template-areas:
-          "header bird"
-          "article bird";
+          "header"
+          "bird";
         grid-gap: 2vw;
         font-family: "Merriweather", serif;
-        align-self: center;
+        max-width: 80%;
+       
       }
 
       header {
         grid-area: header;
       }
 
-      figure{
-        grid-area: bird;
-        align-self: center;  
-      }
-
       article {
-        grid-area: article;
+        grid-area: bird;
       }
 
       h1 {
@@ -42,19 +38,17 @@
         font-size: var(--font-size-xxxx-large);
       }
 
+      figure {
+        float: right;
+        shape-margin: 2em;
+        shape-outside: url(img/023/eastern-bluebird.svg);
+      }
+
+     
       article p:first-of-type::first-line {
         font-weight: 700;
         font-feature-settings: "smp" 1;
         color: #015087;
-      }
-
-      @supports (font-variant-caps: small-caps) {
-        aricle p:first-of-type::first-line {
-          font-feature-settings: normal;
-          font-weight: 400;
-          font-variant-caps: small-caps;
-          
-        }
       }
 
       article p:first-of-type::first-letter {
@@ -69,75 +63,13 @@
       <h1>Blue Jay</h1>
     </header>
 
-    <figure>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 679.59 407.33">
-        <defs>
-          <style>
-            .cls-5 {
-              fill: #231f20;
-              stroke: #231f20;
-              stroke-miterlimit: 10;
-            }
-            .cls-3 {
-              fill: #005087;
-            }
-            .cls-5 {
-              stroke-linecap: round;
-            }
-          </style>
-        </defs>
-        <g id="eye">
-          <path fill="#231f20" d="M46.27 45.79L0 63.06 63.8 63 46.27 45.79z" />
-          <path
-            d="M491.43 136.46h-71c3.26 10.16 8.81 15.39 11.83 17.74 14.06 11 37.3 9.6 57.43-4.23"
-            stroke="#231f20"
-            stroke-miterlimit="10"
-            fill="none"
-            stroke-width="5"
-          />
-          <path
-            class="cls-3"
-            d="M84.9 127.75S123.57 81.57 169.74 82c36.42.3 48.43 9 69.08 22.71l219.24-2.81-4.5 387.42z"
-            transform="translate(-38.64 -81.95)"
-          />
-          <path
-            class="cls-3"
-            d="M418.86 19.9v18.02h244.39l16.34-18.02H418.86z"
-          />
-          <path
-            fill="#c1b6b9"
-            d="M418.47 37.92L418.1 134l101.17-96.08h-100.8z"
-          />
-          <path class="cls-5" d="M363.39 116.19l51.77 60.15" />
-          <path
-            fill="#c1b6b9"
-            stroke="#231f20"
-            stroke-miterlimit="10"
-            d="M316.87 116.19l98.29 110.26"
-          />
-          <path
-            class="cls-5"
-            d="M265.5 116.19l149.66 155M218.58 116.19l196.58 205.12M170.53 116.19l240.45 248.67"
-          />
-          <path
-            d="M102.08 145h140s-58.45 42.49-.45 136.53z"
-            transform="translate(-38.64 -81.95)"
-            fill="#ba2704"
-          />
-          <circle cx="113.9" cy="33.73" r="13.39" fill="#fff" />
-          <circle
-            cx="113.9"
-            cy="33.73"
-            r="5.76"
-            stroke-width="4"
-            stroke="#231f20"
-            stroke-miterlimit="10"
-            fill="#231f20"
-          />
-        </g>
-      </svg>
-    </figure>
+   
     <article>
+
+        <figure>
+            <svg id="eastern-bluebird" data-name="eastern-bluebird" xmlns="http://www.w3.org/2000/svg" width="600" height="359.62" viewBox="0 0 600 359.62"><defs><style>.cls-5{fill:#231f20;stroke:#231f20;stroke-miterlimit:10}.cls-3{fill:#005087}.cls-5{stroke-linecap:round}</style></defs><title>eastern-bluebird</title><g id="eye"><path d="M40.85 40.39L0 55.63l56.33-.05z" fill="#231f20"/><path d="M433.88 120.44h-62.69c2.88 9 7.78 13.58 10.45 15.66 12.41 9.71 32.93 8.48 50.7-3.74" stroke="#231f20" stroke-miterlimit="10" fill="none" stroke-width="5"/><path class="cls-3" d="M40.84 40.39S75-.38 115.75 0c32.15.27 42.75 8 61 20.05l193.55-2.48-4 342.05z"/><path class="cls-3" d="M369.81 17.53v15.91h215.76L600 17.53z"/><path d="M369.46 33.44l-.33 84.83 89.33-84.83z" fill="#c1b6b9"/><path class="cls-5" d="M320.83 102.54l45.71 53.11"/><path d="M279.76 102.54l86.78 97.35" fill="#c1b6b9" stroke="#231f20" stroke-miterlimit="10"/><path class="cls-5" d="M234.41 102.54l132.13 136.85M193 102.54l173.56 181.1m-216-181.1l212.29 219.55"/><path d="M56 55.62h123.6s-51.6 37.52-.39 120.54z" fill="#ba2704"/><circle cx="100.56" cy="29.74" r="11.82" fill="#fff"/><circle cx="100.56" cy="29.74" r="5.09" stroke-width="4" stroke="#231f20" stroke-miterlimit="10" fill="#231f20"/></g></svg>
+            
+          </figure>
       <p>
         One of the loudest and most colorful birds of eastern back yards and
         woodlots, the Blue Jay is unmistakable. Intelligent and adaptable, it
