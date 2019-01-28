@@ -12,6 +12,22 @@
     <link rel="stylesheet" href="css/styles.css" />
 
     <style type="text/css">
+
+body {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-column-gap: 4vw;
+        grid-template-areas:
+        "header"
+        "standfirst"
+        "article"
+        "aside"
+        "footer";
+        font-family: 'Noto Serif', serif;
+        margin: 1vw;
+}
+    @media (min-width: 30em){
       body {
         display: grid;
         grid-template-columns: 4fr 3fr;
@@ -19,6 +35,7 @@
         grid-column-gap: 4vw;
         grid-template-areas:
         "header header"
+        "standfirst standfirst"
         "article aside"
         "article aside"
         "article aside"
@@ -27,6 +44,7 @@
         font-family: 'Noto Serif', serif;
         margin: 1vw;
       }
+    } 
 
       h1, h2, h3 {
         font-family: 'Playfair Display', serif;
@@ -50,6 +68,10 @@
         margin: 0 0 0 2em;
       }
 
+      .standfirst {
+        grid-area: standfirst;
+      }
+
       article {
         grid-area: article;
         font-size: var(--font-size-medium);
@@ -60,6 +82,7 @@
         text-align: center;
         font-size: small;
         font-style: italic;
+       
       }
 
       .cardinal {
@@ -81,17 +104,17 @@
        max-width: 30vw;
       }
 
-      article p.standfirst {
+     p.standfirst {
         font-weight: 700;
         font-family: 'Playfair Display', serif;
-        font-size: var(--font-size-large);
+        font-size: var(--font-size-xx-large);
         color: #f5a622;
         line-height: 1.2;
       }
 
       aside {
         grid-area: aside;
-        margin-top: 8em;
+        
       }
 
       footer {
@@ -106,10 +129,11 @@
           <h1>Charley Harper</h1>
           <p>An American Illustrator</p>
         </header>
+        <p class="standfirst">Charley Harper was a Cincinnati-based American
+          Modernist artist. He was best known for his highly stylized wildlife
+          prints, posters and book illustrations.</p> 
       <article>  
-      <p class="standfirst">Charley Harper was a Cincinnati-based American
-        Modernist artist. He was best known for his highly stylized wildlife
-        prints, posters and book illustrations.</p>
+      
         <figure class="cardinal">
             <svg id="cardinal" width="234" height="600" xmlns="http://www.w3.org/2000/svg">
               <g fill="none" fill-rule="evenodd">
@@ -145,7 +169,7 @@
                 </g>
               </g>
             </svg>
-            <figcaption>Red Cardinal</figcaption>
+            
           </figure> 
       <p>In a style he called "minimal realism", Charley Harper captured the
         essence of his subjects with the fewest possible visual elements. When
@@ -194,7 +218,7 @@
       <figure class="bluejay">
           <svg id="bluejay" data-name="bluejay" xmlns="http://www.w3.org/2000/svg" width="600" height="359.62" viewBox="0 0 600 359.62"><defs><style>.cls-5{fill:#231f20;stroke:#231f20;stroke-miterlimit:10}.cls-3{fill:#005087}.cls-5{stroke-linecap:round}</style></defs><title>eastern-bluebird</title><g id="eye"><path d="M40.85 40.39L0 55.63l56.33-.05z" fill="#231f20"/><path d="M433.88 120.44h-62.69c2.88 9 7.78 13.58 10.45 15.66 12.41 9.71 32.93 8.48 50.7-3.74" stroke="#231f20" stroke-miterlimit="10" fill="none" stroke-width="5"/><path class="cls-3" d="M40.84 40.39S75-.38 115.75 0c32.15.27 42.75 8 61 20.05l193.55-2.48-4 342.05z"/><path class="cls-3" d="M369.81 17.53v15.91h215.76L600 17.53z"/><path d="M369.46 33.44l-.33 84.83 89.33-84.83z" fill="#c1b6b9"/><path class="cls-5" d="M320.83 102.54l45.71 53.11"/><path d="M279.76 102.54l86.78 97.35" fill="#c1b6b9" stroke="#231f20" stroke-miterlimit="10"/><path class="cls-5" d="M234.41 102.54l132.13 136.85M193 102.54l173.56 181.1m-216-181.1l212.29 219.55"/><path d="M56 55.62h123.6s-51.6 37.52-.39 120.54z" fill="#ba2704"/><circle cx="100.56" cy="29.74" r="11.82" fill="#fff"/><circle cx="100.56" cy="29.74" r="5.09" stroke-width="4" stroke="#231f20" stroke-miterlimit="10" fill="#231f20"/></g></svg>
           
-        <figcaption>Blue Jay</figcaption>
+       
       </figure>
       <p>Whereas, the brilliantly rich, colorful paintings, prints and
         illustrations made by artist Charley Harper have delighted
