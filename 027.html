@@ -16,18 +16,15 @@
       body {
         font-family: 'Noto Serif', serif;
         display: grid;
-        grid-template-columns: 3fr 2fr 1fr;
+        grid-template-columns: 4fr 1fr 2fr;
         grid-template-areas:
         "zamboni . quote"
-        "zamboni family family";
+        "zamboni . family"
+        "zamboni . family"
+        "zamboni . .";
         max-height: 100vh;
-        align-self: end;3
+        align-self: end;
 
-      }
-
-      h1 {
-        font-family: 'Noto Sans', sans-serif;
-        font-weight: 700;
       }
 
 
@@ -40,9 +37,9 @@
 
       .familfy {
         grid-area: family;
-        object-fit: cover;
-        height: 50vh;
-        width: 30%;
+        object-fit: contain;
+        height: 100%;
+        width: 100%;
       }
 
       article {
