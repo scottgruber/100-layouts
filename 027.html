@@ -12,11 +12,18 @@
     <link rel="stylesheet" href="css/styles.css" />
 
     <style type="text/css">
+    
       body {
-        display: grid;
-        grid-template-columns: 2fr 3fr;
-        grid-template-rows: auto;
         font-family: 'Noto Serif', serif;
+        display: grid;
+        grid-template-columns: 3fr 2fr 3fr;
+        grid-template-areas:
+        "zamboni . ."
+        "zamboni quote family";
+        min-height: 100vh;
+        align-self: end;
+        
+       
       }
 
       h1 {
@@ -24,20 +31,37 @@
         font-weight: 700;
       }
 
-      img {
+
+      .zamboni {
+        grid-area: zamboni;
         object-fit: cover;
-        max-width: 40vw;
+        height: 100%;
+        width: 100%;
+      }
+
+      .family {
+        grid-area: family;
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+      }
+
+      article {
+        grid-area: quote;
       }
 
     </style>
   </head>
 
   <body>
-      <header><h1>Holiday Ice Rink Downtown Los Angeles</h1></header>
-   
-      <img src="img/027/ciclavia-52.jpg" alt="">
-      <img src="img/027/ciclavia-53.jpg" alt="">
-     
+      
+          <img class="zamboni" src="img/027/ciclavia-52@0.5x.jpg" alt="">
+          <img class="family" src="img/027/ciclavia-53@0.5x.jpg" alt="">
+          <article>
+        <header><h1>Holiday Ice Rink Downtown Los Angeles</h1></header>
+      <q>Super cute idea! Right in the center of downtown LA, this ice rink is easily accessible and very family friendly.</q>
+        
+      </article>
 
   </body>
 
