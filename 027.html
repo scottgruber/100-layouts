@@ -56,21 +56,13 @@
         grid-area: article;
         align-self: center;
       }
-
-      article h1 {
-        font-family: impact, sans-serif;
-        font-size: var(--font-size-xx-large);
-        text-transform: uppercase;
-        line-height: 1.1;
-
-      }
-
+      
       .standfirst {
         font-size: var(--font-size-medium);
         font-style: italic;
         line-height: 1.2;
       }
-
+      
       aside {
         color: #002966;
         font-size: var(--font-size-medium);
@@ -81,11 +73,19 @@
         margin-bottom: 1em;
 
       }
-
+      
       footer {
         grid-area: footer;
       }
 
+
+      article h1 {
+        font-family: impact, sans-serif;
+        font-size: var(--font-size-xx-large);
+        text-transform: uppercase;
+        line-height: 1.1;
+
+      }
 
       @media (min-width: 30em) {
 
@@ -101,8 +101,11 @@
 
         .standfirst {
           font-size: var(--font-size-large);
-          font-style: italic;
-          line-height: 1.2;
+          }
+          
+        aside {
+          font-size: var(--font-size-large);
+          text-align: right;
         }
 
         article h1 {
@@ -114,10 +117,7 @@
           display: inline;
         }
 
-        aside {
-          font-size: var(--font-size-large);
-          text-align: right;
-        }
+        
       }
 
       @media (min-width: 62em) {
@@ -136,6 +136,11 @@
           font-style: italic;
           line-height: 1.2;
         }
+        
+        aside {
+          font-size: var(--font-size-large);
+          text-align: right;
+        }
 
         article h1 {
           font-size: var(--font-size-xxx-large);
@@ -146,10 +151,7 @@
           display: block;
         }
 
-        aside {
-          font-size: var(--font-size-large);
-          text-align: right;
-        }
+        
       }
 
     </style>
