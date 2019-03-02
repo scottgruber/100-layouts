@@ -10,25 +10,25 @@
   <style>
     body {
       color: #454543;
-      font-family: 'Roboto', sans-serif;
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      font-family: 'Roboto', sans-serif;
       grid-template-areas:
         "header"
         "main"
         "aside"
         "footer";
-      max-width: 80vw;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       margin: 0 auto;
+      max-width: 80vw;
     }
 
     @media (min-width: 30em) {
       body {
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         grid-template-areas:
           "header header"
           "main aside"
           "footer footer";
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         max-width: 60vw;
       }
     }
@@ -52,9 +52,9 @@
     }
 
     h1 {
+      color: #003579;
       font-family: "Rochester", cursive;
       font-size: var(--font-size-xxxx-large);
-      color: #003579;
       text-align: center;
     }
 
@@ -84,8 +84,8 @@
 
     ol li {
       font-size: var(--font-size-medium);
+      margin-bottom: 0.5em;
       margin-left: 0;
-      margin-bottom: .5em;
     }
 
     img[src*="svg"] {
@@ -144,6 +144,7 @@
       <li><a href="026.html">Flock of Blue Jays, Greensock animation</a></li>
       <li><a href="027.html">LA Ice Rink</a></li>
       <li><a href="028.html">Burrowing Owl: How to Draw 28 Birds in Harper's Style</a></li>
+      <li><a href="029.html">For Lemmy</a></li>
     </ol>
   </main>
   <aside>

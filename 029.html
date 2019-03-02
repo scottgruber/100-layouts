@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>For Lemmy | 100 LA Layouts</title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,400i"
+      rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <style type="text/css">
+      body {
+        background: hsla(113, 0%, 1%, 1);
+        color: hsla(113, 0%, 91%, 1);
+        font-family: 'Noto Serif', serif;
+      }
+
+      article {
+        display: grid;
+        grid-template-areas:
+          ". header"
+          ". lyrics"
+          ". photo";
+        grid-template-columns: 2vw 1fr 2fr;
+      }
+
+      @media (min-width: 60em) {
+        article {
+          display: grid;
+          grid-template-areas:
+            ". header photo"
+            ". lyrics photo"
+            ". lyrics photo";
+          grid-template-columns: 10vw 1fr 2fr;
+        }
+      }
+
+      article > header {
+        grid-area: header;
+      }
+
+      article > div {
+        grid-area: lyrics;
+      }
+
+      section {
+        font-style: italic;
+      }
+
+      article > figure {
+        grid-area: photo;
+        margin: 0;
+        object-fit: contain;
+        width: 100%;
+      }
+
+      .locale {
+        display: block;
+        font-style: italic;
+      }
+    </style>
+  </head>
+
+  <body>
+      <article>
+        <header>
+          <h1>For Lemmy.</h1>
+        </header>
+        <div>
+        <section class="first-stanza">
+          <p>If you like to gamble,<br>
+            I tell you I'm your man.<br>
+            You win some, lose some,<br>
+            all the same to me.</p>
+        </section>
+        <section class="second-stanza">
+          <p>The pleasure is to play,<br>
+          Makes no difference what you say.<br>
+          I don't share your greed,<br>
+          the only card I need is the Ace of Spades.</p>
+        </section>
+        
+          <p class="p-name">Ian Fraser 'Lemmy' Kilmister (1945-2015)<br>
+          Born to lose, lived to win.</p>
+        
+        </div>
+        <figure>
+          <img src="img/029/lemmy-bw.jpg" alt="">
+          <figcaption>Lemmy's Lounge at the Rainbow Bar and Grill<span class="locale">Hollywood, California.</span></figcaption>
+        </figure>
+  </body>
+
+</html>
