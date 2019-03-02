@@ -7,8 +7,8 @@ html {
 }
 
 *,
-*:before,
-*:after {
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
@@ -27,6 +27,6 @@ body {
 }
 
 .aspect-ratio {
+  height: calc(100vw * 9 / 16);
   width: 100vw;
-  height: calc(100vw * 9/16);
 }

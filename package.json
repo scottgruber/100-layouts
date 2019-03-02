@@ -1,0 +1,25 @@
+{
+  "homepage": "https://scottgruber.github.io/100-layouts/",
+  "name": "100-layouts",
+  "version": "1.0.0",
+  "description": "100 Layouts is a side project to create 100 designs about Los Angele.",
+  "author": "Scott Gruber",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/scottgruber/100-layouts"
+  },
+  "bugs": {
+    "url": "https://github.com/scottgruber/100-layouts/issues",
+    "email": "hello@scottgruber.me"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1",
+    "sanitize.css": "^8.0.0"
+  },
+  "devDependencies": {
+    "stylelint": "^9.10.1",
+    "stylelint-config-standard": "^18.2.0",
+    "stylelint-order": "^2.0.0"
+  }
+}
