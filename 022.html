@@ -12,17 +12,17 @@
     <style type="text/css">
       body {
         background: white;
-        font-family: 'Courier New', Courier, monospace;
         color: black;
         display: grid;
-        grid-template-columns: 1fr 3fr 1fr;
+        font-family: 'Courier New', Courier, monospace;
+        grid-gap: 2vw;
         grid-template-areas:
           ". logo ."
           ". photo ."
           ". tagline .";
-        grid-gap: 2vw;
-        margin: 2em 0;
+        grid-template-columns: 1fr 3fr 1fr;
         justify-items: center;
+        margin: 2em 0;
       }
 
       header {
@@ -30,10 +30,10 @@
       }
 
       picture {
+        background: linear-gradient(#0096db, #00bd30);
         grid-area: photo;
         margin-top: 1em;
-        padding: .5em;
-        background: linear-gradient(#0096db, #00bd30);
+        padding: 0.5em;
       }
 
       footer {
@@ -45,12 +45,11 @@
       }
 
       footer p {
+        color: #0096db;
         font-size: 1rem;
-        color: #0096db; 
       }
 
       @media (min-width: 37.5em) {
-
         body {
           grid-template-areas:
             ". logo ."
@@ -69,12 +68,12 @@
 
       @media (min-width: 48em) {
         header img {
-          width: 20vw;         
+          width: 20vw;
         }
 
         picture {
-          padding: 1em;
           background: linear-gradient(#0096db, #00bd30);
+          padding: 1em;
         }
 
         footer p {

@@ -12,10 +12,10 @@
 
     <style type="text/css">
       body {
-        font-family: 'Noto Sans', sans-serif;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        font-family: 'Noto Sans', sans-serif;
         grid-gap: 2vw;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         max-height: 100%;
       }
 
@@ -33,24 +33,24 @@
       /* media break at 600px; */
       @media (min-width: 37.5em) {
         header {
-          grid-row: 1;
           grid-column: 2 / -1;
+          grid-row: 1;
         }
 
         .top {
           column-count: 3;
           column-gap: 2vw;
           column-width: 300px;
-          grid-row: 3 / 4;
           grid-column: 2 / -1;
+          grid-row: 3 / 4;
         }
 
         .bottom {
           column-count: 3;
           column-gap: 2vw;
           column-width: 300px;
-          grid-row: 7 / 8;
           grid-column: 2 / -1;
+          grid-row: 7 / 8;
         }
       }
 
@@ -67,26 +67,26 @@
 
       figure {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
         grid-gap: 1vw;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
         margin: 0;
       }
 
       @media (min-width: 37.5em) {
         figure {
-          grid-row: 4 / 6;
-          grid-column: 1 / -1;
-          margin: 0;
           display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+          grid-column: 1 / -1;
           grid-gap: 1vw;
+          grid-row: 4 / 6;
+          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+          margin: 0;
         }
       }
 
       img {
         /* max-height: 100%; */
-        width: 100%;
         object-fit: cover;
+        width: 100%;
       }
 
     </style>

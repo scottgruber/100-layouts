@@ -12,15 +12,15 @@
     Total column width = 54px
     54 of 1290 as a percentage = 54/1290*100 = 4.186046512% */
     body {
-      font-family: 'Noto Sans', sans-serif;
       display: grid;
+      font-family: 'Noto Sans', sans-serif;
       grid-template-columns: 4.06504065% 12.814556717% 18.81533101% 13.008130081% 2.322880372% 8.439798684% 8.594657375% 23.228803717% 8.713372048%;
       grid-template-rows: auto;
     }
 
     header {
-      grid-row: 1;
       grid-column: 1 / -1;
+      grid-row: 1;
       text-align: center;
     }
 
@@ -31,53 +31,46 @@
     }
 
     figcaption {
+      font-style: italic;
       font-weight: bold;
-      font-style: italic; 
       text-align: center;
     }
+
     img {
       max-width: 100%;
     }
-    
 
     figure:nth-of-type(1) {
-      grid-column-start: 1;
-      grid-column-end: 5;
+      grid-column: 1 / 5;
       grid-row: 2;
     }
 
     figure:nth-of-type(2) {
-      grid-column-start: 7;
-      grid-column-end: 9;
+      grid-column: 7 / 9;
     }
 
     figure:nth-of-type(3) {
-      grid-column-start: 3;
-      grid-column-end: 5;
+      grid-column: 3 / 5;
       grid-row-start: 4;
     }
 
     figure:nth-of-type(4) {
-      grid-column-start: 8;
-      grid-column-end: 10;
+      grid-column: 8 / 10;
       grid-row-start: 4;
     }
 
     figure:nth-of-type(5) {
-      grid-column-start: 1;
-      grid-column-end: 4;
+      grid-column: 1 / 4;
       grid-row-start: 6;
     }
 
     figure:nth-of-type(6) {
-      grid-column-start: 6;
-      grid-column-end: 9;
+      grid-column: 6 / 9;
       grid-row-start: 6;
     }
 
     figure:nth-of-type(7) {
-      grid-column-start: 2;
-      grid-column-end: 4;
+      grid-column: 2 / 4;
       grid-row-start: 7;
     }
 

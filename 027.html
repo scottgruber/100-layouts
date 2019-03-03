@@ -22,13 +22,14 @@
         --font-size: 1rem;
         --font-size-small: 0.833rem;
       }
-      /* 
-      "Do not underestimate the power of the Dark Side!" Malarkey 
+
+      /*
+      "Do not underestimate the power of the Dark Side!" Malarkey
       https://stuffandnonsense.co.uk/archives/css_specificity_wars.html
       001 */
       body {
-        font-family: "Noto Serif", serif;
         display: grid;
+        font-family: "Noto Serif", serif;
         grid-template-areas:
           "quote"
           "zamboni"
@@ -86,8 +87,8 @@
       article h1 {
         font-family: impact, sans-serif;
         font-size: var(--font-size-xx-large);
-        text-transform: uppercase;
         line-height: 1.1;
+        text-transform: uppercase;
       }
 
       /* 010 */
@@ -101,12 +102,12 @@
         /* 001 */
         body {
           grid-gap: 2vw;
-          grid-template-columns: 2fr 3fr;
           grid-template-areas:
             ". zamboni"
             "quote zamboni"
             ". article"
             ". footer";
+          grid-template-columns: 2fr 3fr;
         }
 
         /* 001 */
@@ -131,11 +132,11 @@
         /* 001 */
         body {
           grid-gap: 2vw;
-          grid-template-columns: 2fr 3fr 2fr 1fr;
           grid-template-areas:
             ". zamboni . ."
             "quote zamboni article ."
             ". zamboni footer .";
+          grid-template-columns: 2fr 3fr 2fr 1fr;
         }
 
         /* 001 */

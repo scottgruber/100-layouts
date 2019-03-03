@@ -11,22 +11,22 @@
 
   <style type="text/css">
     body {
-      font-family: 'Open Sans', sans-serif;
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      font-family: 'Open Sans', sans-serif;
+      grid-gap: 2vw;
       grid-template-areas:
         "a a a a "
         ". . . ."
         "b c d e"
         "x x t t"
         "i i t t";
-      grid-gap: 2vw;
+      grid-template-columns: repeat(4, 1fr);
       max-height: 100vh;
     }
 
     header {
-      border-top: 2px solid #333;
       border-bottom: 2px solid #333;
+      border-top: 2px solid #333;
       font-family: 'Playfair Display SC', serif;
       grid-area: a;
       padding: 1em;
@@ -38,8 +38,12 @@
     }
 
     header p {
-      font-weight: bold;
       font-style: italic;
+      font-weight: bold;
+    }
+
+    article p {
+      margin-top: 0;
     }
 
     header p:last-of-type {
@@ -47,22 +51,23 @@
     }
 
     article {
-      grid-area: t;
       column-count: 2;
       column-gap: 2vw;
       column-width: 300px;
+      grid-area: t;
     }
 
-    article p {
-      margin-top: 0;
-    }
-     article p:first-of-type::first-letter {
-      font-size: 150%;
+    article p:first-of-type::first-letter {
       font-family: 'Playfair Display SC', serif;
+      font-size: 150%;
       line-height: 1;
     }
 
-
+    img {
+      max-height: 100%;
+      object-fit: cover;
+      width: 100%;
+    }
 
     img:nth-of-type(1) {
       grid-area: x;
@@ -84,11 +89,6 @@
       grid-area: e;
     }
 
-    img {
-      max-height: 100%;
-      width: 100%;
-      object-fit: cover;
-    }
   </style>
 </head>
 

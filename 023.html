@@ -15,14 +15,13 @@
     <style type="text/css">
       body {
         display: grid;
-        grid-template-columns: 1fr;
+        font-family: "Merriweather", serif;
+        grid-gap: 2vw;
         grid-template-areas:
           "header"
           "bird";
-        grid-gap: 2vw;
-        font-family: "Merriweather", serif;
+        grid-template-columns: 1fr;
         max-width: 80%;
-       
       }
 
       header {
@@ -44,17 +43,16 @@
         shape-outside: url(img/023/eastern-bluebird.svg);
       }
 
-     
       article p:first-of-type::first-line {
-        font-weight: 700;
-        font-feature-settings: "smp" 1;
         color: #015087;
+        font-feature-settings: "smp" 1;
+        font-weight: 700;
       }
 
       article p:first-of-type::first-letter {
         -webkit-initial-letter: 3 2;
       }
-      
+
     </style>
   </head>
 

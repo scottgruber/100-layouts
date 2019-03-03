@@ -12,49 +12,46 @@
 
     <style type="text/css">
       body {
-        font-family: 'Merriweather', serif;
         display: grid;
-        grid-template-columns: 1fr, 4fr;
+        font-family: 'Merriweather', serif;
+        grid-column-gap: 2vw;
+        grid-row-gap: 1vh;
         grid-template-areas:
           "header caption"
           "image image"
           "text text";
-        grid-column-gap: 2vw;
-        grid-row-gap: 1vh;
+        grid-template-columns: 1fr, 4fr;
         margin: 1vh 4vw;
       }
 
       @media (min-width: 48em) {
         body {
           display: grid;
-          grid-template-columns: repeat(3, 1fr);
+          grid-column-gap: 0;
+          grid-row-gap: 1vh;
           grid-template-areas:
             "image image header"
             "caption text text";
-          grid-column-gap: 0px;
-          grid-row-gap: 1vh;
+          grid-template-columns: repeat(3, 1fr);
           margin: 2vh 6vw;
         }
       }
 
       header {
-        grid-area: header;
         align-self: end;
-      }
-
-      header {
         color: #333;
+        grid-area: header;
         padding-left: 1em;
       }
 
       header h1 {
-        margin: 0;
         line-height: 1.2;
+        margin: 0;
       }
 
       header p {
-        margin: 1em 0;
         font-style: italic;
+        margin: 1em 0;
       }
 
       figure {
@@ -63,8 +60,6 @@
 
       img {
         grid-area: image;
-        /* max-height: 100%;
-        object-fit: cover; */
         max-width: 100%;
       }
 
@@ -76,7 +71,6 @@
       article {
         grid-area: text;
         max-width: 70em;
-         /* add maxcontent to keep around 75em */
       }
 
       article p:first-of-type::first-letter {

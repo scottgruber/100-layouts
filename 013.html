@@ -10,26 +10,27 @@
   <style type="text/css">
     body {
       background: #309ad3;
-      font-family: 'Noto Sans', sans-serif;
-      /* 100px 175px 25px 200px 20px 70px 350px 20px 100px; */
       display: grid;
+      font-family: 'Noto Sans', sans-serif;
+
+      /* 100px 175px 25px 200px 20px 70px 350px 20px 100px; */
       grid-template-columns: 9.4339622641509% 16.509433962264% 2.3584905660377% 18.867924528302% 1.8867924528302% 6.6037735849057% 33.018867924528% 1.8867924528302% 9.4339622641509%;
       grid-template-rows: repeat(6, 1fr);
       max-height: 100vh;
       transform: rotate(45deg);
     }
-    
+
     [class^="purple"] {
       background: #34478c;
       height: 100%;
       width: 100%;
     }
-    
+
     [class^="green"] {
       background: #34854b;
       height: 100%;
+      opacity: 0.8;
       width: 100%;
-      opacity: .8;
       z-index: 1;
     }
 
@@ -42,6 +43,7 @@
       grid-column: 4 / 5;
       grid-row: 2 / 4;
     }
+
     .green-right {
       grid-column: 6 / 8;
       grid-row: 2 / 4;
@@ -64,10 +66,10 @@
     }
 
     .text-left {
+      align-content: start;
       grid-column: 4 / 5;
       grid-row: 6 / 7;
       justify-self: end;
-      align-content: start; 
     }
 
     .text-right {
@@ -78,8 +80,8 @@
     p {
       font-size: var(--font-size-x-large);
       font-weight: 700;
-      padding: 0;
       margin: 0;
+      padding: 0;
     }
 
   </style>

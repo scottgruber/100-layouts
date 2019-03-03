@@ -13,28 +13,28 @@
 
     <style type="text/css">
       body {
-        font-family: 'Noto Serif', serif;
         display: grid;
+        font-family: 'Noto Serif', serif;
         grid-gap: 2vw;
-        grid-template-columns: 2fr 2fr 1fr;
         grid-template-areas:
           "photographer photographer logo"
           "photographer photographer logo"
           "photo photo2 text";
+        grid-template-columns: 2fr 2fr 1fr;
         margin: 2em auto;
-        max-width: 90%;
         max-height: 100vh;
+        max-width: 90%;
       }
 
       h1 {
-        font-family: 'Courier New', Courier, monospace;
         color: #0396d3;
+        font-family: 'Courier New', Courier, monospace;
         font-weight: 700;
       }
 
       p::first-line {
-        font-weight: 700;
         font-style: italic;
+        font-weight: 700;
         text-transform: capitalize;
       }
 
@@ -42,7 +42,11 @@
         grid-area: logo;
       }
 
-      header>img {
+      img {
+        border: 1em solid #efefef;
+      }
+
+      header > img {
         width: 100%;
       }
 
@@ -50,31 +54,26 @@
         display: contents;
       }
 
-      img {
-        border: 1em solid #efefef;
-      }
-
-      figure>img:nth-of-type(1) {
+      figure > img:nth-of-type(1) {
         grid-area: photographer;
-        width: 100%;
         object-fit: cover;
-
+        width: 100%;
       }
 
-      figure>img:nth-of-type(2) {
+      figure > img:nth-of-type(2) {
         grid-area: photo;
         width: 100%;
       }
 
-      figure>img:nth-of-type(3) {
+      figure > img:nth-of-type(3) {
         grid-area: photo2;
         width: 100%;
       }
 
       figcaption {
-        grid-area: text;
         align-self: end;
-        padding: .5em;
+        grid-area: text;
+        padding: 0.5em;
       }
 
     </style>
