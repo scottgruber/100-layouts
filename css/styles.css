@@ -30,3 +30,32 @@ body {
   height: calc(100vw * 9 / 16);
   width: 100vw;
 }
+
+p {
+  font-size: var(--font-size);
+  margin: 0 0 var(--spacing) 0;
+}
+
+.standfirst {
+  font-size: var(--font-size-large);
+}
+
+.lede {
+  font-size: var(--font-size-medium);
+}
+
+/* =figure */
+
+figure {
+  margin: 0 0 var(--spacing) 0;
+  padding: 0;
+  width: min-content;
+}
+
+figure img {
+  margin: 0 0 var(--spacing) 0;
+}
+
+figcaption {
+  font-size: var(--font-size-xx-small);
+}
