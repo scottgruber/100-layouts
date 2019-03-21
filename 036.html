@@ -27,24 +27,33 @@
         font-size: var(--font-size-xx-display);
       }
 
-      .trailhead {
-      
+      .lupine {
+        display: flex;
+        flex-direction: column;
+        float: left;
+        margin-right: 2em;
+        width: 25%;
       }
 
-      .lupine {
-        display: grid;
-        grid-gap: 2vw;
-        grid-template-columns: 2fr 3fr;
+      img {
+        border: 5px solid silver;
+        object-fit: cover;
+        width: 100%;
+      }
+
+      .trailhead {
+        width: 100%;
+      }
+
+      .fires-restoration {
+        float: left;
       }
 
       .oak {
-        
-      }
-
-      .oak figure {
         display: grid;
         grid-gap: 1vw;
         grid-template-columns: 2fr 2fr 3fr;
+        width: 100%;
       }
 
       .oak img {
@@ -60,18 +69,12 @@
         text-align: center;
       }
 
-      img {
-        border: 5px solid silver;
-        object-fit: cover;
-        width: 100%;
-      }
-
       iframe {
         border: 5px solid silver;
       }
 
       p:first-of-type::first-line {
-        color: #7751A6;
+        color: #7751a6;
         font-feature-settings: "smp" 1;
         font-weight: 700;
       }
@@ -93,8 +96,8 @@
         <img src="img/036/las-virgenes-view-trail-1-panorama.jpg" alt="">
         <figcaption>Panorama of the Las Virgenes View Trail</figcaption>
       </figure>
-      <section class="lupine">
-        <figure>
+      <section>
+        <figure class="lupine">
           <img src="img/036/las-virgenes-view-trail-lupine-1.jpg" alt="">
           <img src="img/036/las-virgenes-view-trail-lupine-2.jpg" alt="">
           <img src="img/036/las-virgenes-view-trail-lupine-3.jpg" alt="">
@@ -132,8 +135,8 @@
       </section>
 
 
-      <section class="oak">
-        <figure>
+      <section>
+        <figure class="oak">
           <img src="img/036/las-virgenes-view-trail-hill.jpg" alt="">
           <img src="img/036/las-virgenes-view-trail-oaktree.jpg" alt="">
           <img src="img/036/las-virgenes-view-trail-hill-2.jpg" alt="">
