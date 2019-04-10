@@ -17,6 +17,7 @@
         grid-column-gap: 2vw;
         grid-row-gap: 1vh;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        margin: 0;
         max-height: 100%;
       }
 
@@ -63,20 +64,19 @@
 
       figure {
         display: grid;
-        grid-gap: 1vw;
+        grid-gap: 2vw;
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
         margin: 0;
+        width: 100vw;
       }
 
       @media (min-width: 37.5em) {
         figure {
           display: grid;
           grid-column: 1 / -1;
-          grid-gap: 1vw;
           grid-row: 4 / 6;
           grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-          margin: 0;
-          width: 100vw;
+         
         }
       }
 
