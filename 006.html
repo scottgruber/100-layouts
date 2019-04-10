@@ -39,7 +39,7 @@
           grid-row: 1;
         }
 
-        .top {
+        section:first-of-type {
           column-count: 3;
           column-gap: 2vw;
           column-width: 300px;
@@ -47,7 +47,7 @@
           grid-row: 3 / 4;
         }
 
-        .bottom {
+        section:last-of-type {
           column-count: 3;
           column-gap: 2vw;
           column-width: 300px;
@@ -56,9 +56,8 @@
         }
       }
 
-      .top p:first-of-type,
-      .bottom p:first-of-type,
-      .bottom h2:first-of-type {
+      section p:first-of-type,
+      section h2:first-of-type {
         margin-top: 0;
       }
 
@@ -94,8 +93,7 @@
       <h1>Walt Disney Concert Hall</h1>
       <p class="standfirst">Each year, the LA Phil presents over 250 concerts at its two globally renowned venues: Walt Disney Concert Hall and the Hollywood Bowl. I'm a big fan of Disney Hall.</p>
     </header>
-    
-    <div class="top">
+    <section>
       <p>
         Each year, the LA Phil presents over 250 concerts at its two globally
         renowned venues: Walt Disney Concert Hall and the Hollywood Bowl. Both
@@ -136,7 +134,7 @@
         protege Yasuhisa Toyota, have been praised, in contrast to its
         predecessor, the Dorothy Chandler Pavilion.
       </p>
-    </div>
+    </section>
 
     <!-- horizontal images start here -->
     <figure>
@@ -154,7 +152,7 @@
       <img src="img/006/disney-hall-29.jpg" alt="" />
     </figure>
 
-    <div class="bottom">
+    <section>
       <h2>Acoustics</h2>
       <p>As construction finished in the spring of 2003, the Philharmonic
         postponed its grand opening until the fall and used the summer to let
