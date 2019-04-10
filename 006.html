@@ -14,13 +14,15 @@
       body {
         display: grid;
         font-family: 'Noto Sans', sans-serif;
-        grid-gap: 2vw;
+        grid-column-gap: 2vw;
+        grid-row-gap: 1vh;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         max-height: 100%;
       }
 
       h1 {
-        font-weight: var(--font-weight-bold);
+        font-size: var(--font-size-xxx-display);
+        line-height: 1;
       }
 
       /* doesn't quite work across viewports. need better type calc */
@@ -52,11 +54,6 @@
           grid-column: 2 / -1;
           grid-row: 7 / 8;
         }
-      }
-
-      time {
-        display: block;
-        font-size: 70%;
       }
 
       .top p:first-of-type,
@@ -94,11 +91,10 @@
 
   <body>
     <header>
-      <h1>
-        Walt Disney Concert Hall <time class="date">October 7, 2018</time>
-      </h1>
+      <h1>Walt Disney Concert Hall</h1>
+      <p class="standfirst">Each year, the LA Phil presents over 250 concerts at its two globally renowned venues: Walt Disney Concert Hall and the Hollywood Bowl. I'm a big fan of Disney Hall.</p>
     </header>
-
+    
     <div class="top">
       <p>
         Each year, the LA Phil presents over 250 concerts at its two globally
@@ -156,7 +152,6 @@
       <img src="img/006/disney-hall-28.jpg" alt="" />
       <img src="img/006/disney-hall-34.jpg" alt="" />
       <img src="img/006/disney-hall-29.jpg" alt="" />
-
     </figure>
 
     <div class="bottom">
