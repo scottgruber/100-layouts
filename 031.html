@@ -1,43 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
     <title>LA Noir | 100 LA Layouts</title>
 
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="format-detection" content="telephone=no">
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:700,700i|Noto+Serif:400,400i"
-      rel="stylesheet">
+    <meta name="format-detection" content="telephone=no" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Noto+Sans:700,700i|Noto+Serif:400,400i"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="node_modules/splitting/dist/splitting2.css" />
+    <link rel="stylesheet" href="node_modules/splitting/dist/splitting-cells.css" />
     <link rel="stylesheet" href="css/styles.css" />
 
     <style type="text/css">
       body {
         display: grid;
-        font-family: 'Noto Serif', serif;
+        font-family: "Noto Sans", sans-serif;
+        grid-gap: 2vw;
+        grid-template-columns: repeat(5, 1fr);
+        justify-items: center;
+        margin: 0;
+        max-width: var(--max-width);
+      }
+
+      figure {
+        grid-column: 1 / -1;
+        grid-row: 6;
+      }
+
+      img {
+        height: 100%;
+        object-fit: cover;
+        width: 100vw;
       }
 
       h1 {
-        font-family: 'Noto Sans', sans-serif;
-        font-size: var(--font-size-xxx-display);
-        font-weight: 700;
+        font-size: var(--font-size-x-display);
+        grid-column: 1 / -1;
+      }
+
+      h2 {
+        font-size: var(--font-size-x-display);
+        grid-column: 1 / -1;
+      }
+
+      p {
+        font-size: var(--font-size-display);
+        grid-column: 1 / -1;
+        text-transform: uppercase;
+      }
+
+      p.en,
+      p.es {
+        color: maroon;
+      }
+
+      p.es {
+        font-size: var(--font-size-xxx-large);
+      }
+
+      .en .word:not(:last-child)::after {
+        color: black;
+        content: " /// ";
+      }
+
+      .es .word:not(:first-child)::before {
+        color: black;
+        content: "⇢";
+      }
+
+      .es .word:not(:last-child)::after {
+        color: black;
+        content: "⇠";
+      }
+
+      .ja .char:not(:last-child)::after {
+        color: maroon;
+        content: "⋮";
+      }
+
+      .zh .char:not(:last-child)::after {
+        color: maroon;
+        content: "–";
+        margin: 0 4px;
       }
 
     </style>
   </head>
 
   <body>
-    <header>
-      <h1>我们的每天从开始到终结都成为故事</h1>
-      <h2>Wǒmen de měitiān cóng kāishǐ dào zhōngjié dōu chéngwéi gùshì</h2>
-      <p>Our days begin and end as stories.</p>
-    </header>
-    <main>
-      <article></article>
-    </main>
-    <aside></aside>
-    <footer></footer>
+    
+    <p class="en" data-splitting>Our days begin and end as stories</p>
+    <h2 class="ja" data-splitting>私達の日々は物語のように始まりそして終わります</h2>
+    <p class="es" data-splitting>Nuestro Días Empiezan Y Terminan Como Historias</p>
+    <h1 class="zh" data-splitting>我们的每天从开始到终结都成为故事</h1>
+    <small hidden>Wǒmen de měitiān cóng kāishǐ dào zhōngjié dōu chéngwéi gùshì</small>
 
+    <figure>
+      <img src="img/031/our-days-mural-panorama@0.5x.jpg" alt="" />
+    </figure>
+    <script src="node_modules/splitting/dist/splitting.min.js"> </script>
+    <script> Splitting(); </script>
   </body>
-
 </html>

@@ -15,11 +15,13 @@
   },
   "dependencies": {
     "normalize.css": "^8.0.1",
-    "sanitize.css": "^8.0.0"
+    "prismjs": "^1.16.0",
+    "sanitize.css": "^8.0.0",
+    "splitting": "^1.0.6"
   },
   "devDependencies": {
-    "stylelint": "^9.10.1",
-    "stylelint-config-standard": "^18.2.0",
-    "stylelint-order": "^2.1.0"
+    "stylelint": "^10.0.1",
+    "stylelint-config-standard": "^18.3.0",
+    "stylelint-order": "^2.2.1"
   }
 }
