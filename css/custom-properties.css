@@ -25,6 +25,7 @@
 
   /* Very large sizes */
 
+  --font-size-xxxx-display: 3.653rem;
   --font-size-xxx-display: 3.247rem;
   --font-size-xx-display: 2.887rem;
   --font-size-x-display: 2.566rem;
@@ -77,7 +78,7 @@
 
   --border-width-hairline: 1px;
   --border-width-thin: 2px;
-  --border-width-thick: 3px;
+  --border-width-thick: 5px;
 
   /* Spacing
 // ========================================== */
