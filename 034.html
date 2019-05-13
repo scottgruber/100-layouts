@@ -2,23 +2,41 @@
 <html lang="en">
 
   <head>
-    <title>UCLA Women's Gynmastics and Miss Val dance party | 100 LA Layouts</title>
+    <title>Palms Street Art | 100 LA Layouts</title>
 
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="format-detection" content="telephone=no">
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:700,700i|Noto+Serif:400,400i"
-      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,700|Quattrocento" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css" />
 
     <style type="text/css">
       body {
+        background: hsla(350, 52%, 34%);
         display: grid;
-        font-family: 'Noto Serif', serif;
+        font-family: 'Quattrocentro', serif;
+        grid-gap: 1vw;
+        grid-template-columns: 1fr repeat(6, 2fr) 1fr;
+        margin: 1vw;
+      }
+
+      img {
+        object-fit: cover;
+        width: 100%;
+      }
+
+      main {
+        grid-column: 5 / 8;
+        grid-row: 4 / 6;
+      }
+
+      aside {
+        grid-column: 2 / 4;
+        grid-row: 3 / 5;
       }
 
       h1 {
-        font-family: 'Noto Sans', sans-serif;
+        font-family: Oswald, sans-serif;
         font-weight: 700;
       }
 
@@ -26,14 +44,15 @@
   </head>
 
   <body>
-    <header>
-      <h1>UCLA Women's Gynmastics and Miss Val dance party</h1>
+    <header hidden>
+      <h1>Mural on Motor Ave near the Palms community garden. This project is made possible in partnership with the Motor Avenue Improvement Association.</h1>
     </header>
     <main>
+      <img src="img/034/2019-05-10-woman-book-street-art.jpg" alt="">
       <article></article>
     </main>
-    <aside></aside>
-    <footer></footer>
+    <aside><img src="img/034/2019-05-10-butterfly-street-art.jpg" alt=""></aside>
+    
 
   </body>
 
