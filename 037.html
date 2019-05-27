@@ -14,7 +14,7 @@
       @media screen and (min-width: 48em) {
         body {
           display: grid;
-          grid-gap: 2vw;
+          grid-column-gap: 2vw;
           grid-template-columns: var(--compound-grid-four-plus-five);
           margin: var(--spacing-large);
         }
@@ -32,7 +32,7 @@
 
         img {
           grid-column: 2 / 8;
-          height: 100%;
+          height: 100vh;
           object-fit: cover;
           width: 100%;
         }
@@ -41,14 +41,18 @@
           align-self: end;
         }
 
-        div {
-          grid-column: 2 / 8;
-        }
-
         aside {
           align-self: start;
           grid-column: 1 / 2;
           grid-row: 3;
+        }
+
+        div {
+          column-count: 4;
+          column-gap: 2vw;
+          column-rule: 1px solid hsla(358, 76%, 38%);
+          column-width: 14em;
+          grid-column: 2 / 8;
         }
       }
 
@@ -58,6 +62,7 @@
         font-size: var(--font-size-xxxx-display);
         font-style: italic;
         font-weight: 400;
+        margin: 0 0 var(--spacing-large) 0;
       }
 
       h1 > span {
@@ -66,15 +71,50 @@
         font-size: var(--font-size-display);
         font-style: normal;
         font-weight: 700;
+        margin-left: var(--spacing-xx-large);
+        padding-left: var(--spacing-x-large);
         text-transform: uppercase;
       }
 
       h2 {
+        color: #a3202c;
+        font-family: eloquent-jf-pro, serif;
+        font-size: var(--font-size-display);
+        font-style: italic;
+        font-weight: 400;
         margin: 0;
+      }
+
+      cite {
+        font-family: cooper-black-std, serif;
+        font-style: normal;
+      }
+
+      figcaption > span {
+        display: block;
       }
 
       aside p {
         margin: 0;
+      }
+
+      p > em {
+        font-family: cooper-black-std, serif;
+        font-size: var(--font-size);
+        font-style: normal;
+      }
+
+      p + p {
+        text-indent: 2ch;
+      }
+
+      a {
+        color: #075287;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
       }
 
     </style>
@@ -83,33 +123,44 @@
   <body>
 
     <header>
-     
       <h1>Soul of a Nation: <span>Art in the Age of Black Power 1963-1983</span></h1>
-     
     </header>
     <figure>
-      <img src="img/037/blackchildren.jpg">
-      <figcaption><cite>Black Children Keep Your Spirits Free</cite>, <time>1972</time>. Carolyn Lawrence
-        born 1940.</figcaption>
+      <img srcset="img/037/blackchildren-500w@0.5x.jpg, img/037/blackchildren-1000w.jpg 1.5x, img/037/blackchildren-2000w@2x.jpg 2x" src="img/037/blackchildren-500w@0.5x.jpg">
+      <figcaption><cite>Black Children Keep Your Spirits Free</cite>,
+        <time>1972</time>. <span><a href="https://crystalbridges.org/blog/soul-of-a-nation-an-interview-with-carolyn-mims-lawrence/">Carolyn Lawrence</a>.</span></figcaption>
     </figure>
     <div>
-    <p><em>Soul of a Nation: Art in the Age of Black Power</em> shines a bright light on the vital contribution of Black artists made over two revolutionary decades in American history, beginning in 1963 at the height of the civil rights movement. The exhibition examines the influences, from the civil rights and Black Power movements to Minimalism and developments in abstraction, on artists such as Romare Bearden, Barkley Hendricks, Noah Purifoy, Martin Puryear, Faith Ringgold, Betye Saar, Alma Thomas, Charles White, and William T. Williams. </p>
-     
-      <p>Los Angeles-based artists appear throughout Soul of a Nation, and more
-          deeply in three specific galleries, foregrounding the significant role of
-          Los Angeles in the art and history of the civil rights movement and the
-          subsequent activist era, and the critical influence and sustained
-          originality of the city’s artists, many of whom have lacked wider
-          recognition.</p>
-    
-<p>Featuring the work of more than 60 influential artists and including vibrant paintings, powerful sculptures, street photography, murals, and more, this landmark exhibition is a rare opportunity to see era-defining artworks that changed the face of art in America.</p>
+      <p><em>Soul of a Nation: Art in the Age of Black Power</em> shines a
+        bright light on the vital contribution of Black artists made over two
+        revolutionary decades in American history, beginning in 1963 at the
+        height of the civil rights movement. The exhibition examines the
+        influences, from the civil rights and Black Power movements to
+        Minimalism and developments in abstraction, on artists such as Romare
+        Bearden, Barkley Hendricks, Noah Purifoy, Martin Puryear, Faith
+        Ringgold, Betye Saar, Alma Thomas, Charles White, and William T.
+        Williams. </p>
 
-</div>
-<aside>
-    <h2>Special Exhibition</h2>
-    <time datetime="2019-03">Mar 23</time>-<time datetime="2019-09-01">Sep 01, 2019</time>
-    <p>The Broad, Los Angeles</p>
-</aside>
+      <p>Los Angeles-based artists appear throughout Soul of a Nation, and more
+        deeply in three specific galleries, foregrounding the significant role
+        of
+        Los Angeles in the art and history of the civil rights movement and the
+        subsequent activist era, and the critical influence and sustained
+        originality of the city’s artists, many of whom have lacked wider
+        recognition.</p>
+
+      <p>Featuring the work of more than 60 influential artists and including
+        vibrant paintings, powerful sculptures, street photography, murals, and
+        more, this landmark exhibition is a rare opportunity to see era-defining
+        artworks that changed the face of art in America.</p>
+        <small>Photo of painting taken at the exhibition by Scott Gruber.</small>
+    </div>
+    <aside>
+      <h2>Special Exhibition</h2>
+      <p><em>The Broad, Los Angeles</em></p>
+      <time datetime="2019-03">Mar 23</time>-<time datetime="2019-09-01">Sep 01,
+          2019</time>
+    </aside>
 
   </body>
 
