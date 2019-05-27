@@ -2,7 +2,6 @@ node_modules/*
 !node_modules/splitting/dist/*
 config.codekit3
 starter-file.html
-css/custom-properties-inspiredguide.css
 css/vendor/normalize-opentype.css
 css/vendor/normalize.css
 typography/typesheet.html
