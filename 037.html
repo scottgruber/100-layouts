@@ -13,46 +13,51 @@
     <style type="text/css">
       @media screen and (min-width: 48em) {
         body {
-          display: grid;
-          grid-column-gap: 2vw;
-          grid-template-columns: var(--compound-grid-four-plus-five);
-          margin: var(--spacing-large);
-        }
-
-        header {
-          grid-column: 1 / -1;
-        }
-
-        figure {
-          display: contents;
-          grid-column: 2 / 8;
           margin: 0;
           padding: 0;
         }
 
-        img {
-          grid-column: 2 / 8;
-          height: 100vh;
-          object-fit: cover;
-          width: 100%;
+        article {
+          display: grid;
+          grid-column-gap: 2vw;
+          grid-template-columns: 2fr 1fr 1fr 2fr 2fr 1fr 1fr 2fr;
+          margin: 0;
+        }
+
+        header {
+          grid-column: 4 / -1;
+          grid-row: 2;
+        }
+
+        figure {
+          display: contents;
+          margin: 0;
+          padding: 0;
         }
 
         figcaption {
-          align-self: end;
+          grid-column: 4 / 8;
+          grid-row: 4;
+          margin-bottom: 1em;
         }
 
-        aside {
-          align-self: start;
-          grid-column: 1 / 2;
-          grid-row: 3;
+        img {
+          grid-column: 1 / 4;
+          grid-row: 1 / 5;
+          height: 100vh;
+          object-fit: cover;
+          object-position: right top;
+          width: 100%;
         }
 
         div {
           column-count: 4;
           column-gap: 2vw;
-          column-rule: 1px solid hsla(358, 76%, 38%);
-          column-width: 14em;
-          grid-column: 2 / 8;
+          column-rule: 1px solid hsla(358, 76%, 38%, 0.2);
+          column-width: 10em;
+          grid-column: 4 / -1;
+          grid-row: 3;
+          margin-bottom: 1em;
         }
       }
 
@@ -66,32 +71,26 @@
       }
 
       h1 > span {
+        color: hsla(139, 76%, 33%);
         display: block;
         font-family: cooper-black-std, serif;
-        font-size: var(--font-size-display);
+        font-size: var(--font-size-xx-large);
         font-style: normal;
         font-weight: 700;
-        margin-left: var(--spacing-xx-large);
-        padding-left: var(--spacing-x-large);
+        padding-left: var(--spacing-large);
         text-transform: uppercase;
       }
 
       h2 {
-        color: #a3202c;
-        font-family: eloquent-jf-pro, serif;
-        font-size: var(--font-size-display);
-        font-style: italic;
-        font-weight: 400;
+        font-size: var(--font-size);
+        font-weight: 700;
         margin: 0;
+        text-transform: uppercase;
       }
 
       cite {
         font-family: cooper-black-std, serif;
         font-style: normal;
-      }
-
-      figcaption > span {
-        display: block;
       }
 
       aside p {
@@ -101,34 +100,24 @@
       p > em {
         font-family: cooper-black-std, serif;
         font-size: var(--font-size);
-        font-style: normal;
       }
 
       p + p {
         text-indent: 2ch;
       }
 
-      a {
-        color: #075287;
-        text-decoration: none;
-      }
-
-      a:hover {
-        text-decoration: underline;
-      }
-
     </style>
   </head>
 
   <body>
-
+    <article>
     <header>
       <h1>Soul of a Nation: <span>Art in the Age of Black Power 1963-1983</span></h1>
     </header>
     <figure>
       <img srcset="img/037/blackchildren-500w@0.5x.jpg, img/037/blackchildren-1000w.jpg 1.5x, img/037/blackchildren-2000w@2x.jpg 2x" src="img/037/blackchildren-500w@0.5x.jpg">
       <figcaption><cite>Black Children Keep Your Spirits Free</cite>,
-        <time>1972</time>. <span><a href="https://crystalbridges.org/blog/soul-of-a-nation-an-interview-with-carolyn-mims-lawrence/">Carolyn Lawrence</a>.</span></figcaption>
+        <time>1972</time>. Carolyn Lawrence. <small>Photo by Scott Gruber.</small></figcaption>
     </figure>
     <div>
       <p><em>Soul of a Nation: Art in the Age of Black Power</em> shines a
@@ -153,15 +142,15 @@
         vibrant paintings, powerful sculptures, street photography, murals, and
         more, this landmark exhibition is a rare opportunity to see era-defining
         artworks that changed the face of art in America.</p>
-        <small>Photo of painting taken at the exhibition by Scott Gruber.</small>
+        <aside>
+          <h2>Special Exhibition</h2>
+          <p><em>The Broad, Los Angeles</em></p>
+          <time datetime="2019-03">Mar 23</time>-<time datetime="2019-09-01">Sep 01,
+              2019</time>
+        </aside>
     </div>
-    <aside>
-      <h2>Special Exhibition</h2>
-      <p><em>The Broad, Los Angeles</em></p>
-      <time datetime="2019-03">Mar 23</time>-<time datetime="2019-09-01">Sep 01,
-          2019</time>
-    </aside>
-
+   
+  </article>
   </body>
 
 </html>
