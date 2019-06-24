@@ -16,6 +16,7 @@
       body {
         display: grid;
         font-family: 'Lato', sans-serif;
+        max-width: 70rem;
       }
 
       h1 {
@@ -26,12 +27,45 @@
 
       figure {
         display: grid;
-        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 2vw;
+        grid-template-areas: 
+          "kiss kiss"
+          "inspire love"
+          "heart la"
+          "caption caption";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: fit-content;
+        width: 48em;
       }
 
       img {
+        height: 100%;
         object-fit: cover;
         width: 100%;
+      }
+
+      img:nth-of-type(1) {
+        grid-area: kiss;
+      }
+
+      img:nth-of-type(2) {
+        grid-area: inspire;
+      }
+
+      img:nth-of-type(3) {
+        grid-area: love;
+      }
+
+      img:nth-of-type(4) {
+        grid-area: heart;
+      }
+
+      img:nth-of-type(5) {
+        grid-area: la;
+      }
+
+      figcaption {
+        grid-area: caption;
       }
 
     </style>
@@ -39,36 +73,17 @@
 
   <body>
     <header>
-      <h1>Street Art Little Tokyo Arts District</h1>
+      <h1>Little Tokyo Arts District</h1>
     </header>
     <main>
       <figure>
-        <img src="img/035/street-art-2019-04-20-12.17.55.jpg" alt="">
-        <img src="img/035/street-art-2019-04-20-12.20.40.jpg" alt="">
-        <img src="img/035/street-art-2019-04-20-12.25.15.jpg" alt="">
-        <img src="img/035/street-art-2019-04-20-12.25.45.jpg" alt="">
-        <img src="img/035/street-art-2019-04-20-12.25.50.jpg" alt="">
-        <img src="img/035/street-art-2019-04-20-12.25.59.jpg" alt="">
-        <img src="img/035/street-art-2019-04-20-12.26.55.jpg" alt="">
-        <img src="img/035/street-art-2019-04-20-12.32.38.jpg" alt="">
-        <img src="img/035/street-art-2019-04-20-12.32.50-1.jpg" alt="">
-        <img src="img/035/street-art-2019-04-20-12.33.30.jpg" alt="">
-        <img src="img/035/street-art-2019-04-20-12.33.39.jpg" alt="">
-        <img src="img/035/street-art-2019-04-20-12.33.47.jpg" alt="">
-        <img src="img/035/street-art-2019-04-20-12.34.34.jpg" alt="">
-        <img src="img/035/street-art-2019-04-20-12.34.39.jpg" alt="">
-        <img src="img/035/street-art-2019-04-20-12.39.12.jpg" alt="">
-        <img src="img/035/street-art-2019-04-20-12.39.26.jpg" alt="">
         <img src="img/035/street-art-2019-04-20-13.09.59.jpg" alt="">
-        <img src="img/035/street-art-2019-04-20-13.12.16.jpg" alt="">
-        <img src="img/035/street-art-2019-04-20-13.13.12.jpg" alt="">
-        <img src="img/035/street-art-2019-04-20-13.30.45.jpg" alt="">
+        <img src="img/035/street-art-2019-04-20-12.32.50-1.jpg" alt="">
+        <img src="img/035/street-art-2019-04-20-12.34.34.jpg" alt="">
         <img src="img/035/street-art-2019-04-20-13.31.33.jpg" alt="">
-        <img src="img/035/street-art-2019-04-20-13.31.50.jpg" alt="">
         <img src="img/035/street-art-2019-04-20-13.32.03.jpg" alt="">
-        <img src="img/035/street-art-2019-04-20-13.32.25.jpg" alt="">
-        <img src="img/035/street-art-2019-04-20-13.33.14.jpg" alt="">
-      </figure>
+        <figcaption>sidewalk art los angeles little tokyo arts district</figcaption>
+        </figure>
     </main>
     <aside></aside>
     <footer></footer>
