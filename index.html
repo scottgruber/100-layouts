@@ -10,44 +10,35 @@
   <style>
     body {
       color: #454543;
-      display: grid;
       font-family: 'Roboto', sans-serif;
-      grid-template-areas:
-        "header"
-        "main"
-        "aside"
-        "footer";
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       margin: 0 auto;
-      max-width: 80vw;
     }
 
     @media (min-width: 30em) {
       body {
-        grid-template-areas:
-          "header header"
-          "main aside"
-          "footer footer";
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        max-width: 60vw;
+        display: grid;
+        grid-gap: 2vw;
+        grid-template-columns: 2fr 1fr 1fr 2fr 2fr 1fr 1fr 2fr;
       }
     }
 
     header {
-      grid-area: header;
+      grid-column: 2 / 10;
+      grid-row: 1;
     }
 
     main {
-      grid-area: main;
+      grid-column: 1 / -1;
+      grid-row: 2;
     }
 
     aside {
-      grid-area: aside;
+      grid-row: 3;
     }
 
     footer {
       border-top: var(--border-width-hairline) solid var(--color-border-separator);
-      grid-area: footer;
+      grid-column: 1 / -1;
       margin-top: var(--spacing-medium);
     }
 
@@ -79,6 +70,10 @@
     }
 
     ol {
+      display: grid;
+      grid-gap: 2vw;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      list-style: none;
       padding-left: 0;
     }
 
@@ -88,8 +83,19 @@
       margin-left: 0;
     }
 
+    img {
+      object-fit: cover;
+      width: 100%;
+    }
+
+    img:not([src*="svg"]) {
+      border: 10px solid hsla(213, 34%, 71%);
+      margin: 1em;
+    }
+
     img[src*="svg"] {
       margin-right: 1em;
+      width: 32px;
     }
 
     img[src*="svg"]:hover {
@@ -113,61 +119,52 @@
     <p>Scott Gruber<br> Los Angeles. 2018-19</p>
   </header>
   <main>
-    <h2>Layouts</h2>
-    <!-- <ol>
-      <li>Natural light - mountains, beaches</li>
-      <li>The spirit (churches)</li>
-      <li>Street art and murals</li>
-      <li>Music and the arts</li>
-      <li>Transportation bikes, planes, cars, trains</li>
-      <li>Festivals dios, ciclavia. large groups of people. dodger stadium</li>
-      <li>Books - library, collections, famous authors</li>
-      <li>wine history</li>
-    </ol> -->
+    <h2>100 Layouts</h2>
     <ol>
-      <li><a href="001.html">Flying into LAX</a></li>
-      <li><a href="002.html">DTLA The Park</a></li>
-      <li><a href="003.html">Bonaventure Hotel</a></li>
-      <li><a href="004.html">Santa Monica Pier</a></li>
-      <li><a href="005.html">Brown Pelican Mural, Venice</a></li>
-      <li><a href="006.html">Walt Disney Concert Hall #1</a></li>
-      <li><a href="007.html">Walt Disney Concert Hall #2</a></li>
-      <li><a href="008.html">Walt Disney Concert Hall #3</a></li>
-      <li><a href="009.html">Walt Disney Concert Hall #4</a></li>
-      <li><a href="010.html">Color palettes, Santa Monica mountains</a></li>
-      <li><a href="011.html">Swatch color palettes</a></li>
-      <li><a href="012.html">Interaction of Color, Joseph Albers</a></li>
-      <li><a href="013.html">Swiss poster</a></li>
-      <li><a href="014.html">Disney Hall, polygon & clip-path</a></li>
-      <li><a href="015.html">LA Audubon Bird palettes</a></li>
-      <li><a href="016.html">Santa Monica Mountain Colors</a></li>
+      <li><a href="001.html"><img src="img/_100-layouts/layout-001@0.5x.jpg" srcset="img/_100-layouts/layout-001@2x.jpg 2x" alt="">Flying into LAX</a></li>
+      <li><a href="002.html"><img src="img/_100-layouts/layout-002@0.5x.jpg" srcset="img/_100-layouts/layout-002@2x.jpg 2x" alt=""> DTLA The Park</a></li>
+      <li><a href="003.html"><img src="img/_100-layouts/layout-003@0.5x.jpg" srcset="img/_100-layouts/layout-003@2x.jpg 2x" alt="">Bonaventure Hotel</a></li>
+      <li><a href="004.html"><img src="img/_100-layouts/layout-004@0.5x.jpg" srcset="img/_100-layouts/layout-004@2x.jpg 2x" alt="">Santa Monica Pier</a></li>
+      <li><a href="005.html"><img src="img/_100-layouts/layout-005@0.5x.jpg" srcset="img/_100-layouts/layout-005@2x.jpg 2x" alt="">Brown Pelican Mural, Venice</a></li>
+      <li><a href="006.html"><img src="img/_100-layouts/layout-006@0.5x.jpg" srcset="img/_100-layouts/layout-006@2x.jpg 2x" alt="">Walt Disney Concert Hall #1</a></li>
+      <li><a href="007.html"><img src="img/_100-layouts/layout-007@0.5x.jpg" srcset="img/_100-layouts/layout-007@2x.jpg 2x" alt="">Walt Disney Concert Hall #2</a></li>
+      <li><a href="008.html"><img src="img/_100-layouts/layout-008@0.5x.jpg" srcset="img/_100-layouts/layout-008@2x.jpg 2x" alt="">Walt Disney Concert Hall #3</a></li>
+      <li><a href="009.html"><img src="img/_100-layouts/layout-009@0.5x.jpg" srcset="img/_100-layouts/layout-009@2x.jpg 2x" alt="">Walt Disney Concert Hall #4</a></li>
+      <li><a href="010.html"><img src="img/_100-layouts/layout-010@0.5x.jpg" srcset="img/_100-layouts/layout-010@2x.jpg 2x"alt="">Color palettes, Santa Monica mountains</a></li>
+      <li><a href="011.html"><img src="img/_100-layouts/layout-011@0.5x.jpg" srcset="img/_100-layouts/layout-011@2x.jpg 2x" alt="">Swatch color palettes</a></li>
+      <li><a href="012.html"><img src="img/_100-layouts/layout-012@0.5x.jpg" srcset="img/_100-layouts/layout-012@2x.jpg 2x" alt="">Interaction of Color, Joseph Albers</a></li>
+      <li><a href="013.html"><img src="img/_100-layouts/layout-013@0.5x.jpg" srcset="img/_100-layouts/layout-013@2x.jpg 2x" alt="">Swiss poster</a></li>
+      <li><a href="014.html"><img src="img/_100-layouts/layout-014@0.5x.jpg" srcset="img/_100-layouts/layout-014@2x.jpg 2x" alt="">Disney Hall, polygon & clip-path</a></li>
+      <li><a href="015.html"><img src="img/_100-layouts/layout-015@0.5x.jpg" srcset="img/_100-layouts/layout-015@2x.jpg 2x" alt="">LA Audubon Bird palettes</a></li>
+      <li><a href="016.html"><img src="img/_100-layouts/layout-016@0.5x.jpg" srcset="img/_100-layouts/layout-016@2x.jpg 2x" alt="">Santa Monica Mountain Colors</a></li>
       <li><a href="017.html">TO DO</a></li>
       <li><a href="018.html">TO DO</a></li>
-      <li><a href="019.html">Liberty and the Heart of LA 2018</a></li>
-      <li><a href="020.html">cicLAvia street photographer</a></li>
-      <li><a href="021.html">cicLAvia Families, Heart of LA</a></li>
-      <li><a href="022.html">cicLAvia peace sign, Heart of LA</a></li>
-      <li><a href="023.html">Easter Bluejay: How to Draw 28 Birds in Harper's Style</a></li>
-      <li><a href="024.html">ciclavia we love our police</a></li>
-      <li><a href="025.html">Charley Harper, American illustrator</a></li>
-      <li><a href="026.html">Flock of Blue Jays, Greensock animation</a></li>
-      <li><a href="027.html">LA Ice Rink</a></li>
-      <li><a href="028.html">Burrowing Owl: How to Draw 28 Birds in Harper's Style</a></li>
-      <li><a href="029.html">For Lemmy</a></li>
-      <li><a href="030.html">Interaction of Color, ver 2</a></li>
-      <li><a href="031.html">Our days begin and end as stories</a></li>
-      <li><a href="032.html">Bumblebeelovesyou Mural</a></li>
-      <li><a href="033.html">LA Noir, Raymond Chandler</a></li>
-      <li><a href="034.html">Palms Street Art. Women reading book.</a></li>
-      <li><a href="035.html">Sidewalk art</a></li>
-      <li><a href="036.html">Las Virgenes View Trail</a></li>
-      <li><a href="037.html">Soul of a Nation</a></li>
+      <li><a href="019.html"><img src="img/_100-layouts/layout-019@0.5x.jpg" srcset="img/_100-layouts/layout-019@2x.jpg 2x" alt="">Liberty and the Heart of LA 2018</a></li>
+      <li><a href="020.html"><img src="img/_100-layouts/layout-020@0.5x.jpg" srcset="img/_100-layouts/layout-020@2x.jpg 2x" alt="">cicLAvia street photographer</a></li>
+      <li><a href="021.html"><img src="img/_100-layouts/layout-021@0.5x.jpg" srcset="img/_100-layouts/layout-021@2x.jpg 2x" alt="">cicLAvia Families, Heart of LA</a></li>
+      <li><a href="022.html"><img src="img/_100-layouts/layout-022@0.5x.jpg" srcset="img/_100-layouts/layout-022@2x.jpg 2x" alt="">cicLAvia peace sign, Heart of LA</a></li>
+      <li><a href="023.html"><img src="img/_100-layouts/layout-023@0.5x.jpg" srcset="img/_100-layouts/layout-023@2x.jpg 2x" alt="">Easter Bluejay: How to Draw 28 Birds in Harper's Style</a></li>
+      <li><a href="024.html"><img src="img/_100-layouts/layout-024@0.5x.jpg" srcset="img/_100-layouts/layout-024@2x.jpg 2x" alt="">ciclavia we love our police</a></li>
+      <li><a href="025.html"><img src="img/_100-layouts/layout-025@0.5x.jpg" srcset="img/_100-layouts/layout-025@2x.jpg 2x" alt="">Charley Harper, American illustrator</a></li>
+      <li><a href="026.html"><img src="img/_100-layouts/layout-026@0.5x.jpg" srcset="img/_100-layouts/layout-026@2x.jpg 2x" alt="">Flock of Blue Jays, Greensock animation</a></li>
+      <li><a href="027.html"><img src="img/_100-layouts/layout-027@0.5x.jpg" srcset="img/_100-layouts/layout-027@2x.jpg 2x" alt="">LA Ice Rink</a></li>
+      <li><a href="028.html"><img src="img/_100-layouts/layout-028@0.5x.jpg" srcset="img/_100-layouts/layout-028@2x.jpg 2x" alt="">Burrowing Owl: How to Draw 28 Birds in Harper's Style</a></li>
+      <li><a href="029.html"><img src="img/_100-layouts/layout-029@0.5x.jpg" srcset="img/_100-layouts/layout-029@2x.jpg 2x" alt="">For Lemmy</a></li>
+      <li><a href="030.html"><img src="img/_100-layouts/layout-030@0.5x.jpg" srcset="img/_100-layouts/layout-030@2x.jpg 2x" alt="">Interaction of Color, ver 2</a></li>
+      <li><a href="031.html"><img src="img/_100-layouts/layout-031@0.5x.jpg" srcset="img/_100-layouts/layout-031@2x.jpg 2x" alt="">Our days begin and end as stories</a></li>
+      <li><a href="032.html"><img src="img/_100-layouts/layout-032@0.5x.jpg" srcset="img/_100-layouts/layout-032@2x.jpg 2x" alt="">Bumblebeelovesyou Mural</a></li>
+      <li><a href="033.html"><img src="img/_100-layouts/layout-033@0.5x.jpg" srcset="img/_100-layouts/layout-033@2x.jpg 2x" alt="">LA Noir, Raymond Chandler</a></li>
+      <li><a href="034.html"><img src="img/_100-layouts/layout-034@0.5x.jpg" srcset="img/_100-layouts/layout-034@2x.jpg 2x" alt="">Palms Street Art. Women reading book.</a></li>
+      <li><a href="035.html"><img src="img/_100-layouts/layout-035@0.5x.jpg" srcset="img/_100-layouts/layout-035@2x.jpg 2x" alt="">Sidewalk art</a></li>
+      <li><a href="036.html"><img src="img/_100-layouts/layout-036@0.5x.jpg" srcset="img/_100-layouts/layout-036@2x.jpg 2x" alt="">Las Virgenes View Trail</a></li>
+      <li><a href="037.html"><img src="img/_100-layouts/layout-037@0.5x.jpg" srcset="img/_100-layouts/layout-037@2x.jpg 2x" alt="">Soul of a Nation</a></li>
+      <li><a href="038.html">Sidewalk art</a></li>
       
     </ol>
   </main>
   <aside>
     <h2>Typography</h2>
-    <ol>
+    <ul>
       <li><a href="typography/mrs-eaves-xl.html">Mrs Eaves XL</a></li>
       <li><a href="typography/los-feliz.html">Los Feliz</a></li>
       <li><a href="typography/cormorant-garamond.html">Cormorant Garamond</a></li>
@@ -182,7 +179,7 @@
       <li><a href="typography/playfair.html">Playfair</a></li>
       <li><a href="typography/roboto.html">Roboto</a></li>
       <li><a href="typography/rochester.html">Rochester</a></li>   
-    </ol>
+    </ul>
   </aside>
   <footer>
     <p><a href="https://github.com/scottgruber/100-layouts"><img class="icon-github"
