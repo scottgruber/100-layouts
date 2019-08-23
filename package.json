@@ -13,14 +13,9 @@
     "url": "https://github.com/scottgruber/100-layouts/issues",
     "email": "hello@scottgruber.me"
   },
-  "dependencies": {
-    "normalize.css": "^8.0.1",
-    "prismjs": "^1.16.0",
-    "sanitize.css": "^8.0.0",
-    "splitting": "^1.0.6"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "stylelint": "^10.0.1",
+    "stylelint": "^10.1.0",
     "stylelint-config-standard": "^18.3.0",
     "stylelint-order": "^2.2.1"
   }
