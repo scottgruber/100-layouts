@@ -9,16 +9,16 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:400|Rochester" rel="stylesheet"> 
   <style>
     body {
-      color: #454543;
-      font-family: 'Roboto', sans-serif;
       margin: 0 auto;
+      font-family: 'Roboto', sans-serif;
+      color: #454543;
     }
 
     @media (min-width: 30em) {
       body {
         display: grid;
-        grid-gap: 2vw;
         grid-template-columns: 2fr 1fr 1fr 2fr 2fr 1fr 1fr 2fr;
+        grid-gap: 2vw;
       }
     }
 
@@ -39,13 +39,13 @@
     footer {
       border-top: var(--border-width-hairline) solid var(--color-border-separator);
       grid-column: 1 / -1;
-      margin-top: var(--spacing-medium);
+      margin-block-start: var(--spacing-medium);
     }
 
     h1 {
-      color: #003579;
       font-family: "Rochester", cursive;
       font-size: var(--font-size-xxxx-large);
+      color: #003579;
       text-align: center;
     }
 
@@ -71,16 +71,16 @@
 
     ol {
       display: grid;
-      grid-gap: 2vw;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-gap: 2vw;
+      padding-inline-start: 0;
       list-style: none;
-      padding-left: 0;
     }
 
     ol li {
-      font-size: var(--font-size-medium);
-      margin-bottom: 0.5em;
-      margin-left: 0;
+      margin-block-start: 0;
+      margin-block-end: 0.5em;
+      font-size: var(--font-size-medium);  
     }
 
     img {
@@ -89,13 +89,13 @@
     }
 
     img:not([src*="svg"]) {
-      border: 10px solid hsla(213, 34%, 71%);
       margin: 1em;
+      border: 10px solid hsla(213, 34%, 71%);
     }
 
     img[src*="svg"] {
-      margin-right: 1em;
       width: 32px;
+      margin-inline-end: 1em;
     }
 
     img[src*="svg"]:hover {
@@ -158,7 +158,7 @@
       <li><a href="035.html"><img src="img/_100-layouts/layout-035@0.5x.jpg" srcset="img/_100-layouts/layout-035@2x.jpg 2x" alt="">Sidewalk art</a></li>
       <li><a href="036.html"><img src="img/_100-layouts/layout-036@0.5x.jpg" srcset="img/_100-layouts/layout-036@2x.jpg 2x" alt="">Las Virgenes View Trail</a></li>
       <li><a href="037.html"><img src="img/_100-layouts/layout-037@0.5x.jpg" srcset="img/_100-layouts/layout-037@2x.jpg 2x" alt="">Soul of a Nation</a></li>
-      <li><a href="038.html">Sidewalk art</a></li>
+      <li><a href="038.html"><img src="img/_100-layouts/layout-038@0.5x.jpg" srcset="img/_100-layouts/layout-038@2x.jpg 2x" alt="">Men love Annie. coffee shop art.</a></li>
       <li><a href="039.html">Extinction Rebellion Illustration 1</a></li>
       <li><a href="040.html">Extinction Rebellion Illustration 2</a></li>
       <li><a href="041.html">Extinction Rebellion Illustration 3</a></li>

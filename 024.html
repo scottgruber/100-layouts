@@ -25,9 +25,9 @@
       @media (min-width: 48em) {
         body {
           display: grid;
-          grid-gap: 1vw;
           grid-template-columns: repeat(6, 1fr);
           grid-template-rows: 2fr 2fr 1fr 2fr 2fr 4fr;
+          grid-gap: 1vw;
         }
 
         img {
@@ -45,9 +45,9 @@
       }
 
       header {
-        align-self: end;
         grid-column: 4 / 5;
         grid-row: 2 / 3;
+        align-self: end;
       }
 
       .standfirst {
@@ -60,9 +60,9 @@
       }
 
       article p:first-of-type::first-line {
-        color: #015087;
         font-feature-settings: "smp" 1;
         font-weight: 700;
+        color: #015087;
       }
 
       article p:first-of-type::first-letter {

@@ -29,13 +29,14 @@
       001 */
       body {
         display: grid;
-        font-family: "Noto Serif", serif;
         grid-template-areas:
           "quote"
           "zamboni"
           "article"
           "footer";
         height: 100vh;
+        font-family: "Noto Serif", serif;
+        
       }
 
       /* 001 */
@@ -46,9 +47,9 @@
       /* 001 */
       figure {
         grid-area: zamboni;
+        width: 100%;
         margin: 0;
         object-fit: cover;
-        width: 100%;
       }
 
       /* 001 */
@@ -63,19 +64,19 @@
 
       /* 001 */
       article {
-        align-self: center;
         grid-area: article;
+        align-self: center;
       }
 
       /* 001 */
       aside {
+        grid-area: quote;
         align-self: center;
-        color: #002966;
+        margin-block-end: 1em;
         font-size: var(--font-size-medium);
         font-style: italic;
-        grid-area: quote;
         line-height: 1.2;
-        margin-bottom: 1em;
+        color: #002966;      
       }
 
       /* 001 */
@@ -101,25 +102,26 @@
       @media (min-width: 30em) {
         /* 001 */
         body {
-          grid-gap: 2vw;
+          grid-template-columns: 2fr 3fr;
           grid-template-areas:
             ". zamboni"
             "quote zamboni"
             ". article"
             ". footer";
-          grid-template-columns: 2fr 3fr;
+          grid-gap: 2vw;
+         
         }
 
         /* 001 */
         aside {
           font-size: var(--font-size-large);
-          text-align: right;
+          text-align: end;
         }
 
         /* 002 */
         article h1 {
-          font-size: var(--font-size-xxx-large);
           margin: 0;
+          font-size: var(--font-size-xxx-large);
         }
 
         /* 010 */
@@ -131,24 +133,25 @@
       @media (min-width: 62em) {
         /* 001 */
         body {
-          grid-gap: 2vw;
+          grid-template-columns: 2fr 3fr 2fr 1fr;
           grid-template-areas:
             ". zamboni . ."
             "quote zamboni article ."
             ". zamboni footer .";
-          grid-template-columns: 2fr 3fr 2fr 1fr;
+          grid-gap: 2vw;
         }
 
         /* 001 */
         aside {
           font-size: var(--font-size-large);
-          text-align: right;
+          text-align: end;
         }
 
         /* 002 */
         article h1 {
-          font-size: var(--font-size-xxx-large);
           margin: 0;
+          font-size: var(--font-size-xxx-large);
+
         }
 
         /* 003 */

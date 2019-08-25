@@ -12,24 +12,25 @@
   <style type="text/css">
     body {
       display: grid;
-      font-family: 'Open Sans', sans-serif;
-      grid-gap: 2vw;
+      grid-template-columns: repeat(4, 1fr);
       grid-template-areas:
         "a a a a "
         ". . . ."
         "b c d e"
         "x x t t"
         "i i t t";
-      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 2vw;
       max-height: 100vh;
+      font-family: 'Open Sans', sans-serif;
+      
     }
 
     header {
-      border-bottom: 2px solid #333;
-      border-top: 2px solid #333;
-      font-family: 'Playfair Display SC', serif;
       grid-area: a;
       padding: 1em;
+      font-family: 'Playfair Display SC', serif;
+      border-top: 2px solid #333;
+      border-bottom: 2px solid #333;
     }
 
     header p,
@@ -43,7 +44,7 @@
     }
 
     article p {
-      margin-top: 0;
+      margin-block-start: 0;
     }
 
     header p:last-of-type {
@@ -51,10 +52,10 @@
     }
 
     article {
+      grid-area: t;
       column-count: 2;
       column-gap: 2vw;
       column-width: 300px;
-      grid-area: t;
     }
 
     article p:first-of-type::first-letter {
@@ -64,9 +65,9 @@
     }
 
     img {
+      width: 100%;
       max-height: 100%;
       object-fit: cover;
-      width: 100%;
     }
 
     img:nth-of-type(1) {

@@ -15,17 +15,61 @@
     <style type="text/css">
       body {
         display: grid;
-        grid-template-columns: var(--compound-grid-malarkey);
+        grid-template-columns: 1fr 4fr;
+        grid-template-areas:
+          ". woman"
+          "men men"
+          "header header"
+          "footer footer";
+        margin: 0;
         font-family: 'Alfa Slab One', cursive;
       }
 
+      @media screen and (min-width: 48em) {
+        body {
+          display: grid;
+          grid-template-columns: 3fr 1fr;
+          grid-template-areas:
+            "men woman"
+            "men woman"
+            "header header"
+            "footer footer";
+          grid-column-gap: 2vw;
+        }
+      }
+
+      header {
+        grid-area: header;
+        padding: 1em;
+        color: white;
+        background-color: black;
+      }
+
+      footer {
+        grid-area: footer;
+        padding: 1em;
+        color: white;
+        background-color: black;
+      }
+
       h1 {
+        margin: 0;
         font-size: var(--font-size-xxx-display);
       }
 
+      .men {
+        grid-area: men;
+      }
+
+      .woman {
+        grid-area: woman;
+      }
+
+      img,
       picture {
-        max-width: 100%;
-        object-fit: contain;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
       }
 
     </style>
@@ -33,22 +77,32 @@
 
   <body>
     <header>
-      <h1>Street Art Little Tokyo Arts District</h1>
+      <h1>Little Tokyo Arts District</h1>
     </header>
-   
-        <picture>
-          <source srcset="img/038/street-art-2019-04-20-12.39.12@2x.jpg"
-                  media="(min-width: 48em)">
-          <img srcset="img/038/street-art-2019-04-20-12.39.12@2x.jpg 2x" src="img/038/street-art-2019-04-20-12.39.12-bw.jpg" />
-        </picture>
 
-        <picture>
-          <source srcset="img/038/street-art-2019-04-20-12.39.26@2x.jpg"
-                  media="(min-width: 48em)">
-          <img srcset="img/038/street-art-2019-04-20-12.39.26@2x.jpg 2x" src="img/038/street-art-2019-04-20-12.39.26-bw.jpg" />
-        </picture>
+    <picture class="men">
+      <source srcset="img/038/street-art-2019-04-20-12.39.12@2x.jpg"
+        media="(min-width: 60em)">
+      <source srcset="img/038/street-art-2019-04-20-12.39.12-bw.jpg"
+        media="(min-width: 48em)">
+      <img srcset="img/038/street-art-2019-04-20-12.39.12-op@2x.jpg 2x"
+        src="img/038/street-art-2019-04-20-12.39.12-bw.jpg" />
+    </picture>
 
-    
+    <picture class="woman">
+      <source srcset="img/038/street-art-2019-04-20-12.39.26@2x.jpg"
+        media="(min-width: 60em)">
+      <source srcset="img/038/street-art-2019-04-20-12.39.26-pixel.jpg"
+        media="(min-width: 48em)">
+      <source srcset="img/038/street-art-2019-04-20-12.39.26-bw@0.5x.jpg"
+        media="(min-width: 48em)">
+      <img srcset="img/038/street-art-2019-04-20-12.39.26-pixel@2x.jpg 2x"
+        src="img/038/street-art-2019-04-20-12.39.26-bw.jpg" />
+    </picture>
+
+    <footer>
+      <small>Two men love Annie. <em>coffee shop art mural</em>.</small>
+    </footer>
 
   </body>
 

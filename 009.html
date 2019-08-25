@@ -12,13 +12,12 @@
 
     <style type="text/css">
       body {
-        font-family: 'Open Sans', sans-serif;
         max-height: 100vh;
+        font-family: 'Open Sans', sans-serif;
         background: #94b5b0;
       }
 
       article {
-        background: white;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-areas:
@@ -27,24 +26,28 @@
         grid-gap: 2vw;
         padding: 2em;
         margin: 2vh 5vw;
+        background: white;
       }
 
       article div p:first-of-type::first-letter {
-        font-size: 150%;
         font-family: 'Playfair Display SC', serif;
+        font-size: 150%;
         line-height: 1;
       }
 
       article header {
-        color: #333;
         grid-area: a;
         font-weight: 700;
-
+        color: #333;
       }
 
       header p,
       header h1 {
         margin: 0;
+      }
+
+      div p {
+        grid-column: 2 / 4;
       }
 
       header div p {
@@ -61,9 +64,9 @@
 
       img.pink:hover {
         filter: url("svg/color-overlay.svg#pink");
+        transition-timing-function: ease-in-out;
         transition-duration: 3s;
         transition-property: filter;
-        transition-timing-function: ease-in-out;
       }
 
       div {
@@ -74,15 +77,11 @@
       }
 
       div p:first-of-type {
-        margin-top: 0;
+        margin-block-start: 0;
       }
 
       div aside {
         grid-column: 1;
-      }
-
-      div p {
-        grid-column: 2 / 4;
       }
 
       q {
@@ -90,9 +89,9 @@
       }
 
       img {
-        max-height: 100%;
         width: 100%;
-        object-fit: cover;
+        max-height: 100%;
+       object-fit: cover;
       }
 
     </style>

@@ -13,28 +13,28 @@
 
     <style type="text/css">
       body {
-        background: hsla(113, 0%, 1%, 1);
-        color: hsla(113, 0%, 91%, 1);
         font-family: 'Noto Serif', serif;
+        color: hsla(113, 0%, 91%, 1);
+        background: hsla(113, 0%, 1%, 1);
       }
 
       article {
         display: grid;
+        grid-template-columns: 2vw 1fr 2fr;
         grid-template-areas:
           ". header"
           ". lyrics"
           ". photo";
-        grid-template-columns: 2vw 1fr 2fr;
       }
 
       @media (min-width: 60em) {
         article {
           display: grid;
+          grid-template-columns: 10vw 1fr 2fr;
           grid-template-areas:
             ". header photo"
             ". lyrics photo"
             ". lyrics photo";
-          grid-template-columns: 10vw 1fr 2fr;
         }
       }
 

@@ -12,11 +12,12 @@ html {
 }
 
 body {
-  color: var(--color-text-default);
   font-family: var(--font-family);
   font-size: var(--text-base-size);
   font-weight: var(--font-weight);
   line-height: 1.5;
+  color: var(--color-text-default);
+  
 }
 
 @media (min-width: 64em) {
@@ -26,13 +27,13 @@ body {
 }
 
 .aspect-ratio {
-  height: calc(100vw * 9 / 16);
   width: 100vw;
+  height: calc(100vw * 9 / 16);
 }
 
 p {
-  font-size: var(--font-size);
   margin: 0 0 var(--spacing) 0;
+  font-size: var(--font-size);
 }
 
 .standfirst {
@@ -46,9 +47,9 @@ p {
 /* =figure */
 
 figure {
-  margin: 0 0 var(--spacing) 0;
-  padding: 0;
   width: min-content;
+  padding: 0;
+  margin: 0 0 var(--spacing) 0;
 }
 
 figure img {

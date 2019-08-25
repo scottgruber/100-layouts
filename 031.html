@@ -17,12 +17,13 @@
     <style type="text/css">
       body {
         display: grid;
-        font-family: "Noto Sans", sans-serif;
-        grid-gap: 2vw;
         grid-template-columns: repeat(5, 1fr);
+        grid-gap: 2vw;
         justify-items: center;
-        margin: 0;
         max-width: var(--max-width);
+        margin: 0;
+        font-family: "Noto Sans", sans-serif;
+        
       }
 
       figure {
@@ -31,24 +32,24 @@
       }
 
       img {
-        height: 100%;
         object-fit: cover;
         width: 100vw;
+        height: 100%;
       }
 
       h1 {
-        font-size: var(--font-size-x-display);
         grid-column: 1 / -1;
+        font-size: var(--font-size-x-display);
       }
 
       h2 {
-        font-size: var(--font-size-x-display);
         grid-column: 1 / -1;
+        font-size: var(--font-size-x-display);
       }
 
       p {
-        font-size: var(--font-size-display);
         grid-column: 1 / -1;
+        font-size: var(--font-size-display);
         text-transform: uppercase;
       }
 
@@ -82,9 +83,9 @@
       }
 
       .zh .char:not(:last-child)::after {
+        margin: 0 4px;
         color: maroon;
         content: "–";
-        margin: 0 4px;
       }
 
     </style>

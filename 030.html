@@ -10,39 +10,39 @@
   <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet">
   <style type="text/css">
     body {
+      position: relative;
       display: grid;
-      font-family: 'Cormorant Garamond', serif;
-      font-size: var(--font-size-large);
-
       /* grid-template-columns: 74px 100px 165px 42px 130px 64px 10px 50px 64px 100px 60px 15px 90px 30px 140px 90px; */
       grid-template-columns: 6.1475409836066% 8.1967213114754% 13.524590163934% 3.2786885245902% 10.655737704918% 5.2459016393443% 0.81967213114754% 4.0983606557377% 4.9180327868853% 8.1967213114754% 4.9180327868853% 1.2295081967213% 7.3770491803279% 2.4590163934426% 11.475409836066% 7.3770491803279%;
       grid-template-rows: repeat(3, 1fr);
       margin: 0;
-      position: relative;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: var(--font-size-large);
     }
 
     header {
-      align-items: center;
-      background-color: rgba(255, 255, 255, 0.7);
+      position: absolute;
       display: flex;
-      filter: drop-shadow(0 0 0.75rem gray);
-      flex: 1;
-      flex-direction: column;
       grid-column: 1 / 17;
       grid-row: 2 / 3;
-      height: 100%;
+      flex: 1;
+      flex-direction: column;
+      align-items: center;
       justify-content: center;
-      position: absolute;
       width: 100vw;
+      height: 100%;
       z-index: 1;
+      background-color: rgba(255, 255, 255, 0.7);
+      filter: drop-shadow(0 0 0.75rem gray);
+     
     }
 
     h1 {
-      animation: expanding-text 3s ease-in forwards;
-      letter-spacing: 0;
-      margin-bottom: 0;
+      margin-block-end: 0;
       text-align: center;
       text-transform: uppercase;
+      letter-spacing: 0;
+      animation: expanding-text 3s ease-in forwards;
     }
 
     @keyframes expanding-text {

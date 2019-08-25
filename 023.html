@@ -6,22 +6,20 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="format-detection" content="telephone=no" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Merriweather:400,700"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700" rel="stylesheet" />
     <link rel="stylesheet" href="css/styles.css" />
 
     <style type="text/css">
       body {
         display: grid;
-        font-family: "Merriweather", serif;
-        grid-gap: 2vw;
+        grid-template-columns: 1fr;
         grid-template-areas:
           "header"
           "bird";
-        grid-template-columns: 1fr;
+        grid-gap: 2vw;
         max-width: 80%;
+        font-family: "Merriweather", serif;
+      
       }
 
       header {
@@ -33,20 +31,20 @@
       }
 
       h1 {
-        color: #015087;
         font-size: var(--font-size-xxxx-large);
+        color: #015087;
       }
 
       figure {
-        float: right;
+        float: inline-end;
         shape-margin: 2em;
         shape-outside: url(img/023/eastern-bluebird.svg);
       }
 
       article p:first-of-type::first-line {
-        color: #015087;
         font-feature-settings: "smp" 1;
         font-weight: 700;
+        color: #015087;
       }
 
       article p:first-of-type::first-letter {
@@ -65,8 +63,24 @@
     <article>
 
         <figure>
-            <svg id="eastern-bluebird" data-name="eastern-bluebird" xmlns="http://www.w3.org/2000/svg" width="600" height="359.62" viewBox="0 0 600 359.62"><defs><style>.cls-5{fill:#231f20;stroke:#231f20;stroke-miterlimit:10}.cls-3{fill:#005087}.cls-5{stroke-linecap:round}</style></defs><title>eastern-bluebird</title><g id="eye"><path d="M40.85 40.39L0 55.63l56.33-.05z" fill="#231f20"/><path d="M433.88 120.44h-62.69c2.88 9 7.78 13.58 10.45 15.66 12.41 9.71 32.93 8.48 50.7-3.74" stroke="#231f20" stroke-miterlimit="10" fill="none" stroke-width="5"/><path class="cls-3" d="M40.84 40.39S75-.38 115.75 0c32.15.27 42.75 8 61 20.05l193.55-2.48-4 342.05z"/><path class="cls-3" d="M369.81 17.53v15.91h215.76L600 17.53z"/><path d="M369.46 33.44l-.33 84.83 89.33-84.83z" fill="#c1b6b9"/><path class="cls-5" d="M320.83 102.54l45.71 53.11"/><path d="M279.76 102.54l86.78 97.35" fill="#c1b6b9" stroke="#231f20" stroke-miterlimit="10"/><path class="cls-5" d="M234.41 102.54l132.13 136.85M193 102.54l173.56 181.1m-216-181.1l212.29 219.55"/><path d="M56 55.62h123.6s-51.6 37.52-.39 120.54z" fill="#ba2704"/><circle cx="100.56" cy="29.74" r="11.82" fill="#fff"/><circle cx="100.56" cy="29.74" r="5.09" stroke-width="4" stroke="#231f20" stroke-miterlimit="10" fill="#231f20"/></g></svg>
-            
+          <svg xmlns="http://www.w3.org/2000/svg" id="eastern-bluebird" width="600" height="359.62" data-name="eastern-bluebird">
+            <g id="eye">
+              <path fill="#231f20" d="M40.85 40.39L0 55.63l56.33-.05z"/>
+              <path fill="none" stroke="#231f20" stroke-miterlimit="10" stroke-width="5" d="M433.88 120.44h-62.69c2.88 9 7.78 13.58 10.45 15.66 12.41 9.71 32.93 8.48 50.7-3.74" />
+              <path d="M40.84 40.39S75-.38 115.75 0c32.15.27 42.75 8 61 20.05l193.55-2.48-4 342.05z" fill="#005087" />
+              <path d="M369.81 17.53v15.91h215.76L600 17.53z" fill="#005087" />
+              <path fill="#c1b6b9" d="M369.46 33.44l-.33 84.83 89.33-84.83z"/>
+              <path d="M320.83 102.54l45.71 53.11" fill="#c1b6b9" stroke="#231f20" stroke-miterlimit="10" stroke-linecap="round" />
+              <path d="M279.76 102.54l86.78 97.35"/>
+              <path d="M234.41 102.54l132.13 136.85M193 102.54l173.56 181.1m-216-181.1l212.29 219.55" fill="#c1b6b9" stroke="#231f20" stroke-miterlimit="10" stroke-linecap="round" />
+              <path fill="#ba2704" d="M56 55.62h123.6s-51.6 37.52-.39 120.54z"/>
+              <circle cx="100.56" cy="29.74" r="11.82" fill="#fff"/>
+              <circle cx="100.56" cy="29.74" r="5.09" fill="#231f20" stroke="#231f20" stroke-miterlimit="10" stroke-width="4"/>
+            </g>
+          </svg>
+          
+          
+                    
           </figure>
       <p>
         One of the loudest and most colorful birds of eastern back yards and
