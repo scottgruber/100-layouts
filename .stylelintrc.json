@@ -2,16 +2,17 @@
   "extends": "stylelint-config-recommended",
 
   "plugins": [
-    "stylelint-a11y",
+		"stylelint-a11y",
 		"stylelint-order",
 		"stylelint-use-logical"
+		
 	],
 	"rules": {
-    "a11y/media-prefers-reduced-motion": true,
+		"a11y/media-prefers-reduced-motion": true,
     "a11y/no-outline-none": true,
     "a11y/selector-pseudo-class-focus": true,
-    "csstools/use-logical": true,
-    "custom-property-empty-line-before": null,
+		"csstools/use-logical": true,
+		"custom-property-empty-line-before": null,
 		"indentation": [
       2,
       {
@@ -29,6 +30,10 @@
       "right",
       "bottom",
       "left",
+      "inset-block-start",
+      "inset-inline-end",
+      "inset-block-end",
+      "inset-inline-start",
       "box-sizing",
       "display",
       "grid",
@@ -263,4 +268,3 @@
     ]
 	}
 }
-
