@@ -15,8 +15,13 @@
     <style type="text/css">
       body {
         display: grid;
-        max-width: 70rem;
+        grid-template-columns: 2fr 1fr 1fr 2fr 2fr 1fr 1fr 2fr;
         font-family: 'Lato', sans-serif;
+      }
+
+      header {
+        grid-column: 1 / -1;
+        justify-self: center;
       }
 
       h1 {
@@ -25,17 +30,25 @@
         font-weight: 400;
       }
 
+      
+
+      main {
+        grid-column: 3 / 7;
+      }
+
       figure {
+        
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: fit-content;
         grid-template-areas: 
-          "kiss kiss"
-          "inspire love"
-          "heart la"
-          "caption caption";
+          "kiss kiss kiss"
+          "anywhere la love"
+          "caption caption caption";
         grid-gap: 2vw;
-        width: 48em;
+      }
+
+      figcaption {
+        color: white;
+        background-color: hsla(353, 54%, 36%, 1.00);
       }
 
       img {
@@ -50,19 +63,15 @@
       }
 
       img:nth-of-type(2) {
-        grid-area: inspire;
+        grid-area: anywhere;
       }
 
       img:nth-of-type(3) {
-        grid-area: love;
+        grid-area: la;
       }
 
       img:nth-of-type(4) {
-        grid-area: heart;
-      }
-
-      img:nth-of-type(5) {
-        grid-area: la;
+        grid-area: love;
       }
 
       figcaption {
@@ -78,16 +87,14 @@
     </header>
     <main>
       <figure>
-        <img src="img/035/street-art-2019-04-20-13.09.59.jpg" alt="">
-        <img src="img/035/street-art-2019-04-20-12.32.50-1.jpg" alt="">
-        <img src="img/035/street-art-2019-04-20-12.34.34.jpg" alt="">
-        <img src="img/035/street-art-2019-04-20-13.31.33.jpg" alt="">
-        <img src="img/035/street-art-2019-04-20-13.32.03.jpg" alt="">
-        <figcaption>sidewalk art los angeles little tokyo arts district</figcaption>
+        <img src="img/035/kiss-the-one-you-love@2x.jpg" alt="">
+        <img src="img/035/love-me-always.jpg" alt="">
+        <img src="img/035/i-heart-la.jpg" alt="">
+        <img src="img/035/where-is-the-love@2x.jpg" alt="">
+        <figcaption>Street Art</figcaption>
         </figure>
     </main>
-    <aside></aside>
-    <footer></footer>
+    
 
   </body>
 

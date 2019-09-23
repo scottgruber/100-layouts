@@ -47,15 +47,16 @@ p {
 /* =figure */
 
 figure {
-  width: min-content;
+  /* width: min-content; */
   padding: 0;
-  margin: 0 0 var(--spacing) 0;
+  margin: 0;
 }
 
 figure img {
-  margin: 0 0 var(--spacing) 0;
+  margin: 0;
 }
 
 figcaption {
   font-size: var(--font-size-xx-small);
+  text-align: center;
 }
