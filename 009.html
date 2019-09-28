@@ -62,7 +62,8 @@
         filter: none;
       }
 
-      img.pink:hover {
+      img.pink:hover,
+      img.pink:focus {
         filter: url("svg/color-overlay.svg#pink");
         transition-timing-function: ease-in-out;
         transition-duration: 3s;
@@ -72,8 +73,8 @@
       div {
         grid-area: x;
         column-count: 4;
-        column-gap: 2vw;
         column-width: 300px;
+        column-gap: 2vw;
       }
 
       div p:first-of-type {
@@ -91,7 +92,7 @@
       img {
         width: 100%;
         max-height: 100%;
-       object-fit: cover;
+        object-fit: cover;
       }
 
     </style>

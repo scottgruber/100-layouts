@@ -60,3 +60,24 @@ figcaption {
   font-size: var(--font-size-xx-small);
   text-align: center;
 }
+
+li > ul {
+  padding: 0;
+  margin-block-start: var(--spacing);
+  margin-inline-start: 0;
+}
+
+li > ul > li {
+  list-style: none;
+  padding-block: var(--spacing-small);
+  border-bottom: 1px dotted var(--color-celestial-blue);
+}
+
+li > ul > li:last-of-type {
+  border-bottom: 0;
+  margin-block-end: var(--spacing);
+}
+
+li a {
+  font-weight: 700;
+}

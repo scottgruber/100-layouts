@@ -14,50 +14,55 @@
 
       body {
         display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
         grid-template-areas:
           "stars red-stripes"
           "stars white-stripes";
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        margin: 0;
         max-height: 100vh;
+        margin: 0;
+       
       }
 
       .blue {
+        grid-area: stars;
+        width: 50vw;
+        height: 100vh;
         background: var(--color-blue);
         background-image: url('icons/star.svg');
-        grid-area: stars;
-        height: 100vh;
-        width: 50vw;
       }
 
       .red,
       .white {
-        height: 50vh;
         width: 50vw;
+        height: 50vh;
       }
 
       .red {
-        background: var(--color-red);
         grid-area: red-stripes;
+        background: var(--color-red);
+       
       }
 
       .white {
-        background: #fff;
         grid-area: white-stripes;
+        background: #fff;
+        
       }
 
       .blue img {
+        width: 50vw;
         height: 100vh;
         object-fit: contain;
-        width: 50vw;
+       
       }
 
       .red img,
       .white img {
+        width: 50vw;
         height: 50vh;
         object-fit: contain;
-        width: 50vw;
+       
       }
 
     </style>

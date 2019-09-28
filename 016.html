@@ -10,8 +10,9 @@
       rel="stylesheet">
     <style type="text/css">
       body {
-        font-family: 'Noto Sans', sans-serif;
         margin: 0;
+        font-family: 'Noto Sans', sans-serif;
+        
       }
 
       header {
@@ -27,17 +28,18 @@
       @media (min-width: 48em) {
         figure {
           display: grid;
+          grid-template-columns: 2fr 3fr 1fr 2fr 3fr 1fr;
           grid-template-areas: 
             ". img img . palette .";
-          grid-template-columns: 2fr 3fr 1fr 2fr 3fr 1fr;
           margin: 15vh 0;
         }
       }
 
       img {
+        width: 100%;
         height: 100%;
         object-fit: contain;
-        width: 100%;
+        
       }
 
       figure > img {
@@ -55,11 +57,12 @@
       }
 
       .swatch {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5px;
         align-items: center;
         border-bottom: 1px solid #efefef;
-        display: grid;
-        grid-gap: 5px;
-        grid-template-columns: 1fr 1fr;
+        
       }
 
       .swatch:last-child {
@@ -67,16 +70,19 @@
       }
 
       .swatch > div:first-child {
-        border: 10px solid hsla(24, 17%, 83%, 0.5);
-        border-radius: 50%;
-        height: 75px;
+        box-sizing: border-box;
         justify-self: center;
         width: 75px;
+        height: 75px;
+        border: 10px solid hsla(24, 17%, 83%, 0.5);
+        border-radius: 50%;
+        
       }
 
+      
       .swatch div:last-child {
-        height: 100px;
         width: 140px;
+        height: 100px; 
       }
 
     </style>

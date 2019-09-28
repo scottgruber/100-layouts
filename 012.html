@@ -39,12 +39,17 @@
     }
 
     h1 {
-     margin-block-end: 0;
-     text-align: center;
-     text-transform: uppercase;
-    letter-spacing: 0;
-    animation: expanding-text 3s ease-in forwards;
-      
+      margin-block-end: 0;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 0;
+      animation: expanding-text 3s ease-in forwards;
+    }
+    
+    @media (prefers-reduced-motion) {
+      h1 {
+        animation: none;
+      }
     }
 
     @keyframes expanding-text {

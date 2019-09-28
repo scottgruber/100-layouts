@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>100 LA Layouts</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400|Rochester" rel="stylesheet">
+  <style>
+    body {
+      margin: 0 auto;
+      font-family: 'Roboto', sans-serif;
+      color: #454543;
+    }
+
+    @media (min-width: 30em) {
+      body {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 2fr 2fr 1fr 1fr 2fr;
+        grid-gap: 2vw;
+      }
+    }
+
+    header {
+      grid-column: 4 / 6;
+      grid-row: 1;
+    }
+
+    main {
+      grid-column: 2 / 8;
+      grid-row: 2;
+
+    }
+
+    aside {
+      grid-column: 3 / 7;
+      grid-row: 3;
+    }
+
+    aside ul {
+
+      column-width: 18em;
+      column-gap: 2vw;
+    }
+
+    footer {
+      border-top: var(--border-width-hairline) solid var(--color-border-separator);
+      grid-column: 2 / 8;
+      margin-block-start: var(--spacing-medium);
+    }
+
+    h1 {
+      font-family: "Rochester", cursive;
+      font-size: var(--font-size-xxxx-large);
+      color: #003579;
+      text-align: center;
+    }
+
+    @media (min-width: 30em) {
+      h1 {
+        font-size: var(--font-size-x-display);
+      }
+    }
+
+    @media (min-width: 62em) {
+      h1 {
+        font-size: var(--font-size-xxx-display);
+      }
+    }
+
+    .standfirst {
+      font-size: var(--font-size-large);
+    }
+
+    h2 {
+      font-size: var(--font-size-xx-large);
+    }
+
+    ol {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-gap: 2vw;
+      padding-inline-start: 0;
+      list-style: none;
+    }
+
+    ol li {
+      margin: 0;
+      font-size: var(--font-size-medium);
+    }
+
+    img {
+      object-fit: cover;
+      width: 100%;
+    }
+
+    img:not([src*="svg"]) {
+      /* margin: 1em; */
+      border: 10px solid #003579;
+    }
+
+    img[src*="svg"] {
+      width: 32px;
+      margin-inline-end: 1em;
+    }
+
+    img[src*="svg"]:hover,
+    img[src*="svg"]:focus {
+      color: #0142fe;
+    }
+
+    figure > a {
+      color: black;
+      text-decoration: none;
+    }
+
+    figure > a:hover figcaption,
+    figure > a:focus figcaption {
+      outline: 1px dotted black;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Los Angeles Layouts</h1>
+    <p class="standfirst">100 LA Layouts is an off the grid look at Los Angeles.</p>
+    <p>It is a side project to create 100 designs about Los Angeles
+      to study layouts and typography. Most pages use photos of Los Angeles
+      and include some of my favorite locations. It's an
+      ethnographic love story for LA. All the layouts will use CSS grid. I'll also bring in cool CSS properities like flexbox, shapes, transforms, animations and
+      multi-column. Font selections come from Google and Adobe collections. I
+      want to use variable fonts and web fonts served here. I'll keep a list of
+      type specimens for review. If you'd like to view code or contact me find
+      links in the footer.</p>
+    <p>Scott Gruber<br> Los Angeles. 2018-19</p>
+  </header>
+  <main>
+
+    <ol>
+      <li>
+        <figure>
+          <a href="001.html">
+            <img src="img/_100-layouts/layout-001@0.5x.jpg" srcset="img/_100-layouts/layout-001@2x.jpg 2x" alt="">
+            <figcaption>
+
+              <figcaption>Flying into LAX</figcaption>
+          </a>
+        </figure>
+      </li>
+      <li>
+        <figure><a href="002.html"><img src="img/_100-layouts/layout-002@0.5x.jpg" srcset="img/_100-layouts/layout-002@2x.jpg 2x" alt="">
+            <figcaption>The Park</figcaption>
+          </a>
+        </figure>
+      <li>
+        <figure><a href="003.html"><img src="img/_100-layouts/layout-003@0.5x.jpg" srcset="img/_100-layouts/layout-003@2x.jpg 2x" alt="">
+            <figcaption>Bonaventure Hotel</figcaption>
+          </a></figure>
+      </li>
+      <li>
+        <figure><a href="004.html"><img src="img/_100-layouts/layout-004@0.5x.jpg" srcset="img/_100-layouts/layout-004@2x.jpg 2x" alt="">
+            <figcaption>Santa Monica Pier</figcaption>
+          </a></figure>
+      </li>
+      <li>
+        <figure><a href="005.html"><img src="img/_100-layouts/layout-005@0.5x.jpg" srcset="img/_100-layouts/layout-005@2x.jpg 2x" alt="">
+            <figcaption>Brown Pelican Mural, Venice</figcaption>
+          </a></figure>
+      </li>
+      <li>
+        <figure><a href="006.html"><img src="img/_100-layouts/layout-006@0.5x.jpg" srcset="img/_100-layouts/layout-006@2x.jpg 2x" alt="">
+            <figcaption>Walt Disney Concert Hall #1</figcaption>
+          </a></figure>
+      </li>
+      <li>
+        <figure><a href="007.html"><img src="img/_100-layouts/layout-007@0.5x.jpg" srcset="img/_100-layouts/layout-007@2x.jpg 2x" alt="">
+            <figcaption>Walt Disney Concert Hall #2</figcaption>
+          </a></figure>
+      </li>
+      <li>
+        <figure><a href="008.html"><img src="img/_100-layouts/layout-008@0.5x.jpg" srcset="img/_100-layouts/layout-008@2x.jpg 2x" alt="">
+            <figcaption>Walt Disney Concert Hall #3</figcaption>
+          </a></figure>
+      </li>
+      <li>
+        <figure><a href="009.html"><img src="img/_100-layouts/layout-009@0.5x.jpg" srcset="img/_100-layouts/layout-009@2x.jpg 2x" alt="">
+            <figcaption>Walt Disney Concert Hall #4</figcaption>
+          </a></figure>
+      </li>
+      <li>
+        <figure><a href="010.html"><img src="img/_100-layouts/layout-010@0.5x.jpg" srcset="img/_100-layouts/layout-010@2x.jpg 2x" alt="">
+            <figcaption>Color palettes, Santa Monica mountains</figcaption>
+          </a></figure>
+      </li>
+      <li>
+        <figure><a href="011.html"><img src="img/_100-layouts/layout-011@0.5x.jpg" srcset="img/_100-layouts/layout-011@2x.jpg 2x" alt="">
+            <figcaption>Swatch color palettes</figcaption>
+          </a></figure>
+      </li>
+      <li>
+        <figure><a href="012.html"><img src="img/_100-layouts/layout-012@0.5x.jpg" srcset="img/_100-layouts/layout-012@2x.jpg 2x" alt="">
+            <figcaption>Interaction of Color, Joseph Albers</figcaption>
+          </a></figure>
+      </li>
+      <li>
+        <figure><a href="013.html"><img src="img/_100-layouts/layout-013@0.5x.jpg" srcset="img/_100-layouts/layout-013@2x.jpg 2x" alt="">
+            <figcaption>Swiss poster</figcaption>
+          </a></figure>
+      </li>
+      <li>
+        <figure><a href="014.html"><img src="img/_100-layouts/layout-014@0.5x.jpg" srcset="img/_100-layouts/layout-014@2x.jpg 2x" alt="">
+            <figcaption>Disney Hall, polygon & clip-path</figcaption>
+          </a></figure>
+      </li>
+      <li>
+        <figure><a href="015.html"><img src="img/_100-layouts/layout-015@0.5x.jpg" srcset="img/_100-layouts/layout-015@2x.jpg 2x" alt="">
+            <figcaption>LA Audubon Bird palettes</figcaption>
+          </a></figure>
+      </li>
+      <li>
+        <figure><a href="016.html"><img src="img/_100-layouts/layout-016@0.5x.jpg" srcset="img/_100-layouts/layout-016@2x.jpg 2x" alt="">
+            <figcaption>Santa Monica Mountain Colors</figcaption>
+          </a></figure>
+      </li>
+      <li>
+        <figure><a href="017.html"><img src="img/_100-layouts/layout-017@0.5x.jpg" srcset="img/_100-layouts/layout-017@2x.jpg 2x" alt="">
+            <figcaption>Extinction Rebellion street posters </figcaption>
+          </a></figure>
+      </li>
+      <li>
+        <figure><a href="018.html"><img src="img/_100-layouts/layout-018@0.5x.jpg" srcset="img/_100-layouts/layout-018@2x.jpg 2x" alt="">
+            <figcaption>Extinction Rebellion essay</figcaption>
+          </a></figure>
+      </li>
+      <li>
+        <figure><a href="019.html"><img src="img/_100-layouts/layout-019@0.5x.jpg" srcset="img/_100-layouts/layout-019@2x.jpg 2x" alt="">
+            <figcaption>Liberty and the Heart of LA 2018</figcaption>
+          </a></figure>
+      </li>
+      <li>
+        <figure><a href="020.html"><img src="img/_100-layouts/layout-020@0.5x.jpg" srcset="img/_100-layouts/layout-020@2x.jpg 2x" alt="">
+            <figcaption>cicLAvia street photographer</figcaption>
+          </a></figure>
+      </li>
+      <li>
+        <figure><a href="021.html"><img src="img/_100-layouts/layout-021@0.5x.jpg" srcset="img/_100-layouts/layout-021@2x.jpg 2x" alt="">
+            <figcaption>cicLAvia Families, Heart of LA</figcaption>
+          </a></figure>
+      </li>
+      <li>
+        <figure><a href="022.html"><img src="img/_100-layouts/layout-022@0.5x.jpg" srcset="img/_100-layouts/layout-022@2x.jpg 2x" alt="">
+            <figcaption>cicLAvia peace sign, Heart of LA</figcaption>
+          </a></figure>
+      </li>
+      <li>
+        <figure><a href="023.html"><img src="img/_100-layouts/layout-023@0.5x.jpg" srcset="img/_100-layouts/layout-023@2x.jpg 2x" alt="">
+            <figcaption>Easter Bluejay: How to Draw 28 Birds in Harper's Style</figcaption>
+          </a></figure>
+      </li>
+      <li>
+        <figure><a href="024.html"><img src="img/_100-layouts/layout-024@0.5x.jpg" srcset="img/_100-layouts/layout-024@2x.jpg 2x" alt="">
+            <figcaption>ciclavia we love our police</figcaption>
+          </a></figure>
+      </li>
+      <li>
+        <figure><a href="025.html"><img src="img/_100-layouts/layout-025@0.5x.jpg" srcset="img/_100-layouts/layout-025@2x.jpg 2x" alt="">
+            <figcaption>Charley Harper, American illustrator</figcaption>
+          </a></figure>
+      </li>
+      <li>
+        <figure><a href="026.html"><img src="img/_100-layouts/layout-026@0.5x.jpg" srcset="img/_100-layouts/layout-026@2x.jpg 2x" alt="">
+            <figcaption>Flock of Blue Jays, Greensock animation</figcaption>
+          </a></figure>
+      </li>
+      <li>
+        <figure><a href="027.html"><img src="img/_100-layouts/layout-027@0.5x.jpg" srcset="img/_100-layouts/layout-027@2x.jpg 2x" alt="">
+            <figcaption>LA Ice Rink</figcaption>
+          </a></figure>
+      </li>
+      <li>
+        <figure><a href="028.html"><img src="img/_100-layouts/layout-028@0.5x.jpg" srcset="img/_100-layouts/layout-028@2x.jpg 2x" alt="">
+            <figcaption>Burrowing Owl: How to Draw 28 Birds in Harper's Style</figcaption>
+          </a></figure>
+      </li>
+      <li>
+        <figure><a href="029.html"><img src="img/_100-layouts/layout-029@0.5x.jpg" srcset="img/_100-layouts/layout-029@2x.jpg 2x" alt="">
+            <figcaption>For Lemmy</figcaption>
+          </a></figure>
+      </li>
+      <li>
+        <figure><a href="030.html"><img src="img/_100-layouts/layout-030@0.5x.jpg" srcset="img/_100-layouts/layout-030@2x.jpg 2x" alt="">
+            <figcaption>Interaction of Color, ver 2</figcaption>
+          </a></figure>
+      </li>
+      <li>
+        <figure><a href="031.html"><img src="img/_100-layouts/layout-031@0.5x.jpg" srcset="img/_100-layouts/layout-031@2x.jpg 2x" alt="">
+            <figcaption>Our days begin and end as stories</figcaption>
+          </a></figure>
+      </li>
+      <li>
+        <figure><a href="032.html"><img src="img/_100-layouts/layout-032@0.5x.jpg" srcset="img/_100-layouts/layout-032@2x.jpg 2x" alt="">
+            <figcaption>Bumblebeelovesyou Mural</figcaption>
+          </a></figure>
+      </li>
+      <li>
+        <figure><a href="033.html"><img src="img/_100-layouts/layout-033@0.5x.jpg" srcset="img/_100-layouts/layout-033@2x.jpg 2x" alt="">
+            <figcaption>LA Noir, Raymond Chandler</figcaption>
+          </a></figure>
+      </li>
+      <li>
+        <figure><a href="034.html"><img src="img/_100-layouts/layout-034@0.5x.jpg" srcset="img/_100-layouts/layout-034@2x.jpg 2x" alt="">
+            <figcaption>Palms Street Art. Women reading book.</figcaption>
+          </a></figure>
+      </li>
+      <li>
+        <figure><a href="035.html"><img src="img/_100-layouts/layout-035@0.5x.jpg" srcset="img/_100-layouts/layout-035@2x.jpg 2x" alt="">
+            <figcaption>Sidewalk art</figcaption>
+          </a></figure>
+      </li>
+      <li>
+        <figure><a href="036.html"><img src="img/_100-layouts/layout-036@0.5x.jpg" srcset="img/_100-layouts/layout-036@2x.jpg 2x" alt="">
+            <figcaption>Las Virgenes View Trail</figcaption>
+          </a></figure>
+      </li>
+      <li>
+        <figure><a href="037.html"><img src="img/_100-layouts/layout-037@0.5x.jpg" srcset="img/_100-layouts/layout-037@2x.jpg 2x" alt="">
+            <figcaption>Soul of a Nation</figcaption>
+          </a></figure>
+      </li>
+      <li>
+        <figure><a href="038.html"><img src="img/_100-layouts/layout-038@0.5x.jpg" srcset="img/_100-layouts/layout-038@2x.jpg 2x" alt="">
+            <figcaption>Men love Annie. coffee shop art.</figcaption>
+          </a></figure>
+      </li>
+      <li>
+        <figure><a href="039.html"><img src="img/_100-layouts/layout-039@0.5x.png" srcset="img/_100-layouts/layout-039@2x.png 2x" alt="">
+            <figcaption>Extinction Rebellion skull poster</figcaption>
+          </a></figure>
+      </li>
+      <li>
+        <figure><a href="040.html"><img src="img/_100-layouts/layout-040@0.5x.png" srcset="img/_100-layouts/layout-040@2x.png 2x" alt="">
+            <figcaption>Extinction Rebellion butterfly poster</figcaption>
+          </a></figure>
+      </li>
+      <li>
+        <figure><a href="041.html"><img src="img/_100-layouts/layout-041@0.5x.png" srcset="img/_100-layouts/layout-041@2x.png 2x" alt="">
+            <figcaption>Extinction Rebellion hourglass poster</figcaption>
+          </a></figure>
+      </li>
+      <li>
+        <figure><a href="042.html"><img src="img/_100-layouts/layout-042@0.5x.png" srcset="img/_100-layouts/layout-042@2x.png 2x" alt="">
+            <figcaption>Extinction Rebellion global warming dead plant poster</figcaption>
+          </a></figure>
+      </li>
+      <li>
+        <figure>
+          <figcaption><a href="043.html">Layout 43: Lion</a></figcaption>
+        </figure>
+      </li>
+    </ol>
+  </main>
+  <aside>
+    <h2>Typography</h2>
+    <ul>
+      <li><a href="typography/mrs-eaves-xl.html">Mrs Eaves XL</a></li>
+      <li><a href="typography/los-feliz.html">Los Feliz</a></li>
+      <li><a href="typography/cormorant-garamond.html">Cormorant Garamond</a></li>
+      <li><a href="typography/courier.html">Courier</a></li>
+      <li><a href="typography/futura.html">Futura</a></li>
+      <li><a href="typography/lora.html">Lora</a></li>
+      <li><a href="typography/merriweather.html">Merriweather</a></li>
+      <li><a href="typography/noto-sans.html">Noto Sans</a></li>
+      <li><a href="typography/noto-serif.html">Noto Serif</a></li>
+      <li><a href="typography/open-sans.html">Open Sans</a></li>
+      <li><a href="typography/pacifico.html">Pacifico</a></li>
+      <li><a href="typography/playfair.html">Playfair</a></li>
+      <li><a href="typography/roboto.html">Roboto</a></li>
+      <li><a href="typography/rochester.html">Rochester</a></li>
+    </ul>
+  </aside>
+  <footer>
+    <p><a href="https://github.com/scottgruber/100-layouts"><img class="icon-github" src="icons/github.svg" alt="GitHub icon" title="Code on GitHub"></a><a href="https://twitter.com/scott_gruber"><img class="icon-github" src="icons/twitter.svg" alt="Twitter icon" title="Talk with me on Twitter"></a><a href="https://scottgruber.me"><img class="icon-homepage" src="icons/house-modern.svg" alt="Homepage icon" title="Visit my personal website"></a></p>
+  </footer>
+</body>
+
+</html>
