@@ -14,7 +14,6 @@
       --tropical-rain-forest: #007a5e;
       --lava: #ce1126;
       --candlelight: #fcd116;
-
       --celeste: #b8f7ff;
       --denim: #3066b3;
       --navy: #000570;
@@ -25,127 +24,101 @@
       --chelsea-cucumber: #8fb054;
       --marzipan: #f5db99;
       --gin-fizz: #f7edc9;
-
-
+  
     }
-
-
+  
+  
     body {
       min-height: 100vh;
       margin: 0;
     }
-
-    
-
+  
     header {
       display: flex;
-      flex-grow: 1;
-      flex-basis: 0;
-      background: rgb(143,176,84);
-      background: linear-gradient(0deg, rgba(143,176,84,1) 0%, rgba(48,102,179,1) 90%); 
+      background: rgb(143, 176, 84);
+      background: linear-gradient(0deg, rgba(143, 176, 84, 1) 0%, rgba(48, 102, 179, 1) 90%);
     }
 
-    @media (min-width: 48rem) {
-      header {
-      display: grid;
-      grid-template-columns: repeat(10, 1fr);
-      grid-template-rows: repeat(10, min-content);
-      grid-row-gap: 1vw;      
-      }
-    }
-
-    
-
-    main {
-        padding: var(--spacing-medium);
-        column-width: 18em;
-        column-gap: var(--spacing-large);
-        background-color: rgb(0, 122, 94);
-        background-image: linear-gradient(0deg,
-        rgba(0, 122, 94, 1) 0%,
-        rgba(143, 176, 84, 1) 100%);
-      }
-   
-
-    @media (min-width: 48rem) {
-      main {
-        padding: var(--spacing-xx-large);
-
-      }
-    }
-
-    h1 {
-      column-span: all;
-      font-family: 'Carter One', cursive;
-      font-size: var(--font-size-xxxx-large);
-      line-height: 1;
-    }
-
-    @media (min-width: 48rem) {
-      h1 {
-        font-size: var(--font-size-xxx-display);
-      }
-    }
-
-    main p {
-      font-family: 'Lato', sans-serif;
-      font-size: var(--font-size);
-    }
-
-    main p:first-of-type:first-line {
-      font-weight: 700;
-      text-transform: uppercase;
-    }
-
-    main p + p {
-      text-indent: var(--spacing);
-    }
-
-    svg {
+    header svg {
+      flex-basis: 20vw;
+      flex-shrink: 0;
+      flex-grow: 0;
       margin-block-end: calc(-1 * var(--spacing-large));
     }
-
-    @media (min-width: 48rem) {
-    svg:nth-of-type(1) {
-      grid-column: 2 / 5;
-      grid-row: 2 / 10;
-    }
-
-
-    svg:nth-of-type(2) {
-      grid-column: 5;
-      grid-row: 2 / 5;
-    }
-
-    svg:nth-of-type(3) {
-      grid-column: 6 / 9;
-      grid-row: 1 / 10;
-
-    }
-
-    svg:nth-of-type(4) {
-      grid-column: 7 / 9;
-      grid-row: 5 / 10;
-
-    }
-  }
-
-  @media (min-width: 48em) {
-
+  
     .moon {
-      grid-column: -1;
-      grid-row: 1;
-      width: 200px;
-      height: 200px;
+      flex-shrink: 0;
+      flex-grow: 0;
+      width: 100px;
+      height: 100px;
       z-index: 10;
       background-color: var(--gin-fizz);
       border-radius: var(--border-radius-circle);
       transform: translateY(-30px);
       animation: moon-rise var(--duration-long) ease-in;
     }
-  }
+
+    main {
+      padding: var(--spacing-medium);
+      column-width: 18em;
+      column-gap: var(--spacing-large);
+      background-color: rgb(0, 122, 94);
+      background-image: linear-gradient(0deg,
+      rgba(0, 122, 94, 1) 0%,
+      rgba(143, 176, 84, 1) 100%);
+    }
+  
+  
+    
+    main h1 {
+      column-span: all;
+      font-family: 'Carter One', cursive;
+      font-size: var(--font-size-xxxx-large);
+      line-height: 1;
+    }
+
+    main p {
+      font-family: 'Lato', sans-serif;
+      font-size: var(--font-size);
+    }
+  
+    main p:first-of-type:first-line {
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+  
+    main p+p {
+      text-indent: var(--spacing);
+    }
+  
+    @media (min-width: 48em) {
+      header {
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: repeat(10, fit-content);
+        grid-row-gap: 1vw;
+      }
+
+      main {
+        padding: var(--spacing-xx-large);
+  
+      }
+
+      h1 {
+        font-size: var(--font-size-xxx-display);
+      }
+
+      .moon {
+        grid-column: 10;
+        width: 200px;
+        height: 200px;
+      }
+
+     
+    }
 
     @media (prefers-reduced-motion: reduce) {
+      
       .moon {
         animation: none;
       }
@@ -153,15 +126,44 @@
 
     @keyframes moon-rise {
       from {
-        opacity: 0;       
+        opacity: 0;
       }
-
+  
       to {
         opacity: 1;
-
+  
       }
     }
 
+    .gorilla-walking {
+      grid-column: 2 / 5;
+      grid-row: 2 / 8;
+      max-width: 100%;
+    }
+
+    .gorilla-sitting {
+      grid-column: 5;
+      grid-row: 2 / 6;
+      max-width: 100%;
+    }
+
+    .gorilla-standing {
+      grid-column: 6 / 9;
+      grid-row: 1 / 10;
+      align-self: end;
+      width: 100%;
+      z-index: 1;
+    }
+
+    .gorilla-sitting-front {
+      grid-column: 7 / 9;
+      grid-row: 4 / 10;
+      align-self: end;
+      z-index: 2;
+      width: 100%;
+    }
+
+  
   </style>
 
 </head>
@@ -233,7 +235,7 @@
           <path id="nose" fill="none" stroke="#1a1608" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M198.27 106.31a12.09 12.09 0 0 1-4.13-10.21c.29-3.24 2.15-5.4 5.28-5.79a14 14 0 0 1 6.82 1 9 9 0 0 1 3.44 2.39c1 1.18 1.55 2.19 3.17 1.45 2.08-1 3.66-2.11 6-2.31 4.23-.35 11.19 1.57 11.23 7.05 0 3.44-2.71 6.56-5.34 8.29a11.12 11.12 0 0 1-1.05.62"/>
         </g>
       </svg>
-      <svg class="gorilla-sitting" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 571.18 786.16">
+      <svg class="gorilla-sitting-front" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 571.18 786.16">
         <defs>
           <style>
             .cls-3{fill:#a0a0a0;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2.75px}
