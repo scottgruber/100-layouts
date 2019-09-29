@@ -101,12 +101,13 @@
   --duration-quickly: 0.1s;
   --duration-promptly: 0.2s;
   --duration-slowly: 0.4s;
+  --duration-long: 3.0s;
 
   /* Compound Grids
 // ========================================== */
 
-  --compound-grid-two-plus-three: 2fr 1fr 1fr 2fr;
-  --compound-grid-three-plus-four: 3fr 1fr 2fr 2fr 1fr 3fr;
-  --compound-grid-four-plus-five: 6fr 1fr 4fr 3fr 3fr 4fr 1fr 6fr;
-  --compound-grid-four-plus-six: 2fr 1fr 1fr 2fr 2fr 1fr 1fr 2fr;
+  --grid-compound-3-2: 2fr 1fr 1fr 2fr;
+  --grid-compound-4-3: 3fr 1fr 2fr 2fr 1fr 3fr;
+  --grid-compound-5-4: 6fr 1fr 4fr 3fr 3fr 4fr 1fr 6fr;
+  --grid-compound-6-4: 2fr 1fr 1fr 2fr 2fr 1fr 1fr 2fr;
 }
