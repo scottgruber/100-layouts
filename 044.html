@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Compound Grid | 100 Layouts</title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <style type="text/css">
+      body {
+        display: grid;
+        gap: 2vw;
+        grid-template-columns:
+          [full-start] minmax(0, 2fr) 
+          [start-half-start center-start] minmax(0, 1fr) 
+          [content-start] minmax(0, 1fr) 
+          [space-start] minmax(0, 2fr) 
+          [start-half-end end-half-start] minmax(0, 2fr) 
+          [] minmax(0, 1fr) 
+          [content-end] minmax(0, 1fr) 
+          [center-end end-half-end] minmax(0, 2fr) 
+          [full-end];
+        min-height: 100vh;
+        padding: 0;
+        margin: 0;
+        font: 125% "Open sans", sans-serif;
+      }
+
+      div {
+        padding: 1em;
+        margin: 0;
+        color: #fff;
+        background-color: #7b001b;
+      }
+
+      .content {
+        grid-column: content;
+        grid-row: 1;
+      }
+
+      .full-1 {
+        grid-column: full;
+        grid-row: 2;
+      }
+
+      .start-half {
+        grid-column: start-half;
+        grid-row: 3;
+      }
+
+      .end-half {
+        grid-column: end-half;
+        grid-row: 3;
+      }
+
+      .full-2 {
+        grid-column: full;
+        grid-row: 4;
+      }
+
+      .center {
+        grid-column: center;
+        grid-row: 5;
+      }
+
+      article {
+        grid-column: center;
+        grid-row: 5 / 8;
+      }
+
+      /* picture {
+        grid-column: full;
+        grid-row: 5;
+        z-index: -1;  
+        padding: 0;
+        margin: 0;
+        
+      }
+
+      picture img {
+        object-fit: contain;
+        width: 100%;
+      } */
+
+     
+
+    </style>
+  </head>
+
+  <body>
+
+
+      <div class="content">content</div>
+      <div class="full-1">full width</div>
+      <div class="start-half">start-half</div>
+      <div class="end-half">end-half</div>
+      <div class="full-2">full-width</div>
+      <div class="center">center</div>
+      
+      <article>
+        <!-- <img src="img/044/central-coast.jpg" alt="">
+        <img src="img/044/oil-derricks-paso-robles.jpg" alt="">
+       <img src="img/044/train-engineer.jpg" alt=""> -->
+     
+      <p>Los Angeles Union Station is the main railway station in Los Angeles,
+        California, and the largest railroad passenger terminal in the Western
+        United States. Union Station is located on the original site of the
+        Tongva village of Yaanga, which was “believed to have been the largest
+        of the Tongva villages.” It opened in May 1939 as the Los Angeles Union
+        Passenger Terminal, replacing La Grande Station and Central Station, and
+        celebrated its 80th birthday in 2019.</p>
+
+      <p>Approved in a controversial ballot measure in 1926 and built in the
+        1930s, it served to consolidate rail services from the Union Pacific,
+        Santa Fe, and Southern Pacific Railroads into one terminal station.
+        Conceived on a grand scale, Union Station became known as the “Last of
+        the Great Railway Stations” built in the United States. The structure
+        combines Art Deco, Mission Revival, and Streamline Moderne style. It was
+        placed on the National Register of Historic Places in 1980.</p>
+
+      <p>Today, the station is a major transportation hub for Southern
+        California, serving almost 110,000 passengers a day. It is Amtrak’s
+        fifth-busiest station, and by far the busiest in the Western United
+        States and the tenth-busiest in the entire country. Four of Amtrak’s
+        long-distance trains originate and terminate here: the Coast Starlight
+        to Seattle, the Southwest Chief and Texas Eagle to Chicago, and the
+        Sunset Limited to New Orleans. The state-supported Amtrak California
+        Pacific Surfliner regional trains run frequently to San Diego and also
+        to Santa Barbara and San Luis Obispo. The station is the hub of the
+        Metrolink commuter trains, and several Metro Rail subway and light rail
+        lines serve it as well, with more in construction or planning. </p>
+
+    </article>
+
+  </body>
+
+</html>
