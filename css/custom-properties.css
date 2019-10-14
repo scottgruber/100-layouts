@@ -15,36 +15,61 @@
   /* set base values */
   --text-base-size: 1rem;
   --text-scale-ratio: 1.125; /* major second */
-  --text-scale-ratio-alt: 1.2;
+  --text-scale-ratio-alt: 1.333;
   --line-height-text: 1.5;
-  --line-height-heading: 1.25;
+  --line-height-heading: 1.2;
 
   /* Type scale */
 
   /* Add values for your typographic hierarchy in em/rem units: */
-
+  /* Perfect fourth 1.333 */
   /* Very large sizes */
 
-  --font-size-xxxx-display: 3.653rem;
-  --font-size-xxx-display: 3.247rem;
-  --font-size-xx-display: 2.887rem;
-  --font-size-x-display: 2.566rem;
-  --font-size-display: 2.281rem;
+
+  --font-size-xxxx-display: 23.612rem;
+  --font-size-xxx-display: 17.713rem;
+  --font-size-xx-display: 13.288rem;
+  --font-size-x-display: 9.969rem;
+  --font-size-display: 7.478rem;
 
   /* Large sizes */
-  --font-size-xxxx-large: 2.027rem;
-  --font-size-xxx-large: 1.802rem;
-  --font-size-xx-large: 1.602rem;
-  --font-size-x-large: 1.424rem;
-  --font-size-large: 1.266rem;
+  --font-size-xxxx-large: 5.61rem;
+  --font-size-xxx-large: 4.209rem;
+  --font-size-xx-large: 3.157rem;
+  --font-size-x-large: 2.369rem;
+  --font-size-large: 1.777rem;
 
   /* Regular sizes */
-  --font-size-medium: 1.125rem;
+  --font-size-medium: 1.333rem;
   --font-size: 1rem;
 
   /* Small sizes */
-  --font-size-small: 0.889rem;
-  --font-size-x-small: 0.79rem;
+  --font-size-small: 0.75rem;
+  --font-size-x-small: 0.563rem;
+
+  /* Major third 1.125 */
+  /* Very large sizes */
+
+  /* --font-size-xxxx-display: 3.653rem;
+  --font-size-xxx-display: 3.247rem;
+  --font-size-xx-display: 2.887rem;
+  --font-size-x-display: 2.566rem;
+  --font-size-display: 2.281rem; */
+
+  /* Large sizes */
+  /* --font-size-xxxx-large: 2.027rem;
+  --font-size-xxx-large: 1.802rem;
+  --font-size-xx-large: 1.602rem;
+  --font-size-x-large: 1.424rem;
+  --font-size-large: 1.266rem; */
+
+  /* Regular sizes */
+  /* --font-size-medium: 1.125rem;
+  --font-size: 1rem; */
+
+  /* Small sizes */
+  /* --font-size-small: 0.889rem;
+  --font-size-x-small: 0.79rem; */
 
   /* Color SM Mountains */
   --color-silk: #c1b3a7;

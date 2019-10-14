@@ -11,7 +11,7 @@
     <style type="text/css">
       body {
         display: grid;
-        gap: 2vw;
+        gap: 1vw;
         grid-template-columns:
           [full-start] minmax(0, 2fr) 
           [start-half-start center-start] minmax(0, 1fr) 
@@ -25,90 +25,57 @@
         min-height: 100vh;
         padding: 0;
         margin: 0;
-        font: 125% "Open sans", sans-serif;
+        font: sans-serif;
       }
 
-      div {
-        padding: 1em;
-        margin: 0;
-        color: #fff;
-        background-color: #7b001b;
+      h1 {
+        grid-column: start-half;
+        align-self: end;
+        font-size: var(--font-size-display);
+        line-height: 1;
+        /* transform: translateY(-20px); */
       }
 
       .content {
         grid-column: content;
-        grid-row: 1;
+       
       }
 
-      .full-1 {
-        grid-column: full;
-        grid-row: 2;
-      }
-
-      .start-half {
-        grid-column: start-half;
-        grid-row: 3;
-      }
-
-      .end-half {
+      img {
         grid-column: end-half;
-        grid-row: 3;
+        object-fit: cover;
+        width: 100%; 
       }
 
-      .full-2 {
-        grid-column: full;
-        grid-row: 4;
-      }
-
-      .center {
-        grid-column: center;
-        grid-row: 5;
-      }
 
       article {
-        grid-column: center;
-        grid-row: 5 / 8;
+        grid-column: content;
       }
 
-      /* picture {
-        grid-column: full;
-        grid-row: 5;
-        z-index: -1;  
-        padding: 0;
-        margin: 0;
-        
+
+      p:first-of-type {
+        font-size: var(--font-size-medium);
       }
-
-      picture img {
-        object-fit: contain;
-        width: 100%;
-      } */
-
-     
 
     </style>
   </head>
 
   <body>
 
-
-      <div class="content">content</div>
-      <div class="full-1">full width</div>
-      <div class="start-half">start-half</div>
-      <div class="end-half">end-half</div>
-      <div class="full-2">full-width</div>
-      <div class="center">center</div>
-      
-      <article>
-        <!-- <img src="img/044/central-coast.jpg" alt="">
-        <img src="img/044/oil-derricks-paso-robles.jpg" alt="">
-       <img src="img/044/train-engineer.jpg" alt=""> -->
+      <h1>Union Station</h1>
+      <!-- <img src="img/044/union-station-profile.jpg" alt=""> -->
+      <img src="img/044/train-tracks.png" alt="">
      
+    
+      
+     
+    
+      <article>
+       
       <p>Los Angeles Union Station is the main railway station in Los Angeles,
         California, and the largest railroad passenger terminal in the Western
-        United States. Union Station is located on the original site of the
-        Tongva village of Yaanga, which was “believed to have been the largest
-        of the Tongva villages.” It opened in May 1939 as the Los Angeles Union
+        United States.</p>
+      <p>It opened in May 1939 as the Los Angeles Union
         Passenger Terminal, replacing La Grande Station and Central Station, and
         celebrated its 80th birthday in 2019.</p>
 
@@ -119,7 +86,8 @@
         the Great Railway Stations” built in the United States. The structure
         combines Art Deco, Mission Revival, and Streamline Moderne style. It was
         placed on the National Register of Historic Places in 1980.</p>
-
+        <!-- <img src="img/044/surfliner.jpg" alt="">
+        <img src="img/044/train-engineer.jpg" alt=""> -->
       <p>Today, the station is a major transportation hub for Southern
         California, serving almost 110,000 passengers a day. It is Amtrak’s
         fifth-busiest station, and by far the busiest in the Western United
@@ -131,7 +99,7 @@
         to Santa Barbara and San Luis Obispo. The station is the hub of the
         Metrolink commuter trains, and several Metro Rail subway and light rail
         lines serve it as well, with more in construction or planning. </p>
-
+       
     </article>
 
   </body>
