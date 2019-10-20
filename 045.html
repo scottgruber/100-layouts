@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Union Station | 100 Layouts</title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <style type="text/css">
+      body {
+        display: grid;
+        gap: 1vw;
+        grid-template-columns:
+          [full-start] minmax(0, 2fr) 
+          [start-half-start center-start] minmax(0, 1fr) 
+          [content-start] minmax(0, 1fr) 
+          [third-start space-start] minmax(0, 2fr) 
+          [start-half-end end-half-start] minmax(0, 2fr) 
+          [third-end] minmax(0, 1fr) 
+          [content-end] minmax(0, 1fr) 
+          [end-half-end center-end] minmax(0, 2fr) 
+          [full-end];
+        min-height: 100vh;
+        padding: 0;
+        margin: 0;
+        font: sans-serif;
+      }
+
+      h1 {
+        grid-column: content;
+        align-self: end;
+        font-size: var(--font-size-display);
+        line-height: 1;
+      }
+
+      .content {
+        grid-column: content;
+       
+      }
+
+      img {
+        grid-column: full;
+        object-fit: cover;
+        width: 100%; 
+      }
+
+
+      article {
+        grid-column: content;
+      }
+
+
+      p:first-of-type {
+        font-size: var(--font-size-medium);
+      }
+
+     
+
+    </style>
+  </head>
+
+  <body>
+
+      <h1>Union Station</h1>
+      <img src="img/044/steve-harvey-unsplash.jpg" srcset="img/044/steve-harvey-unsplash@2x.jpg 2x" alt="">
+      <img src="img/044/aris-z-unsplash.jpg" srcset="img/044/aris-z-unsplash@2x.jpg 2x" alt="">
+      <img src="img/044/kyle-glenn-unsplash.jpg" srcset="img/044/kyle-glenn-unsplash@2x.jpg 2x" alt="">
+      <img src="img/044/louka-lambot-unsplash.jpg" srcset="img/044/louka-lambot-unsplash@2x.jpg 2x" alt="">
+      
+      <article>
+       
+      <p>Los Angeles Union Station is the main railway station in Los Angeles,
+        California, and the largest railroad passenger terminal in the Western
+        United States.</p>
+      <p>It opened in May 1939 as the Los Angeles Union
+        Passenger Terminal, replacing La Grande Station and Central Station, and
+        celebrated its 80th birthday in 2019.</p>
+
+      <p>Approved in a controversial ballot measure in 1926 and built in the
+        1930s, it served to consolidate rail services from the Union Pacific,
+        Santa Fe, and Southern Pacific Railroads into one terminal station.
+        Conceived on a grand scale, Union Station became known as the “Last of
+        the Great Railway Stations” built in the United States. The structure
+        combines Art Deco, Mission Revival, and Streamline Moderne style. It was
+        placed on the National Register of Historic Places in 1980.</p>
+        <img src="img/044/surfliner.jpg" alt="">
+        <img src="img/044/train-engineer.jpg" alt="">
+      <p>Today, the station is a major transportation hub for Southern
+        California, serving almost 110,000 passengers a day. It is Amtrak’s
+        fifth-busiest station, and by far the busiest in the Western United
+        States and the tenth-busiest in the entire country. Four of Amtrak’s
+        long-distance trains originate and terminate here: the Coast Starlight
+        to Seattle, the Southwest Chief and Texas Eagle to Chicago, and the
+        Sunset Limited to New Orleans. The state-supported Amtrak California
+        Pacific Surfliner regional trains run frequently to San Diego and also
+        to Santa Barbara and San Luis Obispo. The station is the hub of the
+        Metrolink commuter trains, and several Metro Rail subway and light rail
+        lines serve it as well, with more in construction or planning. </p>
+    </article>
+    <aside>
+        <small>Photos by Steve Harvey, Kyle
+        Glenn, Aris
+        Z. and Louka
+        Lambot on Unsplash.</small>
+    </aside>
+  </body>
+
+</html>

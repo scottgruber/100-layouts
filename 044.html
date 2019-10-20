@@ -2,92 +2,106 @@
 <html lang="en">
 
   <head>
-    <title>Compound Grid | 100 Layouts</title>
+    <title>Union Station | 100 Layouts</title>
 
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/styles.css" />
 
     <style type="text/css">
+    
+    article {
+      max-width: 60ch;
+      margin: auto;
+    }
+
+    @media screen and (min-width: 60em){
       body {
         display: grid;
-        gap: 1vw;
-        grid-template-columns:
-          [full-start] minmax(0, 2fr) 
-          [start-half-start center-start] minmax(0, 1fr) 
-          [content-start] minmax(0, 1fr) 
-          [space-start] minmax(0, 2fr) 
-          [start-half-end end-half-start] minmax(0, 2fr) 
-          [] minmax(0, 1fr) 
-          [content-end] minmax(0, 1fr) 
-          [center-end end-half-end] minmax(0, 2fr) 
-          [full-end];
+        row-gap: 1vw;
+        grid-template-columns: 2fr 1fr 1fr 2fr 2fr 1fr 1fr 2fr;
         min-height: 100vh;
         padding: 0;
         margin: 0;
         font: sans-serif;
       }
 
-      h1 {
-        grid-column: start-half;
+      header {
+        grid-column: 1 / 2;
         align-self: end;
-        font-size: var(--font-size-display);
-        line-height: 1;
-        /* transform: translateY(-20px); */
+        color: white;
+        background-color: #0d0e10;
       }
 
-      .content {
-        grid-column: content;
-       
+      figure {
+        grid-column: 2 / -1;
+        min-height: 100vh;
+        padding: 0;
+        margin: 0;
       }
-
-      img {
-        grid-column: end-half;
-        object-fit: cover;
-        width: 100%; 
-      }
-
 
       article {
-        grid-column: content;
+        grid-column: 2 / 5;
+        max-width: initial;
+       
       }
+    }
+
+   
+
+    h1 {
+      padding: .5em;
+      margin: 0;
+      font-size: var(--font-size-display);
+      line-height: 1;
+      
+    }
+
+   
+
+    img {
+      object-fit: cover;
+      height: 100%;
+    }
 
 
-      p:first-of-type {
-        font-size: var(--font-size-medium);
-      }
+    
+
+
+    p:first-of-type {
+      font-size: var(--font-size-medium);
+    }
+
+     
 
     </style>
   </head>
 
   <body>
-
-      <h1>Union Station</h1>
-      <!-- <img src="img/044/union-station-profile.jpg" alt=""> -->
-      <img src="img/044/train-tracks.png" alt="">
-     
-    
+      <header>
+          <h1>Los Angeles Union Station</h1>
+      </header>
+      <figure>
+      <img src="img/044/steve-harvey-unsplash.jpg" srcset="img/044/steve-harvey-unsplash@2x.jpg 2x" alt="">
+      <figcaption><small>Photo by Steve Harvey on Unsplash.</small></figcaption>
+      </figure>
       
-     
-    
+      
       <article>
-       
-      <p>Los Angeles Union Station is the main railway station in Los Angeles,
-        California, and the largest railroad passenger terminal in the Western
-        United States.</p>
-      <p>It opened in May 1939 as the Los Angeles Union
-        Passenger Terminal, replacing La Grande Station and Central Station, and
-        celebrated its 80th birthday in 2019.</p>
-
+     
+      
+        <p>Conceived on a grand scale, Union Station became known as the “Last of
+            the Great Railway Stations” built in the United States. The structure
+            combines Art Deco, Mission Revival, and Streamline Moderne style. It was
+            placed on the National Register of Historic Places in 1980.</p>
+            <p>Los Angeles Union Station opened in May 1939 as the Los Angeles Union
+                Passenger Terminal, replacing La Grande Station and Central Station, and
+                celebrated its 80th birthday in 2019.</p>
       <p>Approved in a controversial ballot measure in 1926 and built in the
         1930s, it served to consolidate rail services from the Union Pacific,
         Santa Fe, and Southern Pacific Railroads into one terminal station.
-        Conceived on a grand scale, Union Station became known as the “Last of
-        the Great Railway Stations” built in the United States. The structure
-        combines Art Deco, Mission Revival, and Streamline Moderne style. It was
-        placed on the National Register of Historic Places in 1980.</p>
-        <!-- <img src="img/044/surfliner.jpg" alt="">
-        <img src="img/044/train-engineer.jpg" alt=""> -->
+        </p>
+       
       <p>Today, the station is a major transportation hub for Southern
         California, serving almost 110,000 passengers a day. It is Amtrak’s
         fifth-busiest station, and by far the busiest in the Western United
@@ -99,9 +113,11 @@
         to Santa Barbara and San Luis Obispo. The station is the hub of the
         Metrolink commuter trains, and several Metro Rail subway and light rail
         lines serve it as well, with more in construction or planning. </p>
-       
+        <p>It is the main railway station in Los Angeles,
+            California, and the largest railroad passenger terminal in the Western
+            United States.</p>
     </article>
-
+  
   </body>
 
 </html>
