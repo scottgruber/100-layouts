@@ -1,0 +1,50 @@
+<svg class="svg tiger" data-name="tiger" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 133.64 93.06">
+    <g class="ear-left">
+      <path class="ear-left-outer" d="M30.63,43.81s-23.1-18-9.72-36.26c0,0,15.91-22.75,40.08,10.74Z" fill="#ffc50a"/>
+      <path class="ear-left-inner" d="M34.23,27.22S22.55,20.3,27.77,11.4c0,0,6.15-11.07,19.16,2.76Z"/>
+    </g>
+    <g class="ear-right">
+      <path class="ear-right-outer" d="M103.32,43.81s23.09-18,9.71-36.26c0,0-15.91-22.75-40.07,10.74Z" fill="#ffc50a"/>
+      <path class="ear-right-inner" d="M99.71,27.22s11.69-6.92,6.47-15.82c0,0-6.16-11.07-19.17,2.76Z"/>
+    </g>
+    <ellipse cx="66.54" cy="81.77" rx="15.71" ry="11.3" fill="#ffc50a"/>
+    <ellipse class="tongue" cx="66.88" cy="82.83" rx="5.33" ry="6.33"/>
+    <path class="face-fur" d="M67.31,83.2c-48.9,25.67-52.74-19.62-52.74-19.62C13.51,7.22,66.9,7.83,66.9,7.83h-.54s53.89-.61,52.84,55.75c0,0-3,45.29-51.89,19.63Z" fill="#ffc50a"/>
+    <path class="face" d="M66.44,74.92c45,1.87,61.45-4.91,61.45-4.91-15,0-24.25-5.61-24.25-5.61,21.75-1.4,30-8.18,30-8.18-27.42,2.8-35.25-3.51-35.25-3.51,21.25,0,24.75-4.67,24.75-4.67-19.5,0-27.75-5.38-27.75-5.38,12.75-3.27,19.45-6.73,19.45-6.73-12.51-28.48-48-28.1-48-28.1h.06s-35.54-.38-48,28.1c0,0,6.7,3.46,19.45,6.73,0,0-8.25,5.38-27.75,5.38,0,0,3.5,4.67,24.75,4.67,0,0-7.83,6.31-35.25,3.51,0,0,8.25,6.78,30,8.18C30,64.4,20.75,70,5.75,70c0,0,15.75,6.78,60.75,4.91Z" fill="#ca992c"/>
+    <g class="stripes">
+      <path d="M48.64,23.16s17.91-9,35.67,0" fill="none" stroke="#000" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+      <path d="M53.05,28.33s13.48-6.77,26.86,0" fill="none" stroke="#000" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+      <path d="M56.37,34.29s10.15-5.1,20.22,0" fill="none" stroke="#000" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+    </g>
+    <g class="eye-left">
+      <circle class="pupil-left" cx="47.98" cy="50.12" r="5.94" fill="#231f20"/>
+      <ellipse class="sclera-left" cx="47.98" cy="50.12" rx="3.79" ry="3.74" fill="#fff"/>
+      <ellipse class="eyelid-left" cx="46.93" cy="50.76" rx="1.3" ry="2.63"/>
+    </g>
+    <path class="nose" d="M75,75.21a7.84,7.84,0,0,0-15.67,0S67.58,78.59,75,75.21Z" fill="#231f20"/>
+    <g class="whiskers-left">
+      <g>
+        <circle cx="56.36" cy="69.51" r="1.5"/>
+        <circle cx="58.03" cy="64.5" r="1.5"/>
+        <circle cx="51.52" cy="64.92" r="1.5"/>
+        <circle cx="50.24" cy="72.17" r="1.5"/>
+        <circle cx="45.97" cy="68" r="1.5"/>
+      </g>
+      <circle cx="56.46" cy="77.67" r="1.5"/>
+    </g>
+    <g class="whiskers-right">
+      <circle cx="77.46" cy="77.67" r="1.5"/>
+      <g>
+        <circle cx="78.08" cy="69.51" r="1.5"/>
+        <circle cx="76.41" cy="64.5" r="1.5"/>
+        <circle cx="82.92" cy="64.92" r="1.5"/>
+        <circle cx="84.2" cy="72.17" r="1.5"/>
+        <circle cx="88.47" cy="68" r="1.5"/>
+      </g>
+    </g>
+    <g class="eye-right">
+      <circle class="pupil-right" cx="84.88" cy="50.12" r="5.94" fill="#231f20"/>
+      <ellipse class="sclera-right" cx="84.88" cy="50.12" rx="3.79" ry="3.74" fill="#fff"/>
+      <ellipse class="eyelid-right" cx="83.82" cy="50.76" rx="1.3" ry="2.63"/>
+    </g>
+</svg>
