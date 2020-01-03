@@ -2,7 +2,7 @@
   "homepage": "https://scottgruber.github.io/100-layouts/",
   "name": "100-layouts",
   "version": "1.0.0",
-  "description": "100 Layouts is a side project to create 100 designs about Los Angeles.",
+  "description": "LA Layouts is a side project to use CSS Grid designs about Los Angeles.",
   "author": "Scott Gruber",
   "license": "ISC",
   "repository": {

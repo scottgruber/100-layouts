@@ -2,13 +2,17 @@
 <html lang="en">
 
 <head>
-  <title>Interaction of Color | 100 LA Layouts</title>
+  <title>Interaction of Color | LA Layouts</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="css/styles.css" />
-  <link rel="stylesheet" href="css/vendor/animate.css" />
-  <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond"
+    rel="stylesheet">
   <style type="text/css">
+    :root {
+      --font-family: 'Cormorant Garamond', serif;
+    }
+
     body {
       position: relative;
       display: grid;
@@ -16,10 +20,10 @@
       grid-template-columns: 6.1475409836066% 8.1967213114754% 13.524590163934% 3.2786885245902% 10.655737704918% 5.2459016393443% 0.81967213114754% 4.0983606557377% 4.9180327868853% 8.1967213114754% 4.9180327868853% 1.2295081967213% 7.3770491803279% 2.4590163934426% 11.475409836066% 7.3770491803279%;
       grid-template-rows: repeat(3, 1fr);
       margin: 0;
-      font-family: 'Cormorant Garamond', serif;
+      font-family: var(--font-family);
       font-size: var(--font-size-large);
 
-     
+
     }
 
     header {
@@ -35,7 +39,7 @@
       height: 100%;
       z-index: 1;
       background-color: rgba(255, 255, 255, 0.7);
-      filter: drop-shadow(0 0 0.75rem gray); 
+      filter: drop-shadow(0 0 0.75rem gray);
     }
 
     h1 {
@@ -45,7 +49,7 @@
       letter-spacing: 0;
       animation: expanding-text 3s ease-in forwards;
     }
-    
+
     @media (prefers-reduced-motion) {
       h1 {
         animation: none;

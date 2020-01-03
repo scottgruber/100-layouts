@@ -1,199 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <title>CicLAvia Families, Heart of LA| 100 LA Layouts</title>
+<head>
+  <title>CicLAvia Families, Heart of LA | LA Layouts</title>
 
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="format-detection" content="telephone=no">
-    <link rel="stylesheet" href="css/styles.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="format-detection" content="telephone=no">
+  <link rel="stylesheet" href="css/styles.css" />
 
-    <style type="text/css">
-      body {
-        display: grid;
-        grid-template-columns: repeat(4, minmax(250px, 1fr));
-        justify-items: center;
-        margin: 1em 0 2em 0;
-        color: white;
-        background: #e7e7e8;
-      }
+  <style type="text/css">
+    :root {
+      --font-family: monospace;
+    }
 
-      header {
-        display: flex;
-        grid-column: 1 / -1;
-        grid-row: 1;
-        align-items: center;
-      }
+    body {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(250px, 1fr));
+      justify-items: center;
+      margin: 1em 0 2em 0;
+      color: white;
+      background: #e7e7e8;
+    }
 
-      section {
-        grid-column: 1 / -1;
-        grid-row: 2;
-        width: 90vw;
-        text-align: center;
-      }
+    header {
+      display: flex;
+      grid-column: 1 / -1;
+      grid-row: 1;
+      align-items: center;
+    }
 
-      svg {
-        width: 48px;
-        height: 48px;
-        margin: 2em;
-        fill: hsla(196, 100%, 45%, 0.5);       
-      }
+    section {
+      grid-column: 1 / -1;
+      grid-row: 2;
+      width: 90vw;
+      text-align: center;
+    }
 
-      svg:hover,
-      svg:focus {
-        fill: #0097dc;
-      }
+    svg {
+      width: 48px;
+      height: 48px;
+      margin: 2em;
+      fill: hsla(196, 100%, 45%, 0.5);
+    }
 
-      h1 {
-        margin: 0;
-        font-size: var(--font-size-xx-display);
-        font-weight: 700;
-        line-height: 1;
-        color: hsla(196, 100%, 45%, 0.5);
-      }
+    svg:hover,
+    svg:focus {
+      fill: #0097dc;
+    }
 
-      h1 span {
-        color: hsl(199, 100%, 43%);
-      }
+    h1 {
+      margin: 0;
+      font-size: var(--font-size-xx-display);
+      font-weight: 700;
+      line-height: 1;
+      color: hsla(196, 100%, 45%, 0.5);
+    }
 
-      h1 span:nth-child(2) {
-        display: block;
-        font-size: var(--font-size-small);
-        font-style: italic;
-        font-weight: 400;
-        text-transform: uppercase;
-      }
+    h1 span {
+      color: hsl(199, 100%, 43%);
+    }
 
+    h1 span:nth-child(2) {
+      display: block;
+      font-size: var(--font-size-small);
+      font-style: italic;
+      font-weight: 400;
+      text-transform: uppercase;
+    }
+
+    figure {
+      grid-column: 1 / -1;
+      grid-row: 3;
+      margin: 0;
+    }
+
+    @media (min-width: 48em) {
       figure {
-        grid-column: 1 / -1;
-        grid-row: 3;
-        margin: 0;
-      }
-
-      @media (min-width: 48em) {
-        figure {
-          display: grid;
-          grid-template-columns: repeat(4, 1fr);
-          grid-template-areas:
-            "family1 family1 family1 family1"
-            "family2 family3 family4 family5"
-            "caption caption caption caption";
-          grid-column-gap: 2vw;
-          grid-row-gap: 4vh;
-          max-width: 90vw;
-        }
-      }
-
-      img {
-        max-width: 100%;
-        border: 8px solid hsla(52, 100%, 50%, 1); /* #ffde00 */
-      }
-
-      img:nth-of-type(1) {
-        grid-area: family1;
-        object-fit: cover;
-        width: 100vw;
-      }
-
-      img:nth-of-type(2) {
-        grid-area: family2;
-      }
-
-      img:nth-of-type(3) {
-        grid-area: family3;
-      }
-
-      img:nth-of-type(4) {
-        grid-area: family4;
-      }
-
-      img:nth-of-type(5) {
-        grid-area: family5;
-      }
-
-      figcaption {
-        grid-area: caption;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+          "family1 family1 family1 family1"
+          "family2 family3 family4 family5"
+          "caption caption caption caption";
+        grid-column-gap: 2vw;
+        grid-row-gap: 4vh;
         max-width: 90vw;
-        padding: 2em;
-        column-count: 2;
-        column-fill: balance;
-        column-gap: 2vw;
-        column-rule-width: thick;
-        column-rule-style: dotted;
-        background: hsla(199, 100%, 43%, 1);
       }
+    }
 
-      figcaption p {
-        break-inside: avoid;
-        padding: 0 1em;
-        margin-block-start: 0;
-      }
+    img {
+      max-width: 100%;
+      border: 8px solid hsla(52, 100%, 50%, 1);
+      /* #ffde00 */
+    }
 
-    </style>
-  </head>
+    img:nth-of-type(1) {
+      grid-area: family1;
+      object-fit: cover;
+      width: 100vw;
+    }
 
-  <body>
-    <header>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-        <title>love-it</title>
-        <path d="M23.3,5.076a6.582,6.582,0,0,0-10.446-1.71L12,4.147l-.827-.753A6.522,6.522,0,0,0,5.485,1.588,6.472,6.472,0,0,0,.7,5.075,6.4,6.4,0,0,0,1.91,12.544L11.283,22.2a1,1,0,0,0,1.434,0l9.36-9.638A6.414,6.414,0,0,0,23.3,5.076Z" />
-      </svg>
-      <h1>Cic<span>LA</span>via
-        <span>Heart of LA</span>
-      </h1>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-        <title>love-it</title>
-        <path d="M23.3,5.076a6.582,6.582,0,0,0-10.446-1.71L12,4.147l-.827-.753A6.522,6.522,0,0,0,5.485,1.588,6.472,6.472,0,0,0,.7,5.075,6.4,6.4,0,0,0,1.91,12.544L11.283,22.2a1,1,0,0,0,1.434,0l9.36-9.638A6.414,6.414,0,0,0,23.3,5.076Z" />
-      </svg>
-    </header>
-    <section>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-        <title>walking</title>
-        <circle cx="11.369" cy="3.284" r="2.5" />
-        <path d="M13.56,11.18a8.518,8.518,0,0,0,2.418,1.266l1.176.392a1.518,1.518,0,0,0,.475.077,1.5,1.5,0,0,0,1.483-1.275,1.551,1.551,0,0,0-1.083-1.673L16.924,9.6A5.514,5.514,0,0,1,15.36,8.78l-1.016-.762a5.7,5.7,0,0,0-5.963-.54A6.319,6.319,0,0,0,4.87,13.049a1.5,1.5,0,0,0,1.5,1.613,1.5,1.5,0,0,0,1.5-1.426,3.413,3.413,0,0,1,1.622-2.944.25.25,0,0,1,.38.214v1.357a19.425,19.425,0,0,1-.463,4.217,12.745,12.745,0,0,1-2.213,4.7A1.5,1.5,0,0,0,9.54,22.653,17.332,17.332,0,0,0,12.1,17.344a.25.25,0,0,1,.433-.081,16.621,16.621,0,0,1,2.416,4.927,1.5,1.5,0,0,0,1.423,1.026,1.48,1.48,0,0,0,.474-.078,1.5,1.5,0,0,0,.949-1.9,17.2,17.2,0,0,0-4.568-7.518.993.993,0,0,1-.355-.754V11.162a.25.25,0,0,1,.4-.2Z" />
-      </svg>
-      <svg id="Bold" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-        <title>skateboard-person</title>
-        <circle cx="13" cy="3" r="2.5" />
-        <path d="M14.123,15.852a3.522,3.522,0,0,0-1.8-2.037l-1.854-.89,1.825-2.811A.25.25,0,0,1,12.5,10h7a1.5,1.5,0,0,0,0-3H3.5a1.5,1.5,0,0,0,0,3H8.463a.249.249,0,0,1,.215.378L2.2,21.25a1.5,1.5,0,1,0,2.6,1.5l4.049-7.019a.251.251,0,0,1,.325-.1l1.849.89a.488.488,0,0,1,.258.291.5.5,0,0,1-.029.386l-.225.439a.25.25,0,0,0,.223.364h2.7a.25.25,0,0,0,.243-.19A3.5,3.5,0,0,0,14.123,15.852Z" />
-        <path d="M21,19H9a1,1,0,0,0,0,2H21a1,1,0,0,0,0-2Z" />
-        <circle cx="19" cy="22.5" r="1" />
-        <circle cx="10.999" cy="22.5" r="1" />
-      </svg>
+    img:nth-of-type(2) {
+      grid-area: family2;
+    }
 
-      <svg id="Bold" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-        <title>biking-person</title>
-        <circle cx="14.5" cy="3.688" r="2.375" />
-        <path d="M4.5,13.688a4.5,4.5,0,1,0,4.5,4.5A4.5,4.5,0,0,0,4.5,13.688Zm0,7a2.5,2.5,0,1,1,2.5-2.5A2.5,2.5,0,0,1,4.5,20.688Z" />
-        <path d="M19.5,13.688a4.5,4.5,0,1,0,4.5,4.5A4.5,4.5,0,0,0,19.5,13.688Zm0,7a2.5,2.5,0,1,1,2.5-2.5A2.5,2.5,0,0,1,19.5,20.688Z" />
-        <path d="M10.722,11.427l1.451-1.659a8.265,8.265,0,0,0,4.655,1.42H17.5a1.5,1.5,0,0,0,0-3h-.672a5.36,5.36,0,0,1-3.767-1.561,1.413,1.413,0,0,0-1.111-.438,1.5,1.5,0,0,0-1.079.512l-3.5,4a1.5,1.5,0,0,0,.3,2.235l.664.442a5.263,5.263,0,0,1,2.2,5.485,1.5,1.5,0,1,0,2.928.65A8.288,8.288,0,0,0,10.722,11.427Z" />
-      </svg>
-    </section>
+    img:nth-of-type(3) {
+      grid-area: family3;
+    }
 
-    <figure>
-      <img src="img/021/ciclavia-18@2x.jpg" alt="">
-      <img src="img/021/ciclavia-51@0.5x.jpg" alt="">
-      <img src="img/021/ciclavia-39@0.5x.jpg" alt="">
-      <img src="img/021/ciclavia-25@0.5x.jpg" alt="">
-      <img src="img/021/ciclavia-42@0.5x.jpg" alt="">
-      <figcaption>
-        <p>CicLAvia transforms streets into safe, car-free spaces for thousands
-          of people to bike, walk, play and smile. CicLAvia is free and
-          connects
-          people to communities and to each other.</p>
+    img:nth-of-type(4) {
+      grid-area: family4;
+    }
 
-        <p>CicLAvia transforma las calles en espacios seguros y sin carros para
-          que miles de personas puedan ir en bicicleta, pasearse a pie, jugar y
-          sonreír. CicLAvia es gratis y conecta a las personas a las
-          comunidades
-          y a cada uno de los demás.</p>
+    img:nth-of-type(5) {
+      grid-area: family5;
+    }
 
-      </figcaption>
-    </figure>
-    <footer>
-      <p><a href="http://www.ciclavia.org/">CicLAVia</a></p>
-    </footer>
-  </body>
+    figcaption {
+      grid-area: caption;
+      max-width: 90vw;
+      padding: 2em;
+      column-count: 2;
+      column-fill: balance;
+      column-gap: 2vw;
+      column-rule-width: thick;
+      column-rule-style: dotted;
+      background: hsla(199, 100%, 43%, 1);
+    }
+
+    figcaption p {
+      break-inside: avoid;
+      padding: 0 1em;
+      margin-block-start: 0;
+    }
+
+  </style>
+</head>
+
+<body>
+  <header>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      <title>love-it</title>
+      <path
+        d="M23.3,5.076a6.582,6.582,0,0,0-10.446-1.71L12,4.147l-.827-.753A6.522,6.522,0,0,0,5.485,1.588,6.472,6.472,0,0,0,.7,5.075,6.4,6.4,0,0,0,1.91,12.544L11.283,22.2a1,1,0,0,0,1.434,0l9.36-9.638A6.414,6.414,0,0,0,23.3,5.076Z" />
+    </svg>
+    <h1>Cic<span>LA</span>via
+      <span>Heart of LA</span>
+    </h1>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      <title>love-it</title>
+      <path
+        d="M23.3,5.076a6.582,6.582,0,0,0-10.446-1.71L12,4.147l-.827-.753A6.522,6.522,0,0,0,5.485,1.588,6.472,6.472,0,0,0,.7,5.075,6.4,6.4,0,0,0,1.91,12.544L11.283,22.2a1,1,0,0,0,1.434,0l9.36-9.638A6.414,6.414,0,0,0,23.3,5.076Z" />
+    </svg>
+  </header>
+  <section>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      <title>walking</title>
+      <circle cx="11.369" cy="3.284" r="2.5" />
+      <path
+        d="M13.56,11.18a8.518,8.518,0,0,0,2.418,1.266l1.176.392a1.518,1.518,0,0,0,.475.077,1.5,1.5,0,0,0,1.483-1.275,1.551,1.551,0,0,0-1.083-1.673L16.924,9.6A5.514,5.514,0,0,1,15.36,8.78l-1.016-.762a5.7,5.7,0,0,0-5.963-.54A6.319,6.319,0,0,0,4.87,13.049a1.5,1.5,0,0,0,1.5,1.613,1.5,1.5,0,0,0,1.5-1.426,3.413,3.413,0,0,1,1.622-2.944.25.25,0,0,1,.38.214v1.357a19.425,19.425,0,0,1-.463,4.217,12.745,12.745,0,0,1-2.213,4.7A1.5,1.5,0,0,0,9.54,22.653,17.332,17.332,0,0,0,12.1,17.344a.25.25,0,0,1,.433-.081,16.621,16.621,0,0,1,2.416,4.927,1.5,1.5,0,0,0,1.423,1.026,1.48,1.48,0,0,0,.474-.078,1.5,1.5,0,0,0,.949-1.9,17.2,17.2,0,0,0-4.568-7.518.993.993,0,0,1-.355-.754V11.162a.25.25,0,0,1,.4-.2Z" />
+    </svg>
+    <svg id="Bold" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      <title>skateboard-person</title>
+      <circle cx="13" cy="3" r="2.5" />
+      <path
+        d="M14.123,15.852a3.522,3.522,0,0,0-1.8-2.037l-1.854-.89,1.825-2.811A.25.25,0,0,1,12.5,10h7a1.5,1.5,0,0,0,0-3H3.5a1.5,1.5,0,0,0,0,3H8.463a.249.249,0,0,1,.215.378L2.2,21.25a1.5,1.5,0,1,0,2.6,1.5l4.049-7.019a.251.251,0,0,1,.325-.1l1.849.89a.488.488,0,0,1,.258.291.5.5,0,0,1-.029.386l-.225.439a.25.25,0,0,0,.223.364h2.7a.25.25,0,0,0,.243-.19A3.5,3.5,0,0,0,14.123,15.852Z" />
+      <path d="M21,19H9a1,1,0,0,0,0,2H21a1,1,0,0,0,0-2Z" />
+      <circle cx="19" cy="22.5" r="1" />
+      <circle cx="10.999" cy="22.5" r="1" />
+    </svg>
+
+    <svg id="Bold" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      <title>biking-person</title>
+      <circle cx="14.5" cy="3.688" r="2.375" />
+      <path
+        d="M4.5,13.688a4.5,4.5,0,1,0,4.5,4.5A4.5,4.5,0,0,0,4.5,13.688Zm0,7a2.5,2.5,0,1,1,2.5-2.5A2.5,2.5,0,0,1,4.5,20.688Z" />
+      <path
+        d="M19.5,13.688a4.5,4.5,0,1,0,4.5,4.5A4.5,4.5,0,0,0,19.5,13.688Zm0,7a2.5,2.5,0,1,1,2.5-2.5A2.5,2.5,0,0,1,19.5,20.688Z" />
+      <path
+        d="M10.722,11.427l1.451-1.659a8.265,8.265,0,0,0,4.655,1.42H17.5a1.5,1.5,0,0,0,0-3h-.672a5.36,5.36,0,0,1-3.767-1.561,1.413,1.413,0,0,0-1.111-.438,1.5,1.5,0,0,0-1.079.512l-3.5,4a1.5,1.5,0,0,0,.3,2.235l.664.442a5.263,5.263,0,0,1,2.2,5.485,1.5,1.5,0,1,0,2.928.65A8.288,8.288,0,0,0,10.722,11.427Z" />
+    </svg>
+  </section>
+
+  <figure>
+    <img src="img/021/ciclavia-18@2x.jpg" alt="">
+    <img src="img/021/ciclavia-51@0.5x.jpg" alt="">
+    <img src="img/021/ciclavia-39@0.5x.jpg" alt="">
+    <img src="img/021/ciclavia-25@0.5x.jpg" alt="">
+    <img src="img/021/ciclavia-42@0.5x.jpg" alt="">
+    <figcaption>
+      <p>CicLAvia transforms streets into safe, car-free spaces for thousands
+        of people to bike, walk, play and smile. CicLAvia is free and
+        connects
+        people to communities and to each other.</p>
+
+      <p>CicLAvia transforma las calles en espacios seguros y sin carros para
+        que miles de personas puedan ir en bicicleta, pasearse a pie, jugar y
+        sonreír. CicLAvia es gratis y conecta a las personas a las
+        comunidades
+        y a cada uno de los demás.</p>
+
+    </figcaption>
+  </figure>
+  <footer>
+    <p><a href="http://www.ciclavia.org/">CicLAVia</a></p>
+  </footer>
+</body>
 
 </html>

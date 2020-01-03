@@ -1,82 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <title>Liberty and the Heart of LA 2018 | 100 LA Layouts</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/styles.css" />
-    <style type="text/css">
-      :root {
-        --color-red: #d42629;
-        --color-blue: #000554;
-      }
+<head>
+  <title>Liberty and the Heart of LA 2018 | LA Layouts</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <style type="text/css">
+    :root {
+      --color-red: #d42629;
+      --color-blue: #000554;
+    }
 
-      body {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-template-areas:
-          "stars red-stripes"
-          "stars white-stripes";
-        max-height: 100vh;
-        margin: 0;
-       
-      }
+    body {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas:
+        "stars red-stripes"
+        "stars white-stripes";
+      max-height: 100vh;
+      margin: 0;
 
-      .blue {
-        grid-area: stars;
-        width: 50vw;
-        height: 100vh;
-        background: var(--color-blue);
-        background-image: url('icons/star.svg');
-      }
+    }
 
-      .red,
-      .white {
-        width: 50vw;
-        height: 50vh;
-      }
+    .blue {
+      grid-area: stars;
+      width: 50vw;
+      height: 100vh;
+      background: var(--color-blue);
+      background-image: url('icons/star.svg');
+    }
 
-      .red {
-        grid-area: red-stripes;
-        background: var(--color-red);
-       
-      }
+    .red,
+    .white {
+      width: 50vw;
+      height: 50vh;
+    }
 
-      .white {
-        grid-area: white-stripes;
-        background: #fff;
-        
-      }
+    .red {
+      grid-area: red-stripes;
+      background: var(--color-red);
 
-      .blue img {
-        width: 50vw;
-        height: 100vh;
-        object-fit: contain;
-       
-      }
+    }
 
-      .red img,
-      .white img {
-        width: 50vw;
-        height: 50vh;
-        object-fit: contain;
-       
-      }
+    .white {
+      grid-area: white-stripes;
+      background: #fff;
 
-    </style>
-  </head>
+    }
 
-  <body>
-    <div class="blue">
-      <img src="img/019/ciclavia-56.jpg" alt="American Man">
-    </div>
-    <div class="red">
-      <img src="img/019/ciclavia-34.jpg" alt="Liberty Mural">
-    </div>
-    <div class="white"> <img src="img/019/ciclavia-62.jpg" alt="Heart of LA Mural">
-    </div>
-  </body>
+    .blue img {
+      width: 50vw;
+      height: 100vh;
+      object-fit: contain;
+
+    }
+
+    .red img,
+    .white img {
+      width: 50vw;
+      height: 50vh;
+      object-fit: contain;
+
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="blue">
+    <img src="img/019/ciclavia-56.jpg" alt="American Man">
+  </div>
+  <div class="red">
+    <img src="img/019/ciclavia-34.jpg" alt="Liberty Mural">
+  </div>
+  <div class="white"> <img src="img/019/ciclavia-62.jpg"
+      alt="Heart of LA Mural">
+  </div>
+</body>
 
 </html>

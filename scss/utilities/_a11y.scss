@@ -1,36 +1,35 @@
-// Remove all animations and transitions for people that prefer not to see them 
+// Remove all animations and transitions for people that prefer not to see them
 @media (prefers-reduced-motion: reduce) {
   * {
-    animation-duration: 0.01ms !important;
+    transition-duration: none !important;
+    animation-duration: none !important;
     animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
 }
 
 // Hide only visually, but have it available for screen readers:
 .visually-hidden {
-  border: 0;
-  clip: rect(0, 0, 0, 0);
+  position: absolute;
+  width: 1px;
   height: 1px;
+  padding: 0;
   margin: -1px;
   overflow: hidden;
-  padding: 0;
-  position: absolute;
+  clip: rect(0, 0, 0, 0);
   white-space: nowrap;
-  width: 1px;
-  /* 1 */
+  border: 0;
 }
 
-// Extends the .visually-hidden class to allow the element 
+// Extends the .visually-hidden class to allow the element
 // to be focusable when navigated to via the keyboard:
 .visually-hidden.focusable:active,
 .visually-hidden.focusable:focus {
-  clip: auto;
+  position: static;
+  width: auto;
   height: auto;
   margin: 0;
   overflow: visible;
-  position: static;
+  clip: auto;
   white-space: inherit;
-  width: auto;
 }

@@ -1,103 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <title>CicLAvia Peace, Heart of LA| 100 LA Layouts</title>
+<head>
+  <title>CicLAvia Peace, Heart of LA | LA Layouts</title>
 
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="format-detection" content="telephone=no">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="format-detection" content="telephone=no">
 
 
-    <style type="text/css">
+  <style type="text/css">
+    :root {
+      --font-family: monospace;
+    }
+
+    body {
+      display: grid;
+      grid-template-columns: 1fr 3fr 1fr;
+      grid-template-areas:
+        ". logo ."
+        ". photo ."
+        ". tagline .";
+      grid-gap: 2vw;
+      justify-items: center;
+      margin: 2em 0;
+
+    }
+
+    header {
+      grid-area: logo;
+    }
+
+    picture {
+      grid-area: photo;
+      padding: 0.5em;
+      margin-block-start: 1em;
+      background: linear-gradient(#0096db, #00bd30);
+    }
+
+    footer {
+      grid-area: tagline;
+    }
+
+    header img {
+      width: 50vw;
+    }
+
+    footer p {
+      font-family: monospace;
+      font-size: 1rem;
+      color: #0096db;
+    }
+
+    @media (min-width: 37.5em) {
       body {
-        display: grid;
-        grid-template-columns: 1fr 3fr 1fr;
         grid-template-areas:
           ". logo ."
-          ". photo ."
-          ". tagline .";
-        grid-gap: 2vw;
-        justify-items: center;
-        margin: 2em 0;
-         
-      }
-
-      header {
-        grid-area: logo;
-      }
-
-      picture {
-        grid-area: photo;
-        padding: 0.5em;
-        margin-block-start: 1em;
-        background: linear-gradient(#0096db, #00bd30);
-      }
-
-      footer {
-        grid-area: tagline;
+          ". tagline ."
+          ". photo .";
       }
 
       header img {
-        width: 50vw;
+        width: 30vw;
       }
 
       footer p {
-        font-size: 1rem;
-        color: #0096db;
+        max-width: 48ch;
+      }
+    }
+
+    @media (min-width: 48em) {
+      header img {
+        width: 20vw;
       }
 
-      @media (min-width: 37.5em) {
-        body {
-          grid-template-areas:
-            ". logo ."
-            ". tagline ."
-            ". photo .";
-        }
-
-        header img {
-          width: 30vw;
-        }
-
-        footer p {
-          max-width: 48ch;
-        }
+      picture {
+        padding: 1em;
+        background: linear-gradient(#0096db, #00bd30);
       }
 
-      @media (min-width: 48em) {
-        header img {
-          width: 20vw;
-        }
-
-        picture {
-          padding: 1em;
-          background: linear-gradient(#0096db, #00bd30);
-        }
-
-        footer p {
-          max-width: 40ch;
-          font-size: 1.4em;
-        }
+      footer p {
+        max-width: 40ch;
+        font-size: 1.4em;
       }
+    }
 
-    </style>
-  </head>
+  </style>
+</head>
 
-  <body>
-    <header>
-      <a href="http://www.ciclavia.org/"><img src="img/022/ciclavialogo.png"
-          alt="Ciclavia Logo"></a>
-    </header>
-    <picture alt="Street Photographer">
-      <source media="(min-width: 45em) 33vw" srcset="img/022/ciclavia-17.jpg 1x, img/022/ciclavia-17@2x.jpg 2x">
-      <source media="(min-width: 18em) 100vw" srcset="img/022/ciclavia-17@0.25x.jpg 1x, img/022/ciclavia-17.jpg 2x">
-      <img src="img/022/ciclavia-17@0.25x.jpg" alt="Street Photographer">
-    </picture>
-    <footer>
-      <p>CicLAvia transforms our streets into safe, car-free spaces for thousands
-        of people to bike, walk, play and smile.</p>
-    </footer>
+<body>
+  <header>
+    <a href="http://www.ciclavia.org/"><img src="img/022/ciclavialogo.png"
+        alt="Ciclavia Logo"></a>
+  </header>
+  <picture alt="Street Photographer">
+    <source media="(min-width: 45em) 33vw"
+      srcset="img/022/ciclavia-17.jpg 1x, img/022/ciclavia-17@2x.jpg 2x">
+    <source media="(min-width: 18em) 100vw"
+      srcset="img/022/ciclavia-17@0.25x.jpg 1x, img/022/ciclavia-17.jpg 2x">
+    <img src="img/022/ciclavia-17@0.25x.jpg" alt="Street Photographer">
+  </picture>
+  <footer>
+    <p>CicLAvia transforms our streets into safe, car-free spaces for thousands
+      of people to bike, walk, play and smile.</p>
+  </footer>
 
-  </body>
+</body>
 
 </html>

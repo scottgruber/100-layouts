@@ -1,86 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <title>Polygon grid - 100 LA Layouts</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
-    <link rel="stylesheet" href="css/styles.css" />
-    <style type="text/css">
-      main {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-        grid-template-rows: repeat(auto-fill, minmax(150px, 1fr));
-        grid-gap: 2rem;
-        max-height: 100vh;
-      }
+<head>
+  <title>Polygon grid - LA Layouts</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-      img {
-        width: 100%;
-        max-height: 100%;
-        object-fit: contain;
-      }
+  <link rel="stylesheet" href="css/styles.css" />
+  <style type="text/css">
+    main {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      grid-template-rows: repeat(auto-fill, minmax(150px, 1fr));
+      grid-gap: 2rem;
+      max-height: 100vh;
+    }
 
-      main > * {
-        clip-path: polygon(10% 2, 92% 0%, 2% 100%);
-      }
+    img {
+      width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
 
-      main > :nth-child(2n) {
-        clip-path: polygon(0% 0%, 92% 2%, 90% 98%, 8% 92%);
-      }
+    main>* {
+      clip-path: polygon(10% 2, 92% 0%, 2% 100%);
+    }
 
-      main > :nth-child(3n) {
-        clip-path: polygon(0% 8%, 100% 2%, 92% 100%, 0% 92%);
-      }
+    main> :nth-child(2n) {
+      clip-path: polygon(0% 0%, 92% 2%, 90% 98%, 8% 92%);
+    }
 
-      main > div:nth-child(2n) {
-        background: hsl(208 48% 52%);
-      }
+    main> :nth-child(3n) {
+      clip-path: polygon(0% 8%, 100% 2%, 92% 100%, 0% 92%);
+    }
 
-      main > div:nth-child(4n) {
-        background-color: hsl(70 46% 61%);
-      }
+    main>div:nth-child(2n) {
+      background: hsl(208 48% 52%);
+    }
 
-    </style>
-  </head>
+    main>div:nth-child(4n) {
+      background-color: hsl(70 46% 61%);
+    }
 
-  <body>
-    <header>
-      <h1>Disney Hall, polygon & clip-path</h1>
-    </header>
-    <main class="grid">
+  </style>
+</head>
 
-      <img src="img/006/disney-hall-38.jpg" alt="" />
-      <div></div>
-      <img src="img/006/disney-hall-18.jpg" alt="" />
-      <div></div>
-      <img src="img/006/disney-hall-19.jpg" alt="" />
-      <div></div>
-      <img src="img/006/disney-hall-20.jpg" alt="" />
-      <div></div>
-      <img src="img/006/disney-hall-6.jpg" alt="" />
-      <div></div>
-      <img src="img/006/disney-hall-7.jpg" alt="" />
-      <div></div>
-      <img src="img/006/disney-hall-25.jpg" alt="" />
-      <div></div>
-      <img src="img/006/disney-hall-26.jpg" alt="" />
-      <div></div>
-      <img src="img/006/disney-hall-27.jpg" alt="" />
-      <div></div>
-      <img src="img/006/disney-hall-28.jpg" alt="" />
-      <div></div>
-      <img src="img/006/disney-hall-34.jpg" alt="" />
-      <div></div>
-      <img src="img/006/disney-hall-29.jpg" alt="" />
-      <div></div>
-      <img src="img/006/disney-hall-7.jpg" alt="" />
-      <div></div>
-      <img src="img/006/disney-hall-28.jpg" alt="" />
-      <div></div>
-    </main>
-    <footer></footer>
-  </body>
+<body>
+  <header>
+    <h1>Disney Hall, polygon & clip-path</h1>
+  </header>
+  <main class="grid">
+
+    <img src="img/006/disney-hall-38.jpg" alt="" />
+    <div></div>
+    <img src="img/006/disney-hall-18.jpg" alt="" />
+    <div></div>
+    <img src="img/006/disney-hall-19.jpg" alt="" />
+    <div></div>
+    <img src="img/006/disney-hall-20.jpg" alt="" />
+    <div></div>
+    <img src="img/006/disney-hall-6.jpg" alt="" />
+    <div></div>
+    <img src="img/006/disney-hall-7.jpg" alt="" />
+    <div></div>
+    <img src="img/006/disney-hall-25.jpg" alt="" />
+    <div></div>
+    <img src="img/006/disney-hall-26.jpg" alt="" />
+    <div></div>
+    <img src="img/006/disney-hall-27.jpg" alt="" />
+    <div></div>
+    <img src="img/006/disney-hall-28.jpg" alt="" />
+    <div></div>
+    <img src="img/006/disney-hall-34.jpg" alt="" />
+    <div></div>
+    <img src="img/006/disney-hall-29.jpg" alt="" />
+    <div></div>
+    <img src="img/006/disney-hall-7.jpg" alt="" />
+    <div></div>
+    <img src="img/006/disney-hall-28.jpg" alt="" />
+    <div></div>
+  </main>
+  <footer></footer>
+</body>
 
 </html>

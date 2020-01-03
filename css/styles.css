@@ -1,6 +1,6 @@
 :root {
-  --font-family: 'Nunito Sans', sans-serif;
-  --font-family-display: 'Nunito Sans', sans-serif;
+  --font-family: "Nunito Sans", sans-serif;
+  --font-family-display: "Nunito Sans", sans-serif;
   --font-weight-thin: 100;
   --font-weight-extra-light: 200;
   --font-weight-light: 300;
@@ -95,7 +95,7 @@
     --font-size-medium: 2.027rem;
     --font-size: 1.125em;
     --font-size-small: 1rem;
-    --font-size-x-small:0.889rem;
+    --font-size-x-small: 0.889rem;
   }
 }
 
