@@ -13,21 +13,22 @@
     body {
       display: grid;
       grid-template-columns: 3fr 1fr;
-      gap: 2vw;
-      background-image: linear-gradient(var(--color-celestial-blue), var(--color-azalea), var(--color-celestial-blue));
+      gap: 1vw;
+      background: white;
+      background-size: 100%;
     }
 
     article {
       display: grid;
-      padding: var(--spacing-x-large);
-      background-color: white;
+      grid-template-columns: 2fr 3fr;
+
     }
 
     .santa-monica-mtns {
       grid-column: 1 / -1;
       grid-row: 2 / -1;
       pointer-events: none;
-      background-image: linear-gradient(var(--color-celestial-blue), var(--color-azalea), var(--color-celestial-blue));
+      background-image: linear-gradient(var(--color-celestial-blue), var(--color-azalea));
       mix-blend-mode: lighten;
       z-index: 2;
     }
@@ -37,20 +38,7 @@
       grid-row: 2 / -1;
     }
 
-    .sunset-beach {
-      align-self: center;
-      padding: var(--spacing-x-large);
-      background: white;
-    }
-
-    h1 {
-      font-weight: var(--font-weight-extra-bold);
-      line-height: 1;
-    }
-
-    .standfirst {
-      line-height: 1.2;
-    }
+    .sunset-beach {}
 
   </style>
 </head>
@@ -68,6 +56,16 @@
       <h1>Santa Monica Mountains</h1>
       <p class="standfirst">Hidden in plain sight from Los Angeles, the Santa
         Monica Mountains offer easy access to surprisingly wild places. </p>
+      <p>Even though we’re close to Los Angeles, many locations within the park
+        are surprisingly wild and remote. This park is unique in that we jointly
+        manage many locations with partners, like California State Parks and the
+        Mountains, Recreation and Conservation Authority. It takes a village to
+        protect a place like the
+        Santa Monica Mountains, and even though we sometimes have different
+        rules
+        and regulations, we’re all eager to share these special places with the
+        public. </p>
+
       <p>The range extends approximately 40 miles (64 km) east-west from the
         Hollywood Hills in Los Angeles to Point Mugu in Ventura County. The
         western mountains, separating the Conejo Valley from Malibu, suddenly
@@ -82,17 +80,29 @@
         Santa Susana Mountains, which are located directly north of the
         mountains
         across the San Fernando Valley.</p>
+      <p>At the eastern end of the Santa Monica Mountains are Griffith Park and
+        lastly Elysian Park. Griffith Park is separated from the rest of the
+        Santa
+        Monica Mountains to the west by the Cahuenga Pass, over which the 101
+        Freeway (also called the Hollywood Freeway) passes from the San Fernando
+        Valley into Hollywood. Elysian Park is in the easternmost part of the
+        mountains and is bordered by the Los Angeles River to the east and
+        Downtown Los Angeles nearby to the south. </p>
 
-      <p>Beaches along the Malibu coast include Surfrider Beach, Zuma Beach,
-        Malibu Beach, Topanga Beach, Point Dume Beach, County Line, and Dan
-        Blocker Beach. State parks and beaches on the Malibu coast include
-        Malibu Creek State Park, Leo Carrillo State Beach and Park, Point
-        Mugu State Park, and Robert H. Meyer Memorial State Beach, with
-        individual beaches: El Pescador, La Piedra and El Matador. </p>
+      <p>The range is of moderate height, with no particularly craggy or
+        prominent
+        peaks outside the Sandstone Peak and Boney Mountains area. While often
+        rugged and wild, the range hosts a substantial amount of human activity
+        and development. Houses, roads, businesses, and recreational centers are
+        dotted throughout the Santa Monica Mountains.</p>
 
-
-
-
+      <p>A number of creeks in the Santa Monica Mountains are part of the Los
+        Angeles River watershed. Beginning at the western end of the San
+        Fernando
+        Valley the river runs to the north of the mountains. After passing
+        between
+        the range and the Verdugo Mountains it flows south around Elysian Park
+        defining the easternmost extent of the mountains. </p>
     </div>
     <div class="santa-monica-mtns"></div>
   </article>
