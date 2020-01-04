@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Color Wheels | LA Layouts</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/styles.css">
+
+  <style type="text/css">
+    body {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-items: center;
+      align-content: center;
+    }
+
+    .circle {
+      position: absolute;
+      width: 12rem;
+      height: 12rem;
+      border-radius: 50%;
+      mix-blend-mode: screen;
+    }
+
+    .circle-red {
+      background: red;
+    }
+
+    .circle-green {
+      inset-inline: 6rem;
+      background: lightgreen;
+    }
+
+    .circle-blue {
+      inset-block: 6rem;
+      inset-inline: 2rem;
+      background: blue;
+    }
+
+    .isolate {
+      position: relative;
+      isolation: isolate;
+      /* Without isolation, the background color will be taken into account */
+    }
+
+
+    circle {
+      mix-blend-mode: screen;
+    }
+
+    .mix-blend-isolate {
+      isolation: isolate;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="isolate">
+    <div class="circle circle-red"></div>
+    <div class="circle circle-green"></div>
+    <div class="circle circle-blue"></div>
+  </div>
+
+  <svg>
+    <g class="mix-blend-isolate">
+      <circle cx="40" cy="40" r="40" fill="red" />
+      <circle cx="80" cy="40" r="40" fill="lightgreen" />
+      <circle cx="60" cy="80" r="40" fill="blue" />
+    </g>
+  </svg>
+
+</body>
+
+</html>
