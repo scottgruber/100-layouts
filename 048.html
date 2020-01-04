@@ -17,6 +17,31 @@
       align-content: center;
     }
 
+    article {
+      display: grid;
+      grid-template-columns: 2fr 3fr;
+
+    }
+
+    .santa-monica-mtns {
+      grid-column: 1 / -1;
+      grid-row: 1 / -1;
+      background-image: linear-gradient(var(--color-celestial-blue), var(--color-azalea));
+      mix-blend-mode: lighten;
+      z-index: 2;
+    }
+
+    .content {
+      grid-column: 1 / -1;
+      grid-row: 1 / -1;
+    }
+
+    .isolate {
+      position: relative;
+      isolation: isolate;
+      /* Without isolation, the background color will be taken into account */
+    }
+
     .circle {
       position: absolute;
       width: 12rem;
@@ -40,13 +65,6 @@
       background: blue;
     }
 
-    .isolate {
-      position: relative;
-      isolation: isolate;
-      /* Without isolation, the background color will be taken into account */
-    }
-
-
     circle {
       mix-blend-mode: screen;
     }
@@ -59,20 +77,85 @@
 </head>
 
 <body>
+  <header>
 
-  <div class="isolate">
-    <div class="circle circle-red"></div>
-    <div class="circle circle-green"></div>
-    <div class="circle circle-blue"></div>
-  </div>
+  </header>
+  <article>
 
-  <svg>
-    <g class="mix-blend-isolate">
-      <circle cx="40" cy="40" r="40" fill="red" />
-      <circle cx="80" cy="40" r="40" fill="lightgreen" />
-      <circle cx="60" cy="80" r="40" fill="blue" />
-    </g>
-  </svg>
+    <div class="content">
+      <h1>Santa Monica Mountains</h1>
+      <p class="standfirst">Hidden in plain sight from Los Angeles, the Santa
+        Monica Mountains offer easy access to surprisingly wild places. </p>
+      <p>Even though we’re close to Los Angeles, many locations within the park
+        are surprisingly wild and remote. This park is unique in that we jointly
+        manage many locations with partners, like California State Parks and the
+        Mountains, Recreation and Conservation Authority. It takes a village to
+        protect a place like the
+        Santa Monica Mountains, and even though we sometimes have different
+        rules
+        and regulations, we’re all eager to share these special places with the
+        public. </p>
+      <p>The range extends approximately 40 miles (64 km) east-west from the
+        Hollywood Hills in Los Angeles to Point Mugu in Ventura County. The
+        western mountains, separating the Conejo Valley from Malibu, suddenly
+        end
+        at Mugu Peak as the rugged, nearly impassible shoreline gives way to
+        tidal lagoons and coastal sand dunes of the alluvial Oxnard Plain. The
+        mountain range contributed to the isolation of this vast coastal plain
+        before regular transportation routes reached western Ventura County. The
+        eastern mountains form a barrier between the San Fernando Valley and the
+        Los Angeles Basin, separating “the Valley“ on the north and west-central
+        Los Angeles on the south. The Santa Monica Mountains are parallel to the
+        Santa Susana Mountains, which are located directly north of the
+        mountains
+        across the San Fernando Valley.</p>
+      <p>At the eastern end of the Santa Monica Mountains are Griffith Park and
+        lastly Elysian Park. Griffith Park is separated from the rest of the
+        Santa
+        Monica Mountains to the west by the Cahuenga Pass, over which the 101
+        Freeway (also called the Hollywood Freeway) passes from the San Fernando
+        Valley into Hollywood. Elysian Park is in the easternmost part of the
+        mountains and is bordered by the Los Angeles River to the east and
+        Downtown Los Angeles nearby to the south. </p>
+
+      <p>The range is of moderate height, with no particularly craggy or
+        prominent
+        peaks outside the Sandstone Peak and Boney Mountains area. While often
+        rugged and wild, the range hosts a substantial amount of human activity
+        and development. Houses, roads, businesses, and recreational centers are
+        dotted throughout the Santa Monica Mountains.</p>
+
+      <p>A number of creeks in the Santa Monica Mountains are part of the Los
+        Angeles River watershed. Beginning at the western end of the San
+        Fernando
+        Valley the river runs to the north of the mountains. After passing
+        between
+        the range and the Verdugo Mountains it flows south around Elysian Park
+        defining the easternmost extent of the mountains. </p>
+    </div>
+    <div class="santa-monica-mtns"></div>
+  </article>
+
+  <figure>
+    <svg>
+      <g class="mix-blend-isolate">
+        <circle cx="40" cy="40" r="40" fill="red" />
+        <circle cx="80" cy="40" r="40" fill="lightgreen" />
+        <circle cx="60" cy="80" r="40" fill="blue" />
+      </g>
+    </svg>
+
+    <div class="isolate">
+      <div class="circle circle-red"></div>
+      <div class="circle circle-green"></div>
+      <div class="circle circle-blue"></div>
+    </div>
+    <figcaption>
+      Additive color mixing.
+    </figcaption>
+  </figure>
+
+
 
 </body>
 
