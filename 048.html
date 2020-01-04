@@ -26,15 +26,32 @@
       }
     }
 
-    h1 {
-      font-weight: var(--font-weight-extra-bold);
-      line-height: 1;
+    .sunset-beach {
+      padding: var(--spacing-medium);
+      background: white;
     }
 
     article {
       display: grid;
-      padding: var(--spacing-x-large);
+      padding: var(--spacing-medium);
       background-color: white;
+    }
+
+    @media (min-width: 48em) {
+
+      .sunset-beach {
+        padding: var(--spacing-x-large);
+      }
+
+      article {
+        padding: var(--spacing-x-large);
+      }
+
+    }
+
+    article h1 {
+      font-weight: var(--font-weight-extra-bold);
+      line-height: 1;
     }
 
     article p {
@@ -48,23 +65,16 @@
     }
 
     .sunset-gradient {
-      grid-column: 1 / -1;
-      grid-row: 2 / -1;
-      pointer-events: none;
+      grid-column: 1;
+      grid-row: 1;
       background-image: linear-gradient(var(--color-celestial-blue), var(--color-azalea), var(--color-celestial-blue));
       mix-blend-mode: lighten;
       z-index: 2;
     }
 
     .content {
-      grid-column: 1 / -1;
-      grid-row: 2 / -1;
-    }
-
-    .sunset-beach {
-      align-self: center;
-      padding: var(--spacing-x-large);
-      background: white;
+      grid-column: 1;
+      grid-row: 1;
     }
 
   </style>
@@ -109,7 +119,6 @@
         Malibu Creek State Park, Leo Carrillo State Beach and Park, Point
         Mugu State Park, and Robert H. Meyer Memorial State Beach, with
         individual beaches: El Pescador, La Piedra and El Matador. </p>
-
     </div>
     <div class="sunset-gradient"></div>
   </article>
