@@ -12,10 +12,26 @@
   <style type="text/css">
     body {
       display: grid;
-      grid-template-columns: 3fr 1fr;
       gap: 2vw;
       background-image: linear-gradient(var(--color-celestial-blue), var(--color-azalea), var(--color-celestial-blue));
     }
+
+    @media (min-width: 120em) {
+
+      body {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        gap: 2vw;
+        background-image: linear-gradient(var(--color-celestial-blue), var(--color-azalea), var(--color-celestial-blue));
+      }
+    }
+
+    h1 {
+      font-weight: var(--font-weight-extra-bold);
+      line-height: 1;
+    }
+
+
 
     article {
       display: grid;
@@ -23,7 +39,22 @@
       background-color: white;
     }
 
-    .santa-monica-mtns {
+    article p {
+      column-width: 20em;
+    }
+
+    article p:first-of-type {
+      column-width: initial;
+      font-size: var(--font-size-medium);
+    }
+
+    @media (min-width: 120em) {
+      article {
+        display: grid;
+      }
+    }
+
+    .sunset-gradient {
       grid-column: 1 / -1;
       grid-row: 2 / -1;
       pointer-events: none;
@@ -43,15 +74,6 @@
       background: white;
     }
 
-    h1 {
-      font-weight: var(--font-weight-extra-bold);
-      line-height: 1;
-    }
-
-    .standfirst {
-      line-height: 1.2;
-    }
-
   </style>
 </head>
 
@@ -66,8 +88,9 @@
   <article>
     <div class="content">
       <h1>Santa Monica Mountains</h1>
-      <p class="standfirst">Hidden in plain sight from Los Angeles, the Santa
+      <p>Hidden in plain sight from Los Angeles, the Santa
         Monica Mountains offer easy access to surprisingly wild places. </p>
+
       <p>The range extends approximately 40 miles (64 km) east-west from the
         Hollywood Hills in Los Angeles to Point Mugu in Ventura County. The
         western mountains, separating the Conejo Valley from Malibu, suddenly
@@ -75,10 +98,14 @@
         at Mugu Peak as the rugged, nearly impassible shoreline gives way to
         tidal lagoons and coastal sand dunes of the alluvial Oxnard Plain. The
         mountain range contributed to the isolation of this vast coastal plain
-        before regular transportation routes reached western Ventura County. The
-        eastern mountains form a barrier between the San Fernando Valley and the
-        Los Angeles Basin, separating “the Valley“ on the north and west-central
-        Los Angeles on the south. The Santa Monica Mountains are parallel to the
+        before regular transportation routes reached western Ventura County.
+        The
+        eastern mountains form a barrier between the San Fernando Valley and
+        the
+        Los Angeles Basin, separating “the Valley“ on the north and
+        west-central
+        Los Angeles on the south. The Santa Monica Mountains are parallel to
+        the
         Santa Susana Mountains, which are located directly north of the
         mountains
         across the San Fernando Valley.</p>
@@ -90,11 +117,8 @@
         Mugu State Park, and Robert H. Meyer Memorial State Beach, with
         individual beaches: El Pescador, La Piedra and El Matador. </p>
 
-
-
-
     </div>
-    <div class="santa-monica-mtns"></div>
+    <div class="sunset-gradient"></div>
   </article>
 
 
